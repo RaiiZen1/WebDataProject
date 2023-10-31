@@ -1,5 +1,11 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
+import org.w3c.dom.Node;
+
+import de.uni_mannheim.informatik.dws.winter.model.DataSet;
+import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
+
 public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
 
     @Override
