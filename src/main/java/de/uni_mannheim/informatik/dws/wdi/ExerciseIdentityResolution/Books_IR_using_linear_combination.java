@@ -58,7 +58,7 @@ public class Books_IR_using_linear_combination
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Book, Attribute>> correspondences = engine.runIdentityResolution(
-				dataCovers, dataGoodreads, null, matchingRule,
+				dataAmazon, dataGoodreads, null, matchingRule,
 				new NoBlocker<>());
 
 		// write the correspondences to the output file
