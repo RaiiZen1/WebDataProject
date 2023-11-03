@@ -42,11 +42,23 @@ public class Books_IR_using_linear_combination
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Book, Attribute> dataAmazon = new HashedDataSet<>();
 		new BookXMLReader().loadFromXML(new File("data/input/Amazon.xml"), "/books/book", dataAmazon);
-		// HashedDataSet<Book, Attribute> dataCovers = new HashedDataSet<>();
-		// new BookXMLReader().loadFromXML(new File("data/input/Covers.xml"), "/books/book", dataCovers);
+		HashedDataSet<Book, Attribute> dataCovers = new HashedDataSet<>();
+		new BookXMLReader().loadFromXML(new File("data/input/Covers.xml"), "/books/book", dataCovers);
 		HashedDataSet<Book, Attribute> dataGoodreads = new HashedDataSet<>();
 		new BookXMLReader().loadFromXML(new File("data/input/Goodreads.xml"), "/books/book", dataGoodreads);
 		
+		// Print a block of data to see if everything works in the console limit it to 20 elements
+		int i = 0;
+		for(Book b : dataCovers.get()) {
+			i++;
+			if(i > 20) {
+				break;
+			}
+			// Print all attributes of the current book
+			System.out.println(b.toString());
+		}
+
+
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 				0.7);

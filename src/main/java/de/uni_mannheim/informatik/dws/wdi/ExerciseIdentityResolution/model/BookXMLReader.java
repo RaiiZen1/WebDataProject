@@ -21,19 +21,30 @@ public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
 
         book.setTitle(getValueFromChildElement(node, "title"));
         book.setAuthors(getListFromChildElement(node, "authors"));
+        book.setGenres(getListFromChildElement(node, "genres"));
+        book.setPublisher(getValueFromChildElement(node, "publisher"));
 
-        //book.setGenres(getListFromChildElement(node, "genres"));
-        String publisher = getValueFromChildElement(node, "publisher");
-        if(publisher != null && !publisher.isEmpty()) {
-            book.setPublisher(publisher);
-        }
         //book.setPublicationDate(getValueFromChildElement(node, "publicationDate"));
         String averageRating = getValueFromChildElement(node, "averageRating");
         if(averageRating != null && !averageRating.isEmpty()) {
             book.setAverageRating(Double.parseDouble(averageRating));
         }
-        //book.setPageNumber(Integer.parseInt(getValueFromChildElement(node, "pageNumber")));
-        
+
+        String pageNumber = getValueFromChildElement(node, "pageNumber");
+        if(pageNumber != null && !pageNumber.isEmpty()) {
+            book.setPageNumber(Integer.parseInt(pageNumber));
+        }
+
+        book.setCharacters(getListFromChildElement(node, "characters"));
+        book.setAwards(getListFromChildElement(node, "awards"));
+        book.setBookFormat(getValueFromChildElement(node, "bookFormat"));
+
+        String price = getValueFromChildElement(node, "price");
+        if(price != null && !price.isEmpty()) {
+            book.setPrice(Double.parseDouble(price));
+        }
+
+        book.setCurrency(getValueFromChildElement(node, "currency"));
 
         return book;
     }

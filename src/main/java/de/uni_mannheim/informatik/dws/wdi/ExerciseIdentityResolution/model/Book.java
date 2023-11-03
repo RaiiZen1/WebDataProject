@@ -133,6 +133,11 @@ public class Book implements Matchable {
     public void setCurrency(String currency) {
         this.currency = currency;
     }
-    
+
+    @Override
+    public String toString() {
+		return String.format("[Book %s: %s / %s / %s]", getIdentifier(), getTitle(),
+				getAuthors(), getGenres());   
+    } 
 }
 

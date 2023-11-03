@@ -18,6 +18,8 @@ public class BookBlockingKeyByTitleGenerator extends
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
+	 * Example: The Hobbit -> THHO 
+	 * 			Me, Myself and I -> MEMYAN
 	 */
 	@Override
 	public void generateBlockingKeys(Book record, Processable<Correspondence<Attribute, Matchable>> correspondences,
