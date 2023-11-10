@@ -11,9 +11,7 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
-
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
@@ -23,7 +21,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class Actor extends AbstractRecord<Attribute> implements Serializable {
+public class Actor extends AbstractRecord<Attribute> {
 
 	/*
 	 * example entry <actor> <name>Janet Gaynor</name>
