@@ -1,5 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
+import java.time.LocalDateTime;
+
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
@@ -24,7 +26,11 @@ public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
         book.setGenres(getListFromChildElement(node, "genres"));
         book.setPublisher(getValueFromChildElement(node, "publisher"));
 
-        //book.setPublicationDate(getValueFromChildElement(node, "publicationDate"));
+        String date = getValueFromChildElement(node, "publicationn_date");
+        if(date != null && !date.isEmpty()) {
+            book.setPublicationDate(LocalDateTime.parse(date));
+        }
+
         String averageRating = getValueFromChildElement(node, "averageRating");
         if(averageRating != null && !averageRating.isEmpty()) {
             book.setAverageRating(Double.parseDouble(averageRating));

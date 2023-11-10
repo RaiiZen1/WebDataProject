@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
@@ -50,8 +51,8 @@ public class Books_IR_using_linear_combination
 		new BookXMLReader().loadFromXML(new File("data/input/Amazon.xml"), "/books/book", dataAmazon);
 		HashedDataSet<Book, Attribute> dataCovers = new HashedDataSet<>();
 		new BookXMLReader().loadFromXML(new File("data/input/Covers.xml"), "/books/book", dataCovers);
-		HashedDataSet<Book, Attribute> dataGoodreads = new HashedDataSet<>();
-		new BookXMLReader().loadFromXML(new File("data/input/Goodreads.xml"), "/books/book", dataGoodreads);
+		// HashedDataSet<Book, Attribute> dataGoodreads = new HashedDataSet<>();
+		// new BookXMLReader().loadFromXML(new File("data/input/Goodreads.xml"), "/books/book", dataGoodreads);
 		
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -62,19 +63,18 @@ public class Books_IR_using_linear_combination
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 				0.7);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.7);
-		matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.3);
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator());
-		// NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
-		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator(), 1);
+		// StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator());
+		// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
+		SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator(), 30);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 10000);
 
 		// Initialize Matching Engine
 		MatchingEngine<Book, Attribute> engine = new MatchingEngine<>();
@@ -87,7 +87,6 @@ public class Books_IR_using_linear_combination
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/covers_goodreads_correspondences.csv"), correspondences);
-		
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
