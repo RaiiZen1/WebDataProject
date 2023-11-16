@@ -22,9 +22,9 @@ public class BookTitleComparatorEqual implements Comparator<Book, Attribute> {
 			Book record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-    	String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
-    	
+		String s1 = record1.getTitle();
+		String s2 = record1.getTitle();
+
     	double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){

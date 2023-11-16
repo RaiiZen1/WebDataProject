@@ -23,7 +23,7 @@ public class BookTitleComparatorLevenshtein implements Comparator<Book, Attribut
 		
 		String s1 = record1.getTitle();
 		String s2 = record2.getTitle();
-		
+
 		double similarity = sim.calculate(s1, s2);
 		
 		if(this.comparisonLog != null){
