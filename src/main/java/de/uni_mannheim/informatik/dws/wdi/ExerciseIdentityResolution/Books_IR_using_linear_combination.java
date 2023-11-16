@@ -62,12 +62,12 @@ public class Books_IR_using_linear_combination
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.4);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.7);
-		matchingRule.addComparator(new BookAuthorComparatorTokenizingJaccard(), 0.3);
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.8);
+		matchingRule.addComparator(new BookAuthorComparatorTokenizingJaccard(), 0.2);
 		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.2);
 
 		// create a blocker (blocking strategy)
