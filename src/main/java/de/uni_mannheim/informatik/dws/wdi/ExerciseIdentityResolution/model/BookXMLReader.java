@@ -26,10 +26,12 @@ public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
         book.setGenres(getListFromChildElement(node, "genres"));
         book.setPublisher(getValueFromChildElement(node, "publisher"));
 
-        String date = getValueFromChildElement(node, "publicationn_date");
-        if(date != null && !date.isEmpty()) {
-            book.setPublicationDate(LocalDateTime.parse(date));
-        }
+        // String date = getValueFromChildElement(node, "publicationn_date");
+        // if(date != null && !date.isEmpty()) {
+        //     book.setPublicationDate(LocalDateTime.parse(date));
+        // }
+
+        // PublicationDate publicationDate = get
 
         String averageRating = getValueFromChildElement(node, "averageRating");
         if(averageRating != null && !averageRating.isEmpty()) {
