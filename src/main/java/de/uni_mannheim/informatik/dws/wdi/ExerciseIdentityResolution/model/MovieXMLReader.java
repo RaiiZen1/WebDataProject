@@ -55,6 +55,7 @@ public class MovieXMLReader extends XMLMatchableReader<Movie, Attribute>  {
 		// convert the date string into a DateTime object
 		try {
 			String date = getValueFromChildElement(node, "date");
+			System.out.println(date);
 			if (date != null && !date.isEmpty()) {
 				DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 				        .appendPattern("yyyy-MM-dd")
