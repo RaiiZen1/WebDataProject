@@ -7,6 +7,7 @@ import org.w3c.dom.Node;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
+import de.uni_mannheim.informatik.dws.winter.preprocessing.datatypes.DateJavaTime;
 
 public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
 
@@ -26,9 +27,12 @@ public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
         book.setGenres(getListFromChildElement(node, "genres"));
         book.setPublisher(getValueFromChildElement(node, "publisher"));
 
-        String date = getValueFromChildElement(node, "publicationn_date");
-        if(date != null && !date.isEmpty()) {
-            book.setPublicationDate(LocalDateTime.parse(date));
+        String[] dateString = getValueFromChildElement(node, "publication_date").split("\n");
+        try {
+            LocalDateTime dateTime = DateJavaTime.parse(dateString[0]);
+            book.setPublicationDate(dateTime);     
+        } catch (Exception e) {
+            book.setPublicationDate(LocalDateTime.of(1970, 1, 1, 0, 0));
         }
 
         String averageRating = getValueFromChildElement(node, "averageRating");
@@ -54,5 +58,4 @@ public class BookXMLReader extends XMLMatchableReader<Book, Attribute>{
 
         return book;
     }
-    
 }

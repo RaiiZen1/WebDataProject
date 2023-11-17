@@ -23,8 +23,8 @@ public class BookTitleComparatorJaccard implements Comparator<Book, Attribute> {
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
-    	
+		String s2 = record1.getTitle();
+
     	double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){

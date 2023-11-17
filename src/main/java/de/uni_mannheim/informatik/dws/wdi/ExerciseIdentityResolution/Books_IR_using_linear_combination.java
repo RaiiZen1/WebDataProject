@@ -5,16 +5,12 @@ import java.io.File;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookPublisherComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookTitleComparatorEqual;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookAuthorComparatorTokenizingJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -49,29 +45,31 @@ public class Books_IR_using_linear_combination
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Book, Attribute> dataAmazon = new HashedDataSet<>();
 		new BookXMLReader().loadFromXML(new File("data/input/Amazon.xml"), "/books/book", dataAmazon);
-		HashedDataSet<Book, Attribute> dataCovers = new HashedDataSet<>();
-		new BookXMLReader().loadFromXML(new File("data/input/Covers.xml"), "/books/book", dataCovers);
-		// HashedDataSet<Book, Attribute> dataGoodreads = new HashedDataSet<>();
-		// new BookXMLReader().loadFromXML(new File("data/input/Goodreads.xml"), "/books/book", dataGoodreads);
+		// HashedDataSet<Book, Attribute> dataCovers = new HashedDataSet<>();
+		// new BookXMLReader().loadFromXML(new File("data/input/Covers.xml"), "/books/book", dataCovers);
+		HashedDataSet<Book, Attribute> dataGoodreads = new HashedDataSet<>();
+		new BookXMLReader().loadFromXML(new File("data/input/Goodreads.xml"), "/books/book", dataGoodreads);
 		
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_amazon_covers.csv"));
+				"data/goldstandard/gs_amazon_goodreads.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.4);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.8);
+		matchingRule.addComparator(new BookAuthorComparatorTokenizingJaccard(), 0.2);
+		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.2);
 
 		// create a blocker (blocking strategy)
-		// StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator());
 		// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
-		SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator(), 30);
+		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator2(), 30);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 10000);
@@ -82,11 +80,11 @@ public class Books_IR_using_linear_combination
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Book, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAmazon, dataCovers, null, matchingRule,
+				dataGoodreads, dataAmazon, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/covers_goodreads_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/goodreads_amazon_correspondences.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
@@ -95,7 +93,7 @@ public class Books_IR_using_linear_combination
 				gsTest);
 
 		// print the evaluation result
-		logger.info("Amazon <-> Covers");
+		logger.info("Goodreads <-> Amazon");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
