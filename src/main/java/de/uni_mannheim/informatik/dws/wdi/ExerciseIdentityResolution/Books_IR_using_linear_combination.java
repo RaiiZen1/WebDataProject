@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookAuthorComparatorTokenizingJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookTitleComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.BookTitleComparatorTFIDFCosine;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -62,7 +63,7 @@ public class Books_IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.8);
+		matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null), 0.8);
 		matchingRule.addComparator(new BookAuthorComparatorTokenizingJaccard(), 0.2);
 		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.2);
 
