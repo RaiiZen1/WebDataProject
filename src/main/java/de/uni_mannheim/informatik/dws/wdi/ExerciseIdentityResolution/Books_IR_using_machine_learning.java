@@ -65,7 +65,7 @@ public class Books_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_amazon_covers_training.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
@@ -121,7 +121,7 @@ public class Books_IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_amazon_covers_test.csv"));
+				"data/goldstandard/test/gs_amazon_covers_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
