@@ -17,15 +17,13 @@ public class BookBlockingKeyByTitleGenerator2 extends
 
 
 	/* (non-Javadoc)
-	 * Generate blocking keys based on the first two letters of the title
+	 * Generate blocking keys based on the first letter of the title
 	 */
 	@Override
 	public void generateBlockingKeys(Book record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Book>> resultCollector) {
-			
-		String blockingKeyValue = record.getTitle().substring(0, Math.min(2,record.getTitle().length())).toUpperCase();
-		resultCollector.next(new Pair<>(blockingKeyValue, record));
-		
+	
+		String firstLetter  = record.getTitle().substring(0, 1).toUpperCase();
+		resultCollector.next(new Pair<>(firstLetter, record));
 	}
-
 }

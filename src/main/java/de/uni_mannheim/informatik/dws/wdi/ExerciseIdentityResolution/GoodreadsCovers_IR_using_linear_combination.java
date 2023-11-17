@@ -67,7 +67,7 @@ public class GoodreadsCovers_IR_using_linear_combination
 		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.2);
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleGenerator2());
 		// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
 		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator2(), 30);
 		blocker.setMeasureBlockSizes(true);
