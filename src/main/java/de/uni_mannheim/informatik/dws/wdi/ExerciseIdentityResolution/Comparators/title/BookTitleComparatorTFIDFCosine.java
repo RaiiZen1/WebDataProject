@@ -11,7 +11,7 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.BlockingKeyIndexer;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
@@ -47,8 +47,8 @@ public class BookTitleComparatorTFIDFCosine implements Comparator<Book, Attribut
 		logger.info("Calculate TF-IDF score of all correspondences");
 
 		BlockingKeyIndexer<Book, Attribute, Book, Attribute> blockingKeyIndexer = new BlockingKeyIndexer<>(
-				new BookBlockingKeyByTitleGenerator(),
-				new BookBlockingKeyByTitleGenerator(), new VectorSpaceCosineSimilarity(),
+				new BookBlockingKeyByTitleStringGenerator(),
+				new BookBlockingKeyByTitleStringGenerator(), new VectorSpaceCosineSimilarity(),
 				BlockingKeyIndexer.VectorCreationMethod.TFIDF, 0.1);
 
 		this.correspondences = blockingKeyIndexer
