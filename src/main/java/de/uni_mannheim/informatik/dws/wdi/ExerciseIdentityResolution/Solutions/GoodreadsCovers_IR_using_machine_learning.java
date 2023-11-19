@@ -15,6 +15,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparatorEuclideanDistance;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparatorManhattanDistance;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaroWinkler;
@@ -89,7 +91,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
+		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
 		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein());
@@ -102,6 +104,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedJaroWinkler());
 		// matchingRule.addComparator(new BookPublisherComparatorMongeElkan());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedMongeElkan());
+
 		matchingRule.addComparator(new BookTitleComparatorEqual());
 		matchingRule.addComparator(new BookTitleComparatorJaccard());
 		matchingRule.addComparator(new BookTitleComparatorLevenshtein());
@@ -117,6 +120,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookTitleComparatorMongeElkan());
+
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
 		matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
@@ -127,6 +131,9 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookAuthorComparatorJaro());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
+
+		matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
+		matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
 		
 		
 		// train the matching rule's model
@@ -139,7 +146,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleStringGenerator());
 		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByYearGenerator(), 30);
 
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlockingGoodreadsCoversML.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Book, Attribute> engine = new MatchingEngine<>();
@@ -151,7 +158,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/goodreads_covers_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/goodreads_covers_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

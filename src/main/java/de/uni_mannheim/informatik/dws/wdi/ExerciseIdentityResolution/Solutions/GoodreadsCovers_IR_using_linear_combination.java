@@ -61,7 +61,7 @@ public class GoodreadsCovers_IR_using_linear_combination
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 				0.7);
-		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCovers.csv", 10000, gsTest);
+		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversLC.csv", 10000, gsTest);
 		
 		// add comparators
 		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.6);
@@ -74,7 +74,7 @@ public class GoodreadsCovers_IR_using_linear_combination
 		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByDecadeGenerator(), 100);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlockingGoodreadsCovers.csv", 10000);
+		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlockingGoodreadsCoversLC.csv", 10000);
 
 		// Initialize Matching Engine
 		MatchingEngine<Book, Attribute> engine = new MatchingEngine<>();
