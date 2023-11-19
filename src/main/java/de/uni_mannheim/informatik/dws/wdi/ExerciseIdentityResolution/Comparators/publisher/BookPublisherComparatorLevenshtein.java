@@ -21,8 +21,8 @@ public class BookPublisherComparatorLevenshtein implements Comparator<Book, Attr
 			Book record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-		String s1 = record1.getTitle();
-		String s2 = record1.getTitle();
+		String s1 = record1.getPublisher();
+		String s2 = record1.getPublisher();
 		
 		double similarity = sim.calculate(s1, s2);
 		

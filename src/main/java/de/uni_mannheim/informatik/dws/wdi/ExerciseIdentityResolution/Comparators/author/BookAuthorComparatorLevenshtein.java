@@ -14,7 +14,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 public class BookAuthorComparatorLevenshtein implements Comparator<Book, Attribute> {
 
     private static final long serialVersionUID = 1L;
-    LevenshteinSimilarity sim = new LevenshteinSimilarity();
+    private LevenshteinSimilarity sim = new LevenshteinSimilarity();
 
     private ComparatorLogger comparisonLog;
 

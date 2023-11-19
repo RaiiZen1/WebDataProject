@@ -7,6 +7,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
 
 public class BookPublisherComparatorPreprocessedLevenshtein implements Comparator<Book, Attribute> {
 
@@ -21,8 +22,8 @@ public class BookPublisherComparatorPreprocessedLevenshtein implements Comparato
 			Book record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-		String s1 = record1.getPublisher().toLowerCase().replaceAll("\\p{Punct}", "");
-		String s2 = record2.getPublisher().toLowerCase().replaceAll("\\p{Punct}", "");
+		String s1 = StringPreprocessor.preprocess(record1.getPublisher());
+		String s2 = StringPreprocessor.preprocess(record2.getPublisher());
 		
 		double similarity = sim.calculate(s1, s2);
 		

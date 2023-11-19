@@ -10,11 +10,12 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.JaroWinklerSimila
 import java.util.List;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
 
 public class BookAuthorComparatorPreprocessedJaroWinkler implements Comparator<Book, Attribute> {
 
     private static final long serialVersionUID = 1L;
-    JaroWinklerSimilarity sim = new JaroWinklerSimilarity();
+    private JaroWinklerSimilarity sim = new JaroWinklerSimilarity();
 
     private ComparatorLogger comparisonLog;
 
@@ -32,9 +33,9 @@ public class BookAuthorComparatorPreprocessedJaroWinkler implements Comparator<B
         String s1 = "", s2 = "";
         try {
             for (String author1 : l1) {
-                author1 = author1.toLowerCase().replaceAll("\\p{Punct}", "");
+                author1 = StringPreprocessor.preprocess(author1);
                 for (String author2 : l2) {
-                    author2 = author2.toLowerCase().replaceAll("\\p{Punct}", "");
+                    author2 = StringPreprocessor.preprocess(author2);
                     double similarity = sim.calculate(author1, author2);
                     if (similarity > maxSimilarity) {
                         maxSimilarity = similarity;

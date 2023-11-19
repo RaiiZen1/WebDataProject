@@ -7,6 +7,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaroWinklerSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
 
 public class BookTitleComparatorPreprocessedJaroWinkler implements Comparator<Book, Attribute> {
 
@@ -22,8 +23,8 @@ public class BookTitleComparatorPreprocessedJaroWinkler implements Comparator<Bo
             Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
         // Get the titles from the Book instances
-        String s1 = record1.getTitle().toLowerCase().replaceAll("\\p{Punct}", "");
-        String s2 = record2.getTitle().toLowerCase().replaceAll("\\p{Punct}", "");
+        String s1 = StringPreprocessor.preprocess(record1.getTitle());
+        String s2 = StringPreprocessor.preprocess(record2.getTitle());
 
         // Calculate the Jaro-Winkler similarity between the titles
         double similarity = sim.calculate(s1, s2);

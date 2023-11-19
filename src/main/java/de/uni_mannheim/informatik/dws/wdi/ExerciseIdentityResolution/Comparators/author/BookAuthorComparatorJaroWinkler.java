@@ -14,7 +14,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 public class BookAuthorComparatorJaroWinkler implements Comparator<Book, Attribute> {
 
     private static final long serialVersionUID = 1L;
-    JaroWinklerSimilarity sim = new JaroWinklerSimilarity();
+    private JaroWinklerSimilarity sim = new JaroWinklerSimilarity();
 
     private ComparatorLogger comparisonLog;
 
