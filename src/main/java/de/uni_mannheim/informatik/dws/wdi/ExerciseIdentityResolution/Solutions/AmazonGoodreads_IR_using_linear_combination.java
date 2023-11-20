@@ -68,14 +68,8 @@ public class AmazonGoodreads_IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsLC.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), -4.77);
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 0.89);
-		matchingRule.addComparator(new BookAuthorComparatorJaccard(), -1);
-		matchingRule.addComparator(new BookTitleComparatorJaroWinkler(), -5.94);
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), -1.07);
-		matchingRule.addComparator(new BookTitleComparatorSmithWaterman(), -0.01);
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard(), -0.16);
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 7.84);
+		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
+		
 
 
 

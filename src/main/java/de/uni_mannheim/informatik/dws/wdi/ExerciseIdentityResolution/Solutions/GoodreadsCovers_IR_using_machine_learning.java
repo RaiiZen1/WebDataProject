@@ -132,8 +132,8 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
 
-		matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
-		matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
+		// matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
+		// matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
 		
 		
 		// train the matching rule's model
