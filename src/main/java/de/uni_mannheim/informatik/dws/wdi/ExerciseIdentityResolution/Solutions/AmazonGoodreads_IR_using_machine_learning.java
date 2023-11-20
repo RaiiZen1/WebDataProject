@@ -85,7 +85,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -95,7 +95,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
-		matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
+		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
 		// matchingRule.addComparator(new BookTitleComparatorJaro());
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
 		matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
