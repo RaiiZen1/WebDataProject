@@ -158,7 +158,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/goodreads_covers_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/goodreads_covers_correspondencesML.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

@@ -85,11 +85,11 @@ public class AmazonCovers_IR_using_linear_combination {
 
 		// add comparators
 		// matchingRule.addComparator(new BookTitleComparatorEqual(), 1);
-		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 1);
+		matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 1);
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataAmazon, dataCovers, null), 0);
 		// matchingRule.addComparator(new BookTitleComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro(), 0);
@@ -97,8 +97,8 @@ public class AmazonCovers_IR_using_linear_combination {
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorSmithWaterman(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman(), 0);
-		// matchingRule.addComparator(new BookTitleComparatorMongeElkan(), 0);
-		// matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorMongeElkan(), 0.5);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan(), 1);
 		
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0);
@@ -109,7 +109,7 @@ public class AmazonCovers_IR_using_linear_combination {
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan(), 0);
-		// matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0);
+		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.4);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(

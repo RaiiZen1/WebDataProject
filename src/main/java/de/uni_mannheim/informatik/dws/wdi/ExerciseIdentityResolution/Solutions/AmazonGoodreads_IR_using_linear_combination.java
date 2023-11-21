@@ -6,12 +6,22 @@ import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaroWinkler;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaroWinkler;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.genre.BookGenreComparatorPreprocessedJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedSmithWaterman;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorSmithWaterman;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorTFIDFCosine;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
@@ -64,11 +74,42 @@ public class AmazonGoodreads_IR_using_linear_combination
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.4);
+				0.7);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsLC.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorEqual(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
+		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
+		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 0.6);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataAmazon, dataCovers, null), 0);
+		// matchingRule.addComparator(new BookTitleComparatorJaro(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorJaroWinkler(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorSmithWaterman(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman(), 0);
+		// matchingRule.addComparator(new BookTitleComparatorMongeElkan(), 0.5);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan(), 1);
+		
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorLevenshtein(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorJaroWinkler(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorJaro(), 0);
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan(), 0);
+		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.3);
+
+		// matchingRule.addComparator(new BookGenreComparatorJaccard());
+		matchingRule.addComparator(new BookGenreComparatorPreprocessedJaccard(), 0.1);
+
+		// matchingRule.addComparator(new BookRatingComparatorEuclideanDistance());
+		// matchingRule.addComparator(new BookRatingComparatorManhattanDistance());
 		
 
 

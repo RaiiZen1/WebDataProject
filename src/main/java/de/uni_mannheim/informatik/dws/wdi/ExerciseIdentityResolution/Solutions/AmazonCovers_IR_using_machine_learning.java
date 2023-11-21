@@ -77,37 +77,37 @@ public class AmazonCovers_IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorEqual());
+		// matchingRule.addComparator(new BookTitleComparatorEqual());
 		matchingRule.addComparator(new BookTitleComparatorJaccard());
 		matchingRule.addComparator(new BookTitleComparatorLevenshtein());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
-		matchingRule.addComparator(new BookTitleComparatorJaro());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
+		// matchingRule.addComparator(new BookTitleComparatorJaro());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
 		matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
-		matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
-		matchingRule.addComparator(new BookTitleComparatorMongeElkan());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
+		// matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
+		// matchingRule.addComparator(new BookTitleComparatorMongeElkan());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
 		
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookAuthorComparatorJaccard());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
 		matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler());
 		matchingRule.addComparator(new BookAuthorComparatorJaroWinkler());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
-		matchingRule.addComparator(new BookAuthorComparatorJaro());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
+		// matchingRule.addComparator(new BookAuthorComparatorJaro());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
 		
 		
@@ -133,7 +133,7 @@ public class AmazonCovers_IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_covers_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_covers_correspondencesML.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
