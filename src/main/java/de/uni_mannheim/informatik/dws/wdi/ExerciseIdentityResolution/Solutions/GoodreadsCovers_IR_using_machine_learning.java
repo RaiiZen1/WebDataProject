@@ -94,15 +94,15 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
-		// matchingRule.addComparator(new BookPublisherComparatorLevenshtein());
+		matchingRule.addComparator(new BookPublisherComparatorLevenshtein());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedLevenshtein());
-		// matchingRule.addComparator(new BookPublisherComparatorJaccard());
+		matchingRule.addComparator(new BookPublisherComparatorJaccard());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedJaccard());
-		// matchingRule.addComparator(new BookPublisherComparatorJaro());
+		matchingRule.addComparator(new BookPublisherComparatorJaro());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedJaro());
-		// matchingRule.addComparator(new BookPublisherComparatorJaroWinkler());
+		matchingRule.addComparator(new BookPublisherComparatorJaroWinkler());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedJaroWinkler());
-		// matchingRule.addComparator(new BookPublisherComparatorMongeElkan());
+		matchingRule.addComparator(new BookPublisherComparatorMongeElkan());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedMongeElkan());
 
 		matchingRule.addComparator(new BookTitleComparatorEqual());
@@ -132,8 +132,8 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
 
-		// matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
-		// matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
+		matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
+		matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
 		
 		
 		// train the matching rule's model
