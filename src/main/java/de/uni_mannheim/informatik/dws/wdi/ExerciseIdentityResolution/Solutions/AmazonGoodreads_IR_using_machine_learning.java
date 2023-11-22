@@ -85,42 +85,42 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
-		// matchingRule.addComparator(new BookTitleComparatorEqual());
-		// matchingRule.addComparator(new BookTitleComparatorJaccard());
-		// matchingRule.addComparator(new BookTitleComparatorLevenshtein());
+		matchingRule.addComparator(new BookTitleComparatorEqual());
+		matchingRule.addComparator(new BookTitleComparatorJaccard());
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
-		// matchingRule.addComparator(new BookTitleComparatorJaro());
+		matchingRule.addComparator(new BookTitleComparatorJaro());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
-		// matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
+		matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
-		// matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
+		matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
-		// matchingRule.addComparator(new BookTitleComparatorMongeElkan());
+		matchingRule.addComparator(new BookTitleComparatorMongeElkan());
 
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
-		// matchingRule.addComparator(new BookAuthorComparatorJaccard());
+		matchingRule.addComparator(new BookAuthorComparatorJaccard());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
-		// matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
+		matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
-		// matchingRule.addComparator(new BookAuthorComparatorJaro());
+		matchingRule.addComparator(new BookAuthorComparatorJaro());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler());
-		// matchingRule.addComparator(new BookAuthorComparatorJaroWinkler());
+		matchingRule.addComparator(new BookAuthorComparatorJaroWinkler());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
-		// matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
+		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
 
-		// matchingRule.addComparator(new BookGenreComparatorJaccard());
+		matchingRule.addComparator(new BookGenreComparatorJaccard());
 		matchingRule.addComparator(new BookGenreComparatorPreprocessedJaccard());
 
-		// matchingRule.addComparator(new BookRatingComparatorEuclideanDistance());
-		// matchingRule.addComparator(new BookRatingComparatorManhattanDistance());
+		matchingRule.addComparator(new BookRatingComparatorEuclideanDistance());
+		matchingRule.addComparator(new BookRatingComparatorManhattanDistance());
 		
 		
 		// train the matching rule's model

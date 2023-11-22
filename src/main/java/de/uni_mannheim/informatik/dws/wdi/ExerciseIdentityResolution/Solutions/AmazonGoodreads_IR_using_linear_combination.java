@@ -82,8 +82,8 @@ public class AmazonGoodreads_IR_using_linear_combination
 		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 0.6);
-		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 0.6);
+		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataAmazon, dataCovers, null), 0);
 		// matchingRule.addComparator(new BookTitleComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro(), 0);
@@ -132,7 +132,7 @@ public class AmazonGoodreads_IR_using_linear_combination
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondencesLC.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result

@@ -1,0 +1,501 @@
+,covers_id,amazon_id,covers_title,amazon_title,similarity_score,covers_isbn,amazon_isbn,is_match
+0,Covers_4847,Amazon_3985,The McKinsey Way,The McKinsey Way,1.0,9780070534483,9780070534483,True
+1,Covers_7268,Amazon_7066,Jurassic Park,Jurassic Park,1.0,9780345370778,9780345370778,True
+2,Covers_2876,Amazon_7894,A Poetry Handbook,Poetry Handbook,1.0,9780156724005,9780156724005,True
+3,Covers_2864,Amazon_17442,Something Wonderful,Something Wonderful,1.0,9780671737634,9780671737634,True
+4,Covers_8627,Amazon_14439,The Tracker,The Tracker,1.0,9780425101339,9780425101339,True
+5,Covers_8828,Amazon_16539,What the Buddha Taught,What the Buddha Taught,1.0,9780802130310,9780802130310,True
+6,Covers_7995,Amazon_7859,Sweet Revenge,Sweet Revenge,1.0,9780553278590,9780553278590,True
+7,Covers_6708,Amazon_7503,Conspiracy in Death,Conspiracy in Death,1.0,9780425168134,9780425168134,True
+8,Covers_1002,Amazon_2970,The Unabridged Journals of Sylvia Plath,The Unabridged Journals of Sylvia Plath,1.0,9780385720250,9780385720250,True
+9,Covers_6800,Amazon_116,Dibs in Search of Self,Dibs in Search of Self,1.0,9780345339256,9780345339256,True
+10,Covers_5902,Amazon_18786,Women's Strength Training Anatomy,Women's Strength Training Anatomy,1.0,9780736048132,9780736048132,True
+11,Covers_6971,Amazon_21095,Flipped,Flipped,1.0,9780375825446,9780375825446,True
+12,Covers_5450,Amazon_9815,The New Book of Middle Eastern Food,The New Book of Middle Eastern Food,1.0,9780375405068,9780375405068,True
+13,Covers_5477,Amazon_8861,Modern Coin Magic,Modern Coin Magic,1.0,9780486242583,9780486242583,True
+14,Covers_6351,Amazon_11947,A Small Place,A Small Place,1.0,9780374527075,9780374527075,True
+15,Covers_2880,Amazon_3437,I Have Lived A Thousand Years: Growing Up In The Holocaust,I Have Lived A Thousand Years: Growing up in the Holocaust,1.0,9780689823954,9780689823954,True
+16,Covers_6629,Amazon_17555,Candy,Candy,1.0,9780345423870,9780345423870,True
+17,Covers_348,Amazon_3141,Gift from the Sea,Gift From The Sea,1.0,9780679732419,9780679732419,True
+18,Covers_1758,Amazon_11740,From the Holy Mountain,From the Holy Mountain,1.0,9780006547747,9780006547747,True
+19,Covers_1178,Amazon_21575,How To Draw Caricatures,How To Draw Caricatures,1.0,9780809256853,9780809256853,True
+20,Covers_7825,Amazon_16483,Schindler's List,Schindler's List,1.0,9780671880316,9780671880316,True
+21,Covers_3175,Amazon_13816,WISDOM OF FLORENCE SCOVEL SHINN,Wisdom of Florence Scovel Shinn,1.0,9780671682286,9780671682286,True
+22,Covers_8541,Amazon_17794,The Satanic Verses,The Satanic Verses,1.0,9780963270702,9780963270702,True
+23,Covers_2690,Amazon_18107,Servant of the Empire,Servant of the Empire,1.0,9780553292459,9780553292459,True
+24,Covers_8443,Amazon_15028,The Odyssey,The Odyssey,1.0,9781853260254,9781853260254,True
+25,Covers_540,Amazon_18357,D'Aulaires Book of Greek Myths,D'Aulaires Book of Greek Myths,1.0,9780440406945,9780440406945,True
+26,Covers_7122,Amazon_11600,Hiroshima,Hiroshima,1.0,9780679721031,9780679721031,True
+27,Covers_2659,Amazon_2044,Keys to Drawing,Keys to Drawing,1.0,9780891343370,9780891343370,True
+28,Covers_2583,Amazon_16287,The Cost of Discipleship,The Cost of Discipleship,1.0,9780684815008,9780684815008,True
+29,Covers_1068,Amazon_7679,Reunion in Death,Reunion in Death,1.0,9780425183977,9780425183977,True
+30,Covers_5633,Amazon_9716,The Cake Bible,The Cake Bible,1.0,9780688044022,9780688044022,True
+31,Covers_2764,Amazon_13807,Satanic Rituals,Satanic Rituals,1.0,9780380013920,9780380013920,True
+32,Covers_8861,Amazon_14667,Winterdance: The Fine Madness of Running the Iditarod,Winterdance: the Fine Madness of Running the Iditarod,1.0,9780156001458,9780156001458,True
+33,Covers_5984,Amazon_19954,Roxaboxen,Roxaboxen,1.0,9780060526337,9780060526337,True
+34,Covers_1237,Amazon_16094,On Becoming a Novelist,On Becoming a Novelist,1.0,9780393320039,9780393320039,True
+35,Covers_4900,Amazon_11224,Shepherding a Child's Heart,Shepherding A Child's Heart,1.0,9780966378603,9780966378603,True
+36,Covers_8403,Amazon_7429,The Mediterranean Caper,The Mediterranean Caper,1.0,9780425197394,9780425197394,True
+37,Covers_7743,Amazon_16904,Rebecca,Rebecca,1.0,9780380778553,9780380778553,True
+38,Covers_1590,Amazon_7599,Immortal in Death,Immortal in Death,1.0,9780425153789,9780425153789,True
+39,Covers_2635,Amazon_4289,Working with Emotional Intelligence,Working with Emotional Intelligence,1.0,9780553378580,9780553378580,True
+40,Covers_364,Amazon_6708,Drawing the Head and Figure,Drawing the Head and Figure,1.0,9780399507915,9780399507915,True
+41,Covers_4491,Amazon_4591,Where Is Baby's Belly Button?,Where Is Baby's Belly Button?,1.0,9780689835605,9780689835605,True
+42,Covers_8250,Amazon_11761,The First World War,The First World War,1.0,9780375700453,9780375700453,True
+43,Covers_5348,Amazon_14605,The Life of Mammals,The Life of Mammals,1.0,9780691113241,9780691113241,True
+44,Covers_6147,Amazon_20431,The Complete Woodcuts of Albrecht Durer,The Complete Woodcuts of Albrecht Durer,1.0,9780486210971,9780486210971,True
+45,Covers_3779,Amazon_19545,Changing for Good,Changing for Good,1.0,9780380725724,9780380725724,True
+46,Covers_4884,Amazon_2531,Towards a New Architecture,Towards a New Architecture,1.0,9780486250236,9780486250236,True
+47,Covers_8268,Amazon_2100,The Gashlycrumb Tinies,The Gashlycrumb Tinies,1.0,9780151003082,9780151003082,True
+48,Covers_7466,Amazon_18080,Mistress of the Empire,Mistress of the Empire,1.0,9780553561180,9780553561180,True
+49,Covers_6328,Amazon_14294,A Natural History of the Senses,A Natural History of the Senses,1.0,9780679735663,9780679735663,True
+50,Covers_8478,Amazon_4853,The Pillars of the Earth,The Pillars of the Earth,1.0,9780451166890,9780451166890,True
+51,Covers_5509,Amazon_15061,The Collected Poems of W. B. Yeats,The Collected Poems of W.B. Yeats,1.0,9781853264542,9781853264542,True
+52,Covers_5004,Amazon_9139,100 Carols for Choirs,100 Carols for Choirs,1.0,9780193532274,9780193532274,True
+53,Covers_2299,Amazon_5117,The Wonderful Wizard of Oz: A Commemorative Pop-up,The Wonderful Wizard of Oz: a Commemorative Pop-up,1.0,9780689817519,9780689817519,True
+54,Covers_6840,Amazon_16882,Drums of Autumn,Drums of Autumn,1.0,9780440224259,9780440224259,True
+55,Covers_7089,Amazon_7499,Hannibal,Hannibal,1.0,9780440224679,9780440224679,True
+56,Covers_8037,Amazon_16394,The Abolition of Man,The Abolition of Man,1.0,9780060652944,9780060652944,True
+57,Covers_4983,Amazon_4901,The Jolly Postman,The Jolly Postman,1.0,9780316126441,9780316126441,True
+58,Covers_6665,Amazon_11634,Chickenhawk,Chickenhawk,1.0,9780552124195,9780552124195,True
+59,Covers_909,Amazon_10591,Calvin and Hobbes,Calvin and Hobbes,1.0,9780836220889,9780836220889,True
+60,Covers_4604,Amazon_3683,High Output Management,High Output Management,1.0,9780679762881,9780679762881,True
+61,Covers_1132,Amazon_8851,Seinlanguage,Seinlanguage,1.0,9780553569155,9780553569155,True
+62,Covers_6691,Amazon_15179,Collected Fictions,Collected Fictions,1.0,9780140286809,9780140286809,True
+63,Covers_3270,Amazon_3710,Economics in One Lesson,Economics In One Lesson,1.0,9780517548233,9780517548233,True
+64,Covers_5897,Amazon_942,Meditation Made Easy,Meditation Made Easy,1.0,9780062515421,9780062515421,True
+65,Covers_4162,Amazon_18434,Stick and Rudder: An Explanation of the Art of Flying,Stick and Rudder: An Explanation of the Art of Flying,1.0,9780070362406,9780070362406,True
+66,Covers_1513,Amazon_21269,Explorers on the Moon (The Adventures of Tintin),The Adventures of Tintin: Explorers on the Moon,1.0,9780316358460,9780316358460,True
+67,Covers_904,Amazon_12991,The Essential Calvin and Hobbes,The Essential Calvin and Hobbes,1.0,9780836218053,9780836218053,True
+68,Covers_2638,Amazon_13725,Recovery of Your Inner Child : The Highly Acclaimed Method for Liberating Your Inner Self,Recovery of Your Inner Child: The Highly Acclaimed Method for Liberating Your Inner Self,1.0,9780671701352,9780671701352,True
+69,Covers_2027,Amazon_14077,Journey To Ixtlan,Journey to Ixtlan,1.0,9780671732462,9780671732462,True
+70,Covers_3576,Amazon_10774,300,300,1.0,9781569714027,9781569714027,True
+71,Covers_593,Amazon_11025,Teach Your Child to Read in 100 Easy Lessons,Teach Your Child to Read in 100 Easy Lessons,1.0,9780671631987,9780671631987,True
+72,Covers_1058,Amazon_14125,Book of Thoth,Book of Thoth,1.0,9780877282686,9780877282686,True
+73,Covers_1327,Amazon_7445,Vengeance in Death,Vengeance in Death,1.0,9780425160398,9780425160398,True
+74,Covers_5114,Amazon_2288,Drawing for the Artistically Undiscovered,Drawing for the Artistically Undiscovered,1.0,9781570543203,9781570543203,True
+75,Covers_435,Amazon_12064,Genesis Revisited,Genesis Revisited,1.0,9780380761593,9780380761593,True
+76,Covers_5067,Amazon_11787,"New Selected Poems, 1966-1987",New Selected Poems 1966-1987,1.0,9780571143726,9780571143726,True
+77,Covers_1113,Amazon_20710,The Egg and I,The Egg and I,1.0,9780060914288,9780060914288,True
+78,Covers_1807,Amazon_359,The Man Who Mistook His Wife For A Hat : And Other Clinical Tales,The Man Who Mistook His Wife for a Hat and Other Clinical Tales,1.0,9780684853949,9780684853949,True
+79,Covers_2064,Amazon_20584,The Face of Battle,The Face of Battle,1.0,9780140048971,9780140048971,True
+80,Covers_5225,Amazon_15296,In Praise of Shadows,In Praise of Shadows,1.0,9780918172020,9780918172020,True
+81,Covers_1648,Amazon_5247,Hattie And The Fox,Hattie and the Fox,1.0,9780689716119,9780689716119,True
+82,Covers_5579,Amazon_5436,The Soul Of A New Machine,The Soul of a New Machine,1.0,9780316491976,9780316491976,True
+83,Covers_7259,Amazon_3300,Journals,Journals,1.0,9781573223591,9781573223591,True
+84,Covers_6881,Amazon_18062,Endymion,Endymion,1.0,9780553572940,9780553572940,True
+85,Covers_7165,Amazon_17736,Hyperion,Hyperion,1.0,9780553283686,9780553283686,True
+86,Covers_8617,Amazon_17057,The Thorn Birds,The Thorn Birds,1.0,9780380018178,9780380018178,True
+87,Covers_8166,Amazon_7287,The Confessor,The Confessor,1.0,9780451211484,9780451211484,True
+88,Covers_7331,Amazon_16456,Let Me Be a Woman,Let ME be a Woman,1.0,9780842321624,9780842321624,True
+89,Covers_1887,Amazon_1115,THE ORIGIN OF SPECIES,The Origin of Species,1.0,9781853267802,9781853267802,True
+90,Covers_6413,Amazon_10888,Amphigorey,Amphigorey,1.0,9780399504334,9780399504334,True
+91,Covers_4074,Amazon_20964,Unreal!,Unreal!,1.0,9780140370997,9780140370997,True
+92,Covers_1599,Amazon_3890,How I Raised Myself from Failure to Success in Selling,How I Raised Myself From Failure to Success in Selling,1.0,9780671794378,9780671794378,True
+93,Covers_7303,Amazon_17207,Lake in the Clouds,Lake in the Clouds,1.0,9780553582796,9780553582796,True
+94,Covers_8646,Amazon_7467,The Unlikely Spy,The Unlikely Spy,1.0,9780451209306,9780451209306,True
+95,Covers_1821,Amazon_15017,"Three Theban Plays, The",The Three Theban Plays,1.0,9780140444254,9780140444254,True
+96,Covers_639,Amazon_11942,Bill Bryson's African Diary,Bill Bryson's African Diary,1.0,9780767915069,9780767915069,True
+97,Covers_6455,Amazon_2440,Arcadia,Arcadia,1.0,9780571169344,9780571169344,True
+98,Covers_6761,Amazon_17215,Dawn on a Distant Shore,Dawn on a Distant Shore,1.0,9780553578553,9780553578553,True
+99,Covers_7405,Amazon_12115,Making Faces,Making Faces,1.0,9780316286855,9780316286855,True
+100,Covers_20371,Amazon_6974,The Power of Babble: The Politician's Dictionary of Buzzwords and Doubletalk for Every Occasion,The Power,0.2542486736701352,9780440212416,9780670919963,False
+101,Covers_2820,Amazon_16337,Elminster: The Making of a Mage (Forgotten Realms Novel: Elminster Trilogy),Forgotten God,0.21679726186067338,9780786902033,9781434767950,False
+102,Covers_37914,Amazon_15488,U2: Rattle &amp; hum : the official book of the U2 movie : a journey into the heartland of two Americas,The Rattle Bag,0.2550841771212994,9781871307412,9780571225835,False
+103,Covers_14051,Amazon_15584,Splendeurs et MisÃ?Â¨res des courtisanes,No et moi,0.17937599093645137,9782253046554,9782253124801,False
+104,Covers_9693,Amazon_8724,Cisco CCNA Exam #640-507 Certification Guide (With CD-ROM),Complete Advanced Student's Book with Answers with CD-ROM,0.2945008921244495,9780735709713,9781107670907,False
+105,Covers_30458,Amazon_8489,Le chien de guerre et la douleur du monde,Le Monde en Francais Student's Book,0.2683310010885459,9782266083805,9780955926594,False
+106,Covers_15914,Amazon_17933,Garzanti - Gli Elefanti: Gabbiano Jonathan Livingston,Jonathan Strange & Mr. Norrell,0.2003048671184775,9788817131629,9780765356154,False
+107,Covers_44638,Amazon_6686,Quotations of Chairman Jean,Jean Haines' World of Watercolour,0.2900809722663101,9780889952393,9781782210399,False
+108,Covers_30554,Amazon_11982,Family Celebrations at Thanksgiving: And Alternatives to Halloween,The Family,0.2758321431440337,9780801044007,9780060560058,False
+109,Covers_14146,Amazon_6964,"The Secret Sin of Septimus Brop, Sredni Vashtar, the Lumber Room: With Envelope (Travelman Short Stories)",Room,0.2198514126119453,9781860920134,9780330519021,False
+110,Covers_12301,Amazon_15083,NÃ?Â¤chte der Leidenschaft.,Harry Potter Und Der Stein Der Weisen,0.17428765646069344,9783404186396,9783551354013,False
+111,Covers_14128,Amazon_5998,Fan Mail (An Avon Flare Book),The R Book,0.19080297127209367,9780380769957,9780470973929,False
+112,Covers_13046,Amazon_7229,"Theros Ironfeld (Dragonlance Warriors, Vol. 4)",The Five Greatest Warriors,0.2830392688701381,9780786904815,9781416577584,False
+113,Covers_37935,Amazon_2354,The Best Sex I Ever Had: Real People Recall Their Most Erotic Experiences,Best Bear Ever!,0.2941132259926022,9780312950835,9780762463626,False
+114,Covers_16835,Amazon_7051,Sapo y Sepo son amigos,Golden Son,0.2801310666022403,9788420430430,9781444759037,False
+115,Covers_46699,Amazon_6422,Dann bis nÃ?Â¤chsten Sonntag. Cartoons Ã?Â¼ber Gott und die Welt.,Die Welt unter der Lupe - zu Wasser,0.1550133207828273,9783451276316,9783404609499,False
+116,Covers_36562,Amazon_8549,Hot Type: Our Most Celebrated Writers Introduce the Next Word in Contemporary American Fiction (Collier Fiction),The Art of Fiction,0.29443276325972473,9780020447016,9780140174922,False
+117,Covers_23416,Amazon_8566,"Reyes Malditos I, Los. El Rey de Hierro",El Amor En Los Tiempos Del Colera,0.17920750897358992,9788466612043,9788497592451,False
+118,Covers_35197,Amazon_10729,El incauto mediodÃ­a (Devenir. PoesÃ­a),El principito,0.13798313784241606,9788486351991,9788498381498,False
+119,Covers_20521,Amazon_19792,The Blond Baboon,The Story of the World,0.05908496388052731,9780345344977,9781933339054,False
+120,Covers_17800,Amazon_5335,American Thunder: The Garth Brooks Story,Storm King's Thunder,0.28806494521422266,9780345439505,9780786966004,False
+121,Covers_16906,Amazon_6092,La Ligne Verte 5e Episode,Learning Web Design 5e,0.2939715977514365,9782277301042,9781491960202,False
+122,Covers_35489,Amazon_8676,Les oiseaux dans mon jardin,La gloire de mon pere,0.2047726751096518,9782803437818,9782877065078,False
+123,Covers_44835,Amazon_20377,Und so ist alles schwankend: TagebÃ¼cher Juni bis Dezember 1945,Panzers in Berlin 1945,0.1466050957345014,9783746655154,9781908032164,False
+124,Covers_46082,Amazon_18767,Cortez Peters Championship Keyboarding Skillbuilding and Applications,Championship Fighting,0.2974235040072855,9780070496354,9781501111488,False
+125,Covers_39574,Amazon_5652,"Patti's Pearls : Lessons in Living Genuinely, Joyfully, Generously",Programming Pearls,0.29842013386893285,9780446527941,9780201657883,False
+126,Covers_41202,Amazon_2598,Mutiny of the Bounty,The Art of the Lord of the Rings,0.12674331125563004,9781854712677,9780008105754,False
+127,Covers_27254,Amazon_638,Client/Server Strategies: A Survival Guide for Corporate Reengineers,Between Therapist and Client,0.2703146950563386,9781568840642,9780805071009,False
+128,Covers_14393,Amazon_9372,"WahnsinnsWissen. Hochspannend, die ElektrizitÃ?Â¤t. ( Ab 10 J.).",80/10/10 Diet,0.22588233173921582,9783785540404,9781893831247,False
+129,Covers_41338,Amazon_1710,Die Marquise Von O. / Das Erdbeben in Chili,To Die For,0.1873837789418684,9783150080023,9780007264094,False
+130,Covers_3935,Amazon_11936,"Midshipman Bolitho (Richard Bolitho Novels/Alexander Kent, No 1)",Alexander the Great,0.23545060586279948,9780935526417,9780141020761,False
+131,Covers_43943,Amazon_15471,Grimmy: The Horrors of Global Worming (Grimmy),The Horrors and Absurdities of Religion,0.22122273502045028,9780312873264,9780141191591,False
+132,Covers_20365,Amazon_6151,"Microsoft Office XP: Introductory Concepts and Techniques, Windows XP Edition (Shelly Cashman (Paperback))",Introductory Statistics with R,0.18916878859771977,9780619200039,9780387790534,False
+133,Covers_10754,Amazon_17551,"Blackstone's Bride (Harlequin Historical, No. 667)",Devil's Bride,0.25406067808004235,9780373292677,9780380794560,False
+134,Covers_23979,Amazon_439,American Indian Studies: An Interdisciplinary Approach to Contemporary Issues,The American Indian Secrets of Crystal Healing,0.2513394099015447,9780820439167,9780572022631,False
+135,Covers_3958,Amazon_2820,Las Palabras Andantes,Fear and Loathing in Las Vegas,0.19648637167932756,9789682319013,9780007204496,False
+136,Covers_13781,Amazon_3025,"COWBOY LIFE : A SADDLEBAG GUIDE FOR DUDES, TENDERFEET, AND COWPUNCHERS EVERYWHERE",Everywhere I Look,0.27782738985052813,9780671866822,9781925355369,False
+137,Covers_586,Amazon_16241,Stones for Ibarra (Penguin Contemporary American Fiction Series),Stepping Stones,0.28578681354217556,9780140075625,9780571242535,False
+138,Covers_36204,Amazon_8549,Elbowing the seducer: A novel (Contemporary American fiction),The Art of Fiction,0.24523448533267814,9780140077926,9780140174922,False
+139,Covers_34443,Amazon_16160,The Ritual Bath (Peter Decker &amp; Rina Lazarus Novels (Paperback)),Interaction Ritual,0.25419369216534,9780449213735,9780394706313,False
+140,Covers_38258,Amazon_10729,El Chaman,El principito,0.2458391754840508,9788440644060,9788498381498,False
+141,Covers_4532,Amazon_10696,"Gravitation, Vol. 1",Batman Vol. 1,0.2644008230549802,9781591823339,9781401235413,False
+142,Covers_11034,Amazon_14842,"Last Santini Virgin (Bachelor Battalion) (Desire, 1312)",Desire Map,0.17255710499446755,9780373763122,9781622032518,False
+143,Covers_26627,Amazon_9995,"Nord perdu ;: Suivi de, Douze France (Un endroit oÃ¹ aller)",My Life in France,0.1975636644993071,9782742724949,9780307277695,False
+144,Covers_32326,Amazon_3821,Adventures of Poor Mrs. Quack (Dover Children's Thrift Classics),Poor Economics,0.2930200600419381,9780486278186,9780718193669,False
+145,Covers_47701,Amazon_2521,La Musique du hasard,La La Land,0.2693081891423386,9782253138327,9780571539826,False
+146,Covers_39558,Amazon_11325,Viaje al Pirineo de LÃ©rida (Libros de bolsillo Noguer ; 20),The 20/20 Diet,0.2114326500647387,9788427908246,9781939457318,False
+147,Covers_4805,Amazon_2330,Carl Sagan's Cosmic Connection: An Extraterrestrial Perspective,Carl Czerny,0.27929548858263015,9780521783033,9780793525676,False
+148,Covers_13087,Amazon_1440,The Case for a Creator: A Journalist Investigates Scientific Evidence That Points Toward God,The Language Of God: A Scientist Presents Evidence For Belief,0.23344555718680132,9780310241447,9781416542742,False
+149,Covers_41554,Amazon_11570,Im Reich der KÃ?Â¶nigin von Saba. Auf Karawanenwegen im Jemen.,Das Reich,0.2136876743632188,9783442711796,9780330509985,False
+150,Covers_45422,Amazon_11266,Company Manners: An Insider Tells How to Succeed in the Real World of Corporate Protocol and Power Politics (C5674),How Children Succeed,0.29176592036372906,9780070721937,9780544104402,False
+151,Covers_28704,Amazon_4225,NEW TERRORS      1,The New Me,0.2803683416286627,9780671451165,9781474612296,False
+152,Covers_27358,Amazon_9014,MCSE Testprep: Windows 95 (Covers Exam #70-063),1000 Record Covers,0.2505549549992028,9781562058258,9783836550581,False
+153,Covers_3634,Amazon_9084,Death Along the Cimarron (Ralph Compton Novels (Paperback)),The Art of Wreck-it Ralph,0.26729785823744956,9780451207692,9781452111018,False
+154,Covers_5632,Amazon_11144,Born O'Hurley (Silhouette Single Title),Born for Love,0.29774233245836307,9780373218769,9780061656798,False
+155,Covers_27566,Amazon_9172,Le procÃ?Â¨s NÃ?Â©ron,Le Freak,0.1952690780752815,9782253141280,9780751542776,False
+156,Covers_28532,Amazon_4075,Satan's Silence: The Second Cassidy McCabe Mystery (The Second Cassidy Mccabe Mystery),The 5 Second Journal,0.27147304380699827,9781890768041,9781682617229,False
+157,Covers_31232,Amazon_19798,Loverboys: Stories,Learning Stories,0.24588738664385834,9780393039597,9780857020932,False
+158,Covers_26743,Amazon_19792,The Dreadful Debutante,The Story of the World,0.05986299643157221,9780449222614,9781933339054,False
+159,Covers_44314,Amazon_12804,Das Cottage hinter den Feldern.,Life in a Cottage Garden,0.2975353813362699,9783404148844,9781846078712,False
+160,Covers_27406,Amazon_13107,"Roswell, Secreto de Estado",The De-Textbook,0.15182212071075618,9788441409248,9780452298200,False
+161,Covers_29950,Amazon_1710,Die wunderbaren Jahre: Prosa,To Die For,0.21965370745865112,9783100420039,9780007264094,False
+162,Covers_14326,Amazon_2270,Les Soldats de Salamine,Dali. Les diners de Gala,0.21372113802503034,9782742739356,9783836508766,False
+163,Covers_16577,Amazon_8344,Una Semana de Octubre,Cronica De Una Muerte Anunciada,0.26714233695552647,9789502802718,9788497592437,False
+164,Covers_7407,Amazon_15144,Mama Makes Up Her Mind: And Other Dangers of Southern Living,Her,0.2985441683106695,9780679751601,9780997426588,False
+165,Covers_44239,Amazon_11570,Das Herz des Waldes.,Das Reich,0.23162292392852782,9783442245925,9780330509985,False
+166,Covers_28003,Amazon_2989,Solve the Mystery: 41 Puzzling Cases (Dover Game and Puzzle Activity Books),The Game,0.26401806479716866,9780486296623,9781782118930,False
+167,Covers_40086,Amazon_18779,"My Weight Is Always Perfect for My Height, Which Varies",My Life,0.29958071077496295,9780312558611,9781847396457,False
+168,Covers_14310,Amazon_15737,Ein schlechter Scherz. Roman.,Roman Lives,0.23239137259082915,9783423243070,9780199537389,False
+169,Covers_17898,Amazon_8344,Vida Y Amores De Una Maligna,Cronica De Una Muerte Anunciada,0.24525432563366734,9788472239180,9788497592437,False
+170,Covers_36576,Amazon_7376,La Symphonie Pastorale. ( echo - LektÃ?Â¼ren FranzÃ?Â¶sisch). (Lernmaterialien),Echo Park,0.23528001869281365,9783125974005,9781409156185,False
+171,Covers_15825,Amazon_15429,"Wilde At Heart (Harlequin Temptation, No 429)",The Plays of Oscar Wilde,0.27429776168732145,9780373255290,9781840224184,False
+172,Covers_7621,Amazon_2598,Parable of the Sower,The Art of the Lord of the Rings,0.11598121602869607,9780446675505,9780008105754,False
+173,Covers_21731,Amazon_7585,Vendetta's Victim: The Third Cassidy McCabe Mystery (Cassidy McCabe Mysteries (Paperback)),Vendetta in Death,0.2231876040250311,9781890768140,9780349422046,False
+174,Covers_1841,Amazon_16105,Wait Till Helen Comes : A Ghost Story (Avon Camelot Books (Paperback)),Capitalism: A Ghost Story,0.25793796844873806,9780380704422,9781608463855,False
+175,Covers_45045,Amazon_15584,Les Grands Philosophes et leur philosophie : Une histoire mouvementÃ?Â©e et belliqueuse,No et moi,0.25358922228050595,9782846710459,9782253124801,False
+176,Covers_20724,Amazon_13660,"San Juan Bautista: The Town, the Mission and the Park",The Teachings of Don Juan,0.29459709418644486,9781884995071,9780671600419,False
+177,Covers_44504,Amazon_10878,Time to Kill Sparrows: A Kaleidoscope of Verse by Diplomats and Their Families,Spider-verse,0.22963569689730629,9781857763980,9780785190363,False
+178,Covers_38325,Amazon_6422,Die Allendes. Mit brennender Geduld fÃ?Â¼r eine bessere Welt.,Die Welt unter der Lupe - zu Wasser,0.16261362161203113,9783593367750,9783404609499,False
+179,Covers_42923,Amazon_5722,"Web Of Deceit (Harlequin Presents, No 1329)",The Human Web,0.29299651386175773,9780373113293,9780393925685,False
+180,Covers_4968,Amazon_13107,Rabos de Lagartija (Arete),The De-Textbook,0.142476210510299,9788426412843,9780452298200,False
+181,Covers_46703,Amazon_7179,"Psychometrer Eiji, tome 7",D&D Mordenkainen's Tome of Foes,0.19567175375246912,9782871294313,9780786966240,False
+182,Covers_46743,Amazon_15083,Der Anruf.,Harry Potter Und Der Stein Der Weisen,0.25109613951206844,9783453189935,9783551354013,False
+183,Covers_26489,Amazon_2521,Le Marin rejetÃ?Â© par la mer,La La Land,0.2139377517927378,9782070371471,9780571539826,False
+184,Covers_13854,Amazon_5012,"Daddy'S Little Cowgirl (Sexy Single Dads) (Harlequin American Romance, No 766)",My Daddy,0.26081368705295827,9780373167661,9781409309062,False
+185,Covers_38969,Amazon_2521,La Bete Humaine (World Classics),La La Land,0.27414969056318783,9782877141475,9780571539826,False
+186,Covers_4821,Amazon_3888,One Dimensional Man: Studies in Ideology of Advanced Industrial Society,The Third Industrial Revolution,0.2601613467684689,9780807014172,9780230341975,False
+187,Covers_36059,Amazon_3329,Scientology: Ich klage an!,An Autobiography,0.15953404768358048,9783629006370,9780007314669,False
+188,Covers_45857,Amazon_12395,"Most Likely to Succeed at Work: How Work Is Just Like High School -- Crib Notes for Getting Along and Getting Ahead Amidst Bullies, Teachers' Pets, Cheerleaders, and Other Members of the \Class\""""",Getting to I Do,0.2658763698020654,9780312317089,9780380718153,False
+189,Covers_49018,Amazon_17518,"Andre Breton (Twayne's World Authors Series, No 117)",The Little Breton Bistro,0.28254049995345365,9780805746235,9780349142234,False
+190,Covers_42279,Amazon_2358,"Compost This Book!: The Art of Composting for Your Yard, Your Community, and the Planet",The Art Book for Children,0.271421622424537,9780871565969,9780714845111,False
+191,Covers_26890,Amazon_17302,Golden Precepts of Esotericism,Golden Moments,0.2525357029587001,9780911500868,9780751541397,False
+192,Covers_35042,Amazon_1797,Der Unsichtbare. ( Ab 13 J.).,Apollo 13,0.29822894730062777,9783446200456,9780618619580,False
+193,Covers_15728,Amazon_11897,Dashiell Hammett : 5 Complete Novels,The Complete Works,0.19206674491061645,9780517336281,9781857152593,False
+194,Covers_19456,Amazon_1710,Die zÃ?Â¤rtliche Zeugin.,To Die For,0.21715457689370343,9783442728947,9780007264094,False
+195,Covers_3193,Amazon_2669,The Hunchback of Notre-Dame (Signet Classics (Paperback)),The Library Of Piano Classics,0.17641628394096892,9780451527882,9780825611117,False
+196,Covers_41880,Amazon_11570,Das VermÃ?Â¤chtnis meiner Mutter.,Das Reich,0.19281653213388264,9783716022580,9780330509985,False
+197,Covers_36537,Amazon_18501,L'Isola Del Giorno Prima,Camino del Norte,0.1607163206861195,9788845228131,9781947474109,False
+198,Covers_30926,Amazon_15737,Eine Reise nach Genf. Ein Siggi- Baumeister- Roman.,Roman Lives,0.1623497018096511,9783442453252,9780199537389,False
+199,Covers_48657,Amazon_4896,"Bodyguard (Harlequin Intrique, No 309)",No Means No!,0.15410319980463583,9780373223091,9781925089226,False
+200,Covers_19561,Amazon_2521,Il corso delle cose (La memoria),La La Land,0.20493920762727097,9788838914720,9780571539826,False
+201,Covers_19979,Amazon_16170,Lebenskrisen als Entwicklungschancen. Zeiten des Umbruchs und ihre Krankheitsbilder.,Tintin au pays des Soviets,0.07721911799542001,9783570121832,9782203003033,False
+202,Covers_5401,Amazon_3690,Aunt Dimity Beats the Devil (Penguin Mysteries (Paperback)),The Little Book That Still Beats the Market,0.2861332850512522,9780141002194,9780470624159,False
+203,Covers_44622,Amazon_2840,Unspoken Desires : Real People Talk About Sexual Experiences and Fantasies They Hide from Their Partners,What I Talk About When I Talk About Running,0.268886178095271,9780312253448,9780099532538,False
+204,Covers_3398,Amazon_15083,Der Kuss meiner Schwester,Harry Potter Und Der Stein Der Weisen,0.167063901156703,9783785531228,9783551354013,False
+205,Covers_10952,Amazon_11471,"You Could Love Me (Silhoutte Special Edition, No. 734)",Special,0.29951049142382474,9780373097340,9781925384680,False
+206,Covers_7566,Amazon_9928,"Oh, wie schÃ?Â¶n ist Panama",Oh She Glows,0.2487984179467622,9783407805331,9780718181505,False
+207,Covers_21517,Amazon_18965,Soins du corps,The Canal Du Midi,0.19267663105392308,9782016207680,9781408112731,False
+208,Covers_44983,Amazon_15083,Lern- und Arbeitsbuch SAP R/3.,Harry Potter Und Der Stein Der Weisen,0.1023050111963991,9783528057909,9783551354013,False
+209,Covers_6022,Amazon_899,"The Wisdom of the Native Americans: Includes the Soul of an Indian and Other Writings by Ohiyesa, and the Great Speeches of Red Jacket, Chief Joseph, and Chief Seattle (Religion and Spirituality)",The Heart and Soul of Change,0.22642318551111745,9781577310792,9781433807091,False
+210,Covers_33651,Amazon_994,Korean in a Hurry a Quick Approach to Spoken Korea (Tuttle Language Library),Astrophysics for People in a Hurry,0.2810537265357742,9780804803496,9780393609394,False
+211,Covers_21958,Amazon_2598,The Cosmographia of Bernardus Silvestris,The Art of the Lord of the Rings,0.08829851173095048,9780231096256,9780008105754,False
+212,Covers_735,Amazon_15524,Cloudsplitter : A Novel,The Novel Cure,0.19389624256808544,9780060930868,9780857864215,False
+213,Covers_45246,Amazon_13107,Cabo de Hornos,The De-Textbook,0.17133385080699404,9789561308770,9780452298200,False
+214,Covers_1707,Amazon_3492,For Love of Evil : Book Six of Incarnations of Immortality (Incarnations of Immortality (Paperback)),House of Evil,0.2645686361308205,9780380752850,9780312946999,False
+215,Covers_32079,Amazon_20228,Los Tres Pasos: UN Relato Imprescindible Para Definir Nuestra Verdadera Pasion Laboral,Pasos 1 Spanish Beginner's Course (Fourth Edition),0.1727009618465438,9788495787149,9781473610682,False
+216,Covers_24508,Amazon_9145,The Secret Parts of Fortune : Three Decades of Intense Investigations and Edgy Enthusiasms,A Life in Parts,0.24874154148993355,9780060934460,9781409156598,False
+217,Covers_15274,Amazon_18035,Das Haus hinter dem Wind. Roman.,The Other Wind,0.2732985048023641,9783442094127,9781842552117,False
+218,Covers_38267,Amazon_2270,Les Valeureux,Dali. Les diners de Gala,0.18170699787806005,9782070377404,9783836508766,False
+219,Covers_16717,Amazon_14126,"Ancient Secrets (Silhouette Intimate Moments, No 231)",The Book of Secrets,0.27701628006498696,9780373072316,9781400098347,False
+220,Covers_6269,Amazon_1622,"Flashman &amp; the Angel of the Lord: From the Flashman Papers, 1858-59",59 Seconds,0.23805333673774237,9780452274402,9781447273370,False
+221,Covers_35830,Amazon_1710,Selig sind die DÃ?Â¼rstenden.,To Die For,0.2013577368192385,9783492236584,9780007264094,False
+222,Covers_26687,Amazon_1710,Lulu. Die Geschichte einer Frau.,To Die For,0.22409956909091802,9783442411016,9780007264094,False
+223,Covers_12558,Amazon_15737,Die Schone Gegenwart: Roman,Roman Lives,0.24865957584941847,9783492042383,9780199537389,False
+224,Covers_37918,Amazon_15524,Afterimage: A Novel,The Novel Cure,0.19389624256808544,9780805066661,9780857864215,False
+225,Covers_3921,Amazon_15788,Masochism: Coldness and Cruelty &amp; Venus in Furs,Mars And Venus On A Date,0.2210166728689641,9780942299557,9780091887674,False
+226,Covers_37732,Amazon_18345,"The Rancher's Mail Order Bride (Harlequin American Romance, No. 829)",World Order,0.2965218830957443,9780373168309,9780141979007,False
+227,Covers_1281,Amazon_16337,"Streams of Silver (Forgotten Realms: The Icewind Dale Trilogy, Book 2)",Forgotten God,0.25718098539106454,9780880386722,9781434767950,False
+228,Covers_20516,Amazon_19792,The Y Chromosome,The Story of the World,0.08564935241464153,9780929005164,9781933339054,False
+229,Covers_11311,Amazon_1710,Die FlÃ?Â¼chtige.,To Die For,0.2659633386018312,9783499232510,9780007264094,False
+230,Covers_23567,Amazon_8502,The Emperor's Pearl : A Judge Dee Mystery (A Judge Dee Mystery),The Pearl,0.28213046627270055,9780226848723,9780140177374,False
+231,Covers_33250,Amazon_15083,Lebensweisheit aus der Bibel. Biblische Frauen und MÃ?Â¤nner - Inspiration fÃ?Â¼r heute.,Harry Potter Und Der Stein Der Weisen,0.16362050049841348,9783451273209,9783551354013,False
+232,Covers_30736,Amazon_11717,Frommer's Israel from $45 a Day (16th Ed.),D-Day,0.27902070943210816,9780028607160,9780241968970,False
+233,Covers_37495,Amazon_2325,Death of a Voodoo Doll (A Penny Spring and Sir Toby Glendower Mystery),Spring,0.2987104502120002,9780881501322,9780241207048,False
+234,Covers_37445,Amazon_4807,"Flash, Crash, Rumble, and Roll (Lets Read and Find Out)",Rumble in the Jungle,0.29182046397909395,9780064450126,9781860396601,False
+235,Covers_11207,Amazon_17551,"Welshman'S Bride (Harlequin Historical, No. 459)",Devil's Bride,0.23874490075539515,9780373290598,9780380794560,False
+236,Covers_1389,Amazon_1710,Fabian Die Geschichte Enes Moralisten,To Die For,0.1938094074388085,9783423110068,9780007264094,False
+237,Covers_48995,Amazon_19792,The Interpreter,The Story of the World,0.08947988275413458,9780374177133,9781933339054,False
+238,Covers_30720,Amazon_6880,"Retro Desserts: Totally Hip, Updated Classic Desserrts from the '40S, '50S, 60s and '70s",Simply Retro,0.23835355944637737,9780688164447,9781607056843,False
+239,Covers_38675,Amazon_8150,Stylistique Comparee Du Francais Et De L,Grammaire progressive du francais - Nouvelle edition,0.2941556159506464,9780775004694,9782090381030,False
+240,Covers_34812,Amazon_17845,They Glorified Mary...We Glorified Rice: A Catholic-Lutheran Lexicon,We,0.20147920032680877,9780961343743,9780140185850,False
+241,Covers_1866,Amazon_12087,"An Army at Dawn: The War in Africa, 1942-1943, Volume One of the Liberation Trilogy",The Tragedy of Liberation,0.29139814850862505,9780805062885,9781408886359,False
+242,Covers_47105,Amazon_15083,Der Ekel.,Harry Potter Und Der Stein Der Weisen,0.25109613951206844,9783499105814,9783551354013,False
+243,Covers_14927,Amazon_15737,Die Liebe eines Sommers. Roman.,Roman Lives,0.22904938121738855,9783442067008,9780199537389,False
+244,Covers_46440,Amazon_11719,From Lilith to Lilith Fair,Vanity Fair 100 Years:From the Jazz Age to Our Age,0.17858146132191235,9781894160001,9781419708633,False
+245,Covers_3598,Amazon_20243,A Shropshire Lad (Dover Thrift Editions),Heart of Darkness Thrift Study,0.18194248889401693,9780486264684,9780486475677,False
+246,Covers_26440,Amazon_11728,The EMPIRE OF THE ATOM (Collier Nucleus Science Fiction Classic),The Age Of Empire,0.29657878596488724,9780020259916,9780349105987,False
+247,Covers_42205,Amazon_2521,Mentiras histÃ³ricas comÃºnmente creÃ­das (v. 1: Memoria de la historia),La La Land,0.1735783096038927,9788432079122,9780571539826,False
+248,Covers_12125,Amazon_21102,The Lonely Silver Rain (The Travis Mcgee Series),The Silver Sword,0.29948769585286966,9780394538990,9780099439493,False
+249,Covers_19239,Amazon_5570,"This Kiss (Destiny, Texas) (Silhouette Romance, No. 1541)",The Art of Destiny,0.2947479035280642,9780373195411,9781783297443,False
+250,Covers_21894,Amazon_17160,"All-Nighter (Roommates, No 1)",All Change,0.20798430290436615,9780804100229,9780330508988,False
+251,Covers_49519,Amazon_8,Cindy macht ihren Weg. LeseRiese. ( Ab 12 J.).,12 Rules for Life,0.1733681680793183,9783785533956,9780241351642,False
+252,Covers_1173,Amazon_20848,The Headless Cupid (Yearling Books (Paperback)),The Little House Books,0.18113037503906237,9780440228950,9780064400404,False
+253,Covers_17302,Amazon_9846,America: A Jake Grafton Novel,Jamie's America,0.2092361724822518,9780312253417,9780718154769,False
+254,Covers_25546,Amazon_611,PARKINSON'S DISEASE : THE COMPLETE GUIDE FOR PATIENTS AND CAREGIVERS,A Short History Of Disease,0.2776102803266763,9780671768195,9781843444190,False
+255,Covers_17756,Amazon_16101,Alternatives Games Exercises and Conversations for the Language Classroom (Pilgrims Longman Resource Books),Better Conversations,0.22620991994352183,9780582037670,9781506307459,False
+256,Covers_29421,Amazon_10729,"Horoscopo, El",El principito,0.2458391754840508,9788477651512,9788498381498,False
+257,Covers_42021,Amazon_2521,La Gruta de Las Sirenas,La La Land,0.2547171467248932,9788439289944,9780571539826,False
+258,Covers_10628,Amazon_7593,Stanley Yelnats's Survival Guide to Camp Green Lake,The Lake House,0.2945364002063512,9780440419471,9781447200864,False
+259,Covers_45449,Amazon_3097,Damiano (Damiano Trilogy),The Night Trilogy,0.19951074274576275,9780553253474,9780809073641,False
+260,Covers_42359,Amazon_7084,Defending the Realm: MI5 and the Shayler Affair: Inside MI5,The Affair,0.27824115229322527,9780233996677,9780553825510,False
+261,Covers_16860,Amazon_17339,"The Savage Nation: Saving America from the Liberal Assault on Our Borders, Language and Culture",Savage Nature,0.23697201083114036,9780785263531,9780515149333,False
+262,Covers_17725,Amazon_21582,Louis XV (PrÃ©sence de l'histoire),The Spirit of St. Louis,0.26011194589291015,9782262010560,9780743237055,False
+263,Covers_46513,Amazon_15626,Don Quixote De LA Mancha (The World's Classics),The World,0.2804852840293601,9780192827265,9781786576538,False
+264,Covers_38122,Amazon_14192,"Night of the Living Shark (Daniel M. Pinkwater's Melvinge of the Megaverse, Book 1)",Shark Lady,0.2867824034104172,9780441574827,9781492642046,False
+265,Covers_39578,Amazon_3000,"Des jeunes y entrent, des fauves en sortent (Stock/2)",Reminiscences of a Stock Operator,0.1766385544090559,9782234015920,9780471770886,False
+266,Covers_43686,Amazon_7893,Sangre a Borbotones (Coleccion Nueva Biblioteca),Aula Internacional - Nueva edicion,0.20436438844824165,9788489618848,9788415846772,False
+267,Covers_46306,Amazon_5426,"Congestive Heart Failure: Pathophysiology, Diagnosis, and Comprehensive Approach to Management",Management 3.0,0.2886685742493405,9780387940175,9780321712479,False
+268,Covers_19431,Amazon_13690,La mochila de Dora (Dora's Backpack) (Dora The Explorer),The Psychedelic Explorer's Guide,0.16565382950285948,9780689863066,9781594774027,False
+269,Covers_13576,Amazon_19792,The Fermata,The Story of the World,0.07903835058657858,9780679759331,9781933339054,False
+270,Covers_45345,Amazon_22477,Theodore Dreiser: An American Journey 1908-1945,An Illustrated Journey,0.2792734490462745,9780399135200,9781440320255,False
+271,Covers_31079,Amazon_942,Miracle-Gro Beautiful Gardens Made Easy: 39 Quick Project,Meditation Made Easy,0.2983560357946746,9780696216145,9780062515421,False
+272,Covers_43136,Amazon_19792,The Koran,The Story of the World,0.08394128781079635,9780804111256,9781933339054,False
+273,Covers_13982,Amazon_3534,Manny Lesko: The Erotic History of Estelle Antoinette Francine Chevalier,Marie Antoinette,0.2820249144238988,9780595223923,9780753813058,False
+274,Covers_30507,Amazon_16857,Fan Mail,"The Hating Game: 'Warm, witty and wise' The Daily Mail",0.23952290461443107,9780451404824,9780349414263,False
+275,Covers_43825,Amazon_11428,"Samuel Pepys: The Man in the Making, 1633-1669",Mind in the Making,0.2728285819147685,9780586064702,9780061732324,False
+276,Covers_35047,Amazon_124,Corporations Are Gonna Get Your Mama: Globalization and the Downsizing of the American Dream,Get Out of Your Mind and into Your Life,0.23537744792053159,9781567511123,9781572244252,False
+277,Covers_1508,Amazon_7370,A Stab in the Dark (Matthew Scudder Mysteries (Paperback)),"In a Dark, Dark Wood",0.2929887236006714,9780380715749,9780099598244,False
+278,Covers_13137,Amazon_18501,L'odore del sangue: Romanzo,Camino del Norte,0.1590024192747589,9788817660761,9781947474109,False
+279,Covers_18546,Amazon_4896,"Perilous Pastime (Harlequin Intrigue, No 201)",No Means No!,0.14783998587169386,9780373222018,9781925089226,False
+280,Covers_48762,Amazon_9172,Le dÃ?Â®ner de Londres,Le Freak,0.18922742137361356,9782277240112,9780751542776,False
+281,Covers_29915,Amazon_15524,The Asiatics : A Novel,The Novel Cure,0.21774721103897118,9780374517670,9780857864215,False
+282,Covers_30409,Amazon_4896,"Babycakes (Harlequin Temptation, No 383)",No Means No!,0.16279119489016067,9780373254835,9781925089226,False
+283,Covers_38032,Amazon_17467,"Cross-country ski routes of Oregon's Cascades: Mt. Hood, Bend (and southern Washington)",A Bend In The Road,0.2493518008625085,9780898860832,9780751541168,False
+284,Covers_17861,Amazon_9372,Die Sache mit den WeihnachtsmÃ?Â¤nnern. ( Ab 10 J.). Ein GroÃ?Â?stadtkrimi.,80/10/10 Diet,0.1692513902522021,9783570209073,9781893831247,False
+285,Covers_25685,Amazon_7155,"Rancher And The Lost Bride (Silhouette Romance, No 1153)",The Lost World,0.27408696119148995,9780373191536,9780345538994,False
+286,Covers_46969,Amazon_12560,"Beef, Veal, Lamb and Pork (Cooking with Bon Appetit)",Bong Appetit,0.25946110680956047,9780895351388,9781911624561,False
+287,Covers_19130,Amazon_1614,Laugh and Learn Too!: Cartoon Features for Church Publications (Reprobooks Series),"Heads, Features and Faces",0.2670808370303726,9780801032219,9780486227085,False
+288,Covers_40527,Amazon_22659,Die Oliven von San Pietro. Ein italienisches Abenteuer.,Lonely Planet San Francisco,0.17177477937982646,9783442455171,9781786573544,False
+289,Covers_211,Amazon_15524,Bookends : A Novel,The Novel Cure,0.19389624256808544,9780767907811,9780857864215,False
+290,Covers_2719,Amazon_19792,The Conservationist,The Story of the World,0.07903835058657858,9780140047165,9781933339054,False
+291,Covers_23964,Amazon_8566,El Otono En Pekin (Andanzas),El Amor En Los Tiempos Del Colera,0.20354387298318294,9788472232594,9788497592451,False
+292,Covers_36422,Amazon_15134,L'Herbe du diable et la petite fumÃ?Â©e,Le Petite Prince (French),0.288437233912084,9782264007254,9780156013987,False
+293,Covers_13830,Amazon_15083,Der Zug nach Mailand.,Harry Potter Und Der Stein Der Weisen,0.1652848758672866,9783453195851,9783551354013,False
+294,Covers_35193,Amazon_19167,Guano Stains Grandma: Aka Astounding Anagrams,Dear Grandma,0.2624786810001965,9781858688855,9781907048463,False
+295,Covers_36760,Amazon_8115,Latin &amp; Caribbean Grocery Stores Demystified (Take It with You Guides),Cassell's Standard Latin Dictionary - Latin/English - English/Latin,0.23701594695773615,9781580632126,9780025225800,False
+296,Covers_41887,Amazon_19798,Monogamy: Stories,Learning Stories,0.24588738664385834,9780060974527,9780857020932,False
+297,Covers_38684,Amazon_11897,Daphne Dumaurier : 3 Complete Novels 5S,The Complete Works,0.16010931858738223,9780517349175,9781857152593,False
+298,Covers_13857,Amazon_7057,Weekends Are Entertaining: From Cocktail Parties and Brunches to Dinner for Two or Twenty (Everyday Cookbooks),The Dinner,0.28029619048424786,9780783548333,9780857897206,False
+299,Covers_45863,Amazon_3257,Arthurian Romances (Everyman's Library ; No. 698),The Library Book,0.22774887113362707,9780460006989,9781782392262,False
+300,Covers_33353,Amazon_19792,The BEYONDERS,The Story of the World,0.07903835058657858,9780671698539,9781933339054,False
+301,Covers_5265,Amazon_21583,I Had Trouble in Getting to Solla Sollew : (Reissue),I Had to Survive,0.2815820372466519,9780394800929,9781472124173,False
+302,Covers_11260,Amazon_3470,Voyage Au Bout De LA Nuit,The Unlikely Voyage of Jack De Crow,0.25606578382761175,9782070360284,9781574091526,False
+303,Covers_11272,Amazon_3701,LA Vida Sale Al Encuentro (ColecciÃ³n Libros de bolsillo Z),The Challenger Sale,0.22773745354661373,9788426109859,9780670922857,False
+304,Covers_33062,Amazon_18501,Mas Alla Del Jardin,Camino del Norte,0.16139133922190435,9788408041764,9781947474109,False
+305,Covers_29335,Amazon_6743,I Can't Wait Until Christmas: Featuring Jim Henson's Sesame Street Muppets (Little Golden Book),Elmo's 12 Days of Christmas: Sesame Street,0.29498647472515277,9780307004567,9780375825064,False
+306,Covers_2918,Amazon_17444,Mrs. Jeffries Dusts for Clues,Mrs. Hemingway,0.24837577589055207,9780425137048,9781447226888,False
+307,Covers_41569,Amazon_7557,Don't: A manual of mistakes &amp; improprieties more or less prevalent in conduct and speech,The Secret Speech,0.2830664125893175,9780946014026,9780857204097,False
+308,Covers_31224,Amazon_2521,Histoire de la philosophie moderne et contemporaine,La La Land,0.21017983280899089,9782253942726,9780571539826,False
+309,Covers_2018,Amazon_15524,Wideacre : A Novel,The Novel Cure,0.19389624256808544,9780743249294,9780857864215,False
+310,Covers_27543,Amazon_5477,"A Michener Miscellany, 1950-1970",Vargic's Miscellany of Curious Maps,0.2676272973210802,9780449225264,9780718181147,False
+311,Covers_40714,Amazon_19792,Polgara the Sorceress,The Story of the World,0.06327613445995359,9780345416629,9781933339054,False
+312,Covers_21439,Amazon_1710,Die Umarmung des Todes.,To Die For,0.23962051783505098,9783442309177,9780007264094,False
+313,Covers_41044,Amazon_2521,Le Salaire De La Peur,La La Land,0.2610351749669071,9782266023023,9780571539826,False
+314,Covers_39300,Amazon_20684,"Rip Van Winkle: The Strange Men of the Mountains, Legend of Sleepy Hollow: The Headless Horseman",Out of the Mountains,0.2840678113231062,9780590014960,9780199737505,False
+315,Covers_17567,Amazon_19792,The Anonymous Amanuensis,The Story of the World,0.06004107215848788,9781931696906,9781933339054,False
+316,Covers_43385,Amazon_10874,"Lone Star and the Biggest Gun in the West (Lonestar, No 36)",Berserk Volume 36,0.27144663548098563,9780515083323,9781595829429,False
+317,Covers_20836,Amazon_1920,"Commitments (Harlequin American Romance, No 205)",Modern Romance,0.1968951780619153,9780373162055,9780141981468,False
+318,Covers_24526,Amazon_8151,"Toy Story 2 - Woody's Roundup: Fool's Gold - Book #4 (Woody's Round-Up, 4)","Project X Origins: Turquoise Book Band, Oxford Level 7: Hide and Seek: Where's Woody?",0.2714200880438305,9780786844456,9780198301639,False
+319,Covers_21291,Amazon_498,My First Church Book: Shaped Naptime Tales (Shaped Naptime Tale),The No-Cry Nap Solution: Guaranteed Gentle Ways to Solve All Your Naptime Problems,0.24435175086563926,9780307122100,9780071596954,False
+320,Covers_27243,Amazon_3651,Extended Massive Orgasm: How You Can Give and Receive Intense Sexual Pleasure,Give and Take,0.23893660091796864,9780897932899,9781780224725,False
+321,Covers_42169,Amazon_14842,"Courtship In Granite Ridge (Harlequin Silhouette Desire, No 1128)",Desire Map,0.17925509574950726,9780373761289,9781622032518,False
+322,Covers_5144,Amazon_19792,The Persecutor,The Story of the World,0.07903835058657858,9780800781774,9781933339054,False
+323,Covers_25229,Amazon_4896,No Quarter Asked,No Means No!,0.19996333202842997,9780373832132,9781925089226,False
+324,Covers_35991,Amazon_1217,Fossil: Isaac's Universe (DAW book collectors),Human Universe,0.2627841339133032,9780886775735,9780008125080,False
+325,Covers_11812,Amazon_12356,"Second Chances (American Romance, No. 410)",Second Nature,0.2563563307692972,9780373164103,9780802140111,False
+326,Covers_35867,Amazon_18736,Westside : Young Men and Hip Hop in L.A.,Red Men,0.21405365220006628,9780684865065,9781845967109,False
+327,Covers_49641,Amazon_5963,Computer Simulated Experiments for Electronic Devices Using Electronics Workbench (2nd Edition),Electronics For Kids,0.2950492077971464,9780130845009,9781593277253,False
+328,Covers_15312,Amazon_903,Bertie and the Tinman,The Mind and the Brain,0.10187621556773557,9780892961962,9780060988470,False
+329,Covers_31197,Amazon_1048,"Life With Riley (Silhouette Romance, 1617)",Life 3.0,0.2598283562421808,9780373196173,9780141981802,False
+330,Covers_49443,Amazon_7075,Paperback Thriller,The Breakdown: The gripping thriller from the bestselling author of Behind Closed Doors,0.25756131635767526,9780380008667,9781848454996,False
+331,Covers_43966,Amazon_15164,High Tide in Tucson: Essays from Now or Never (Thorndike Large Print Americana Series),Essays,0.2639064389155679,9780786206308,9780141183060,False
+332,Covers_44355,Amazon_15584,GrÃ?Â¢ce et DÃ?Â©nuement,No et moi,0.20264421826895698,9782290302750,9782253124801,False
+333,Covers_2205,Amazon_10696,"YuYu Hakusho, Vol. 1",Batman Vol. 1,0.18157332460757586,9781569319048,9781401235413,False
+334,Covers_30901,Amazon_19143,AMPHIBIANS AND REPTILES,Q And A A Day,0.10071391251503432,9780002200837,9780307719775,False
+335,Covers_46798,Amazon_2521,La maman des poissons,La La Land,0.2716985450007122,9782278049424,9780571539826,False
+336,Covers_42350,Amazon_16068,"Tartuffe, by Moliere",Living By The Book,0.20465199073860227,9780156881807,9780802408235,False
+337,Covers_11495,Amazon_2669,Tristram Shandy (Classics Library (NTC)),The Library Of Piano Classics,0.2872992966104232,9781853262913,9780825611117,False
+338,Covers_26105,Amazon_14401,The Christopher Churchmouse Treasury (Christopher Churchmouse Classics),A Forager's Treasury,0.15734048081544694,9780896930780,9781877505164,False
+339,Covers_25209,Amazon_20340,El aire de un crimen: Novela (ColecciÃ³n Autores espaÃ±oles e hispanoamericanos),El Celler de Can Roca,0.1259928819667318,9788432055362,9781910690291,False
+340,Covers_34783,Amazon_19792,The Untouchables,The Story of the World,0.07903835058657858,9780804101615,9781933339054,False
+341,Covers_26769,Amazon_11596,Eight Cousins or the Aunt Hill (Puffin Classics),Golden Hill,0.271827120013325,9780140374568,9780571225200,False
+342,Covers_26967,Amazon_16485,"The Mystery on Stage (Boxcar Children Mysteries, 43)",The Book of Mysteries,0.254289288983531,9780807554180,9781629989419,False
+343,Covers_38062,Amazon_9118,Makenzies: David (The Mackenzies Series),Camp David,0.2940153428323616,9780380793372,9780241957721,False
+344,Covers_10050,Amazon_8572,Silas Marner (Signet Classics (Paperback)),The Penguin Classics Book,0.16024668449353816,9780451527219,9780241320853,False
+345,Covers_44880,Amazon_19792,The Terrorists,The Story of the World,0.08709642803186955,9780394724522,9781933339054,False
+346,Covers_44227,Amazon_8895,Tief im Netz. leo( a)fergusrules.com.,Justinguitar.com Beginner's Songbook,0.17822097055081204,9783423205665,9781780387109,False
+347,Covers_3831,Amazon_18767,The Junction Boys: How Ten Days in Hell with Bear Bryant Forged a Championship Team,Championship Fighting,0.26382545374373395,9780312267551,9781501111488,False
+348,Covers_20335,Amazon_2521,La Symphonie Pastorale Isabelle,La La Land,0.25458378163257334,9780140019506,9780571539826,False
+349,Covers_34504,Amazon_15083,Der Talisman,Harry Potter Und Der Stein Der Weisen,0.27114025576501616,9783453866782,9783551354013,False
+350,Covers_3060,Amazon_15243,A Midsummer Night's Dream (Wordsworth Collection),A Midsummer Night's Dream,0.7895103714012968,9781853260308,9781853260308,True
+351,Covers_6184,Amazon_16607,Going to Pieces Without Falling Apart: A Buddhist Perspective on Wholeness,Going to Pieces without Falling Apart,0.7417515448138062,9780767902359,9780767902359,True
+352,Covers_6209,Amazon_15317,Death and the Maiden (Penguin Plays),Death and the Maiden,0.7758208507128919,9780140246841,9780140246841,True
+353,Covers_876,Amazon_4880,Jane Eyre (Wordsworth Classics),Jane Eyre,0.7954553653098997,9781853260209,9781853260209,True
+354,Covers_5150,Amazon_6221,Knitting Without Tears : Basic Techniques and Easy-to-Follow Directions for Garments to Fit All Sizes (Knitting Without Tears SL 466),Knitting Without Tears,0.6651853277389651,9780684135052,9780684135052,True
+355,Covers_670,Amazon_7778,Tears of the Moon (Irish Trilogy),Tears of the Moon,0.7387744218447965,9780515128543,9780515128543,True
+356,Covers_8427,Amazon_11420,The Multi-Orgasmic Man: Sexual Secrets Every Man Should Know,Multi-Orgasmic Man,0.7144534824744417,9780062513366,9780062513366,True
+357,Covers_5476,Amazon_6784,The Artist's Complete Guide to Figure Drawing: A Contemporary Perspective on the Classical Tradition,The Artist's Complete Guide To Figure Drawing,0.7068926520560191,9780823003037,9780823003037,True
+358,Covers_6085,Amazon_14160,My Side of the Mountain (Puffin Modern Classics),My Side of the Mountain,0.7374461116367333,9780142401118,9780142401118,True
+359,Covers_3596,Amazon_16290,The Way of Zen (Vintage Spiritual Classics),The Way of Zen,0.688816244485808,9780375705106,9780375705106,True
+360,Covers_2279,Amazon_14434,The Log from the Sea of Cortez (Penguin Great Books of the 20th Century),The Log from the Sea of Cortez,0.7684245511382071,9780140187441,9780140187441,True
+361,Covers_3582,Amazon_17359,A Room With a View (Penguin Twentieth-Century Classics),A Room with a View,0.6876942900833861,9780141183299,9780141183299,True
+362,Covers_3782,Amazon_9171,Duchess of Malfi (Dover Thrift Editions),The Duchess of Malfi,0.7645530819912257,9780486406602,9780486406602,True
+363,Covers_582,Amazon_3429,Kon-Tiki: Across the Pacific by Raft,Kon Tiki,0.6619728645092451,9780671726522,9780671726522,True
+364,Covers_4850,Amazon_13552,Interpretation of Dreams (Classics of World Literature),The Interpretation of Dreams,0.7308390384859802,9781853264849,9781853264849,True
+365,Covers_5929,Amazon_1677,Wiggling Worms at Work (Let's-Read-and-Find-Out Science 2),Wiggling Worms at Work,0.7385573142772106,9780064451994,9780064451994,True
+366,Covers_515,Amazon_17706,Neuromancer (Remembering Tomorrow),Neuromancer,0.659224108040079,9780441569595,9780441569595,True
+367,Covers_32,Amazon_13838,"The Complete Book of Incense, Oils &amp; Brews (Llewellyn's Practical Magick)","The Complete Book of Incense, Oils and Brews",0.7735610693615269,9780875421285,9780875421285,True
+368,Covers_3384,Amazon_16123,DICTIONARY OF ANGELS: INCLUDING THE FALLEN ANGELS,Dictionary of Angels,0.7517473211963366,9780029070529,9780029070529,True
+369,Covers_5028,Amazon_16680,The Sacred and Profane: The Nature of Religion,The Sacred and the Profane,0.7837258409984494,9780156792011,9780156792011,True
+370,Covers_5761,Amazon_20279,A Rainbow of My Own,Freeman Don : Rainbow of My Own,0.6799807302938028,9780140503289,9780140503289,True
+371,Covers_4296,Amazon_237,The Web That Has No Weaver : Understanding Chinese Medicine,The Web That Has No Weaver,0.7872724089700703,9780809228409,9780809228409,True
+372,Covers_277,Amazon_11514,The Importance of Being Earnest (Dover Thrift Editions),The Importance of Being Earnest,0.7925203588575269,9780486264783,9780486264783,True
+373,Covers_3689,Amazon_11808,Tacitus: The Annals of Imperial Rome (Penguin Classics),The Annals of Imperial Rome,0.7612630451067361,9780140440607,9780140440607,True
+374,Covers_6565,Amazon_22598,Blue Highways : A Journey into America,Blue Highways,0.7351151215198113,9780316353298,9780316353298,True
+375,Covers_5234,Amazon_2960,Persepolis : The Story of a Childhood,Persepolis,0.7029901062840572,9780375714573,9780375714573,True
+376,Covers_254,Amazon_15927,The Art and Craft of Feature Writing,The Art and Craft of Feature Writing: Based on the Wall Street Journal Guide,0.7058299844130544,9780452261587,9780452261587,True
+377,Covers_4384,Amazon_8496,Introducing Neuro-Linguistic Programming: Psychological Skills for Understanding and Influencing People,Introducing Neuro-Linguistic Programming,0.7061459423951225,9781855383449,9781855383449,True
+378,Covers_5009,Amazon_1705,One Two Three...Infinity: Facts and Speculations of Science,"One, Two, Three...Infinity",0.6853334710999195,9780486256641,9780486256641,True
+379,Covers_2527,Amazon_13876,Bringers of the Dawn: Teachings from the Pleiadians,Bringers of the Dawn,0.6681403307085204,9780939680986,9780939680986,True
+380,Covers_3809,Amazon_11550,The Histories (Penguin Classics),The Histories,0.7459513832282777,9780140449082,9780140449082,True
+381,Covers_2613,Amazon_18184,"Grave Peril (The Dresden Files, Book 3)",Grave Peril,0.693588769164206,9780451458445,9780451458445,True
+382,Covers_5429,Amazon_16595,A Tale of Three Kings: A Study of Brokenness,A Tale of Three Kings,0.7022099244501562,9780842369084,9780842369084,True
+383,Covers_4726,Amazon_13673,The Power Is Within You/136t,The Power Is Within You,0.7482206109583215,9781561700233,9781561700233,True
+384,Covers_4407,Amazon_18597,A Twist of the Wrist: The Motorcycle Road Racers Handbook,Twist of the Wrist I,0.6656425194078497,9780965045018,9780965045018,True
+385,Covers_7155,Amazon_8440,How to Read a Poem: And Fall in Love with Poetry,How to Read a Poem,0.6983572479720996,9780156005661,9780156005661,True
+386,Covers_4238,Amazon_11401,The Parent's Tao Te Ching: Ancient Advice for Modern Parents : A New Interpretation,The Parent's Tao Te Ching,0.677485373046505,9781569246627,9781569246627,True
+387,Covers_4437,Amazon_18739,When Pride Still Mattered : A Life Of Vince Lombardi,When Pride Still Mattered,0.7115106367229429,9780684870182,9780684870182,True
+388,Covers_436,Amazon_7881,Wide Sargasso Sea (Penguin Student Editions),Wide Sargasso Sea,0.7870995717564871,9780140818031,9780140818031,True
+389,Covers_5827,Amazon_14246,Pastured Poultry Profits,Pastured Poultry Profit$,0.7029165374811556,9780963810908,9780963810908,True
+390,Covers_1531,Amazon_15049,Candide (Dover Thrift Editions),Candide,0.6612007245552597,9780486266893,9780486266893,True
+391,Covers_91,Amazon_11009,Light on Yoga: Yoga Dipika,Light on Yoga,0.7822677893177867,9780805210316,9780805210316,True
+392,Covers_3970,Amazon_5259,You Get So Alone at Times That It Just Makes Sense,You Get So Alone at Times,0.7214921695000733,9780876856833,9780876856833,True
+393,Covers_3818,Amazon_15200,The Birth of Tragedy (Dover Thrift Editions),The Birth of Tragedy,0.7005740860779854,9780486285153,9780486285153,True
+394,Covers_2834,Amazon_16976,Crossing to Safety (Modern Library Classics),Crossing to Safety,0.7962349784673292,9780375759314,9780375759314,True
+395,Covers_4239,Amazon_4690,Richard Scarry's Cars and Trucks from A to Z (Chunky Shape Books),Richard Scarry's Cars And Trucks,0.7460609406674535,9780679806639,9780679806639,True
+396,Covers_305,Amazon_17243,Dance upon the Air (Three Sisters Island Trilogy),Dance upon the Air,0.7025484794333902,9780515131222,9780515131222,True
+397,Covers_1498,Amazon_15334,Little Dorrit (Wordsworth Collection),Little Dorrit,0.7710332186523439,9781853261824,9781853261824,True
+398,Covers_2033,Amazon_15562,The Souls of Black Folk (Dover Thrift Editions),The Souls of Black Folk,0.7535310469643769,9780486280417,9780486280417,True
+399,Covers_480,Amazon_4639,Pride &amp; Prejudice (Wordsworth Classics),Pride and Prejudice,0.7201737356844486,9781853260001,9781853260001,True
+400,Covers_5277,Amazon_20610,Twenty Years A-Growing (Oxford Paperbacks),Twenty Years A-Growing,0.7807929501268449,9780192813251,9780192813251,True
+401,Covers_5406,Amazon_566,The Drama of Being a Child: The Search for the True Self,The Drama Of Being A Child,0.7238240920376299,9781860491016,9781860491016,True
+402,Covers_5833,Amazon_14849,The Purpose Driven Life: What on Earth Am I Here For?,The Purpose Driven Life,0.6819255607984387,9780762416844,9780762416844,True
+403,Covers_1671,Amazon_17551,Devil's Bride (Cynster Novels),Devil's Bride,0.6561259544003364,9780380794560,9780380794560,True
+404,Covers_5617,Amazon_8247,"Workbook for Wheelock's Latin, 3rd Edition, Revised",Workbook for Wheelock's Latin,0.7918268642067272,9780060956424,9780060956424,True
+405,Covers_105,Amazon_15048,Howl and Other Poems (Pocket Poets),Howl and Other Poems,0.7727687236731012,9780872860179,9780872860179,True
+406,Covers_5303,Amazon_20569,The Giza Power Plant : Technologies of Ancient Egypt,The Giza Power Plant,0.7193735334299185,9781879181502,9781879181502,True
+407,Covers_5451,Amazon_1969,Mastering Copperplate Calligraphy: A Step-By-Step Manual,Mastering Copperplate Calligraphy,0.7058252500018909,9780486409511,9780486409511,True
+408,Covers_3972,Amazon_11810,The Bridge on the Drina (A Phoenix Book ; P746),The Bridge on the Drina,0.7049144057250065,9780226020457,9780226020457,True
+409,Covers_4303,Amazon_16535,The Sermon on the Mount - Reissue : The Key to Success in Life,The Sermon on the Mount,0.7193025853114692,9780060628628,9780060628628,True
+410,Covers_3119,Amazon_6509,The Natural Way to Draw : A Working Plan for Art Study,The Natural Way to Draw,0.6510094269848626,9780395530078,9780395530078,True
+411,Covers_5306,Amazon_11690,"The Campaigns of Alexander (The Penguin Classics, L253)",The Campaigns of Alexander,0.7205649998167197,9780140442533,9780140442533,True
+412,Covers_6211,Amazon_12914,An Ideal Husband (Dover Thrift Editions),An Ideal Husband,0.7453355504197156,9780486414232,9780486414232,True
+413,Covers_4460,Amazon_13809,Seth Speaks: The Eternal Validity of the Soul (A Seth Book),Seth Speaks,0.755282552709978,9781878424075,9781878424075,True
+414,Covers_3108,Amazon_20531,Why Buildings Stand Up: The Strength of Architecture,Why Buildings Stand Up,0.7819491218384209,9780393306767,9780393306767,True
+415,Covers_7742,Amazon_1743,Reason for Hope : A Spiritual Journey,Reason For Hope,0.7776297475240543,9780446676137,9780446676137,True
+416,Covers_4938,Amazon_11416,"Perfect Health: The Complete Mind/Body Guide, Revised and Updated Edition",Perfect Health--Revised and Updated,0.7562891105161257,9780609806944,9780609806944,True
+417,Covers_7434,Amazon_12049,"Means of Ascent (The Years of Lyndon Johnson, Volume 2)",Means Of Ascent Vol 2 Lyndon Johnson Vintage USA,0.7591853816418307,9780679733713,9780679733713,True
+418,Covers_4602,Amazon_11194,"Yoga Mind, Body &amp; Spirit: A Return to Wholeness","Yoga Mind, Body and Spirit",0.6905823351919244,9780805059700,9780805059700,True
+419,Covers_3823,Amazon_15403,Nicomachean Ethics (Dover Thrift Editions),The Nicomachean Ethics,0.7374757930047386,9780486400969,9780486400969,True
+420,Covers_907,Amazon_13032,Scientific Progress Goes 'Boink':  A Calvin and Hobbes Collection,Scientific Progress Goes Boink,0.7832179016338529,9780836218787,9780836218787,True
+421,Covers_1672,Amazon_16655,Illuminata: A Return to Prayer,Illuminata,0.6875842939035826,9781573225205,9781573225205,True
+422,Covers_8350,Amazon_11182,The Language of Letting Go (Hazelden Meditation Series),The Language Of Letting Go,0.7044691005896161,9780894866371,9780894866371,True
+423,Covers_8068,Amazon_14646,The Beak of the Finch: A Story of Evolution in Our Time,The Beak of the Finch,0.7632181268038175,9780679733379,9780679733379,True
+424,Covers_3966,Amazon_14642,Teaching a Stone to Talk : Expeditions and Encounters,Teaching a Stone to Talk,0.6809989739590065,9780060915414,9780060915414,True
+425,Covers_36593,Amazon_13047,A Study in Scarlet (New Millennium Library),A Study in Scarlet,0.7188888432681156,9780595014286,9780241952894,False
+426,Covers_8066,Amazon_7394,The Beach,On The Beach,0.8663134645882128,9781573226523,9780099530251,False
+427,Covers_174,Amazon_1225,The Snow Leopard (Penguin Nature Classics),The Snow Leopard,0.7566625693168574,9780140255089,9780099771111,False
+428,Covers_14421,Amazon_12285,"Dreams of Forever (Forever Trilogy,No 1)",Forever,0.807845552737564,9780553267006,9783899554427,False
+429,Covers_39376,Amazon_17217,Summer Secrets,Secrets of a Summer Night,0.8282694383539705,9780451410825,9780060091293,False
+430,Covers_10309,Amazon_7057,Dinner for Two,The Dinner,0.7477738849521076,9780340767962,9780857897206,False
+431,Covers_18249,Amazon_18328,Awakening the Silence,The Awakening,0.7305968952130327,9781583485828,9780486277868,False
+432,Covers_8012,Amazon_15897,Tales of the Cthulhu Mythos,The Cthulhu Mythos Encyclopedia,0.8009074690898303,9780345422040,9781934501054,False
+433,Covers_49493,Amazon_15998,Spiritual leadership,Leadership,0.7492262509836725,9780802482211,9781544331942,False
+434,Covers_23282,Amazon_15382,Punk's War,k-punk,0.8577439344063895,9780451205780,9781912248285,False
+435,Covers_5486,Amazon_20352,The Christmas Box,The Box,0.7668443856343292,9780684832357,9780691170817,False
+436,Covers_37074,Amazon_8429,Greek Grammar,Oxford Grammar of Classical Greek,0.7198829684037074,9781853995224,9780198604563,False
+437,Covers_25230,Amazon_7254,Keeper of the Stone,A Keeper,0.7397579040831136,9780451181329,9781473664982,False
+438,Covers_36131,Amazon_3605,7 Habits of Highly Effective Families,7 Habits Of Highly Effective People,0.807687062603531,9781883219116,9781471129391,False
+439,Covers_856,Amazon_10474,Sailor Moon Stars # 3,Sailor Moon: v. 2,0.8292488461915579,9781892213976,9781935429753,False
+440,Covers_48684,Amazon_12239,Shades,Shades of Grey,0.7014299289451567,9780743418379,9781849757126,False
+441,Covers_42309,Amazon_12636,Indoor Bonsai,Indoor Bonsai for Beginners,0.8396442297048445,9780945352594,9781844033508,False
+442,Covers_15179,Amazon_14126,Secrets,The Book of Secrets,0.7930938925339324,9780440176480,9781400098347,False
+443,Covers_26715,Amazon_10845,The Berlin Game,Berlin,0.7773386633578051,9780345317568,9781770463264,False
+444,Covers_32107,Amazon_4471,Lost...and Never Found,Lost and Found,0.831595697857502,9780590444477,9780007150366,False
+445,Covers_47497,Amazon_17901,Foundation and Chaos (Second Foundation Trilogy),Second Foundation,0.8162336606169693,9780061052422,9780553293364,False
+446,Covers_10549,Amazon_10598,Asterix in Belgium (Pocket Asterix),Asterix: Asterix in Belgium,0.943648920883849,9780340363881,9780752866505,False
+447,Covers_31758,Amazon_7291,A Certain Malice,Malice,0.7270991146895984,9780345405395,9780349140520,False
+448,Covers_26873,Amazon_3201,Walden (World's Classics),Walden,0.7888726766150136,9780192829825,9781509826704,False
+449,Covers_7934,Amazon_12193,Space,A Living Space,0.7511304193449949,9780449203798,9781742703930,False
+450,Covers_19642,Amazon_2251,Translations of Beauty : A Novel,Translations,0.7171526541286961,9780743483568,9780571117420,False
+451,Covers_225,Amazon_4470,The Curious Incident of the Dog in the Night-Time (Vintage Contemporaries),The Curious Incident of the Dog in the Night-time,0.8725745238305062,9781400032716,9780099470434,False
+452,Covers_3231,Amazon_20818,The Language of Sisters,Sisters,0.7169145954682603,9780451207005,9780545540605,False
+453,Covers_8370,Amazon_17441,The List,List of the Lost,0.7915029855260515,9780515121490,9780141982960,False
+454,Covers_4720,Amazon_14586,The Dog's Mind: Understanding Your Dog's Behavior,The Dog's Mind,0.7389368051134123,9780876055137,9780720719642,False
+455,Covers_49577,Amazon_3620,Emotional Intelligence at Work,Emotional Intelligence 2.0,0.7995513312433653,9780787951986,9780974320625,False
+456,Covers_41223,Amazon_21142,Everyday Creative Writing,Creative Writing Book,0.7384742762977405,9780844259000,9781409598787,False
+457,Covers_6741,Amazon_7370,Dark,"In a Dark, Dark Wood",0.8151431593653005,9780330376204,9780099598244,False
+458,Covers_14445,Amazon_21123,The Sorcerer's Apprentice,The Sorcerer in the North (Ranger's Apprentice Book 5),0.7018324342319908,9780816710683,9780440869054,False
+459,Covers_32743,Amazon_7109,Alias Grace : A Novel,Alias Grace,0.9355120356956022,9780385490443,9781860492594,False
+460,Covers_27420,Amazon_15313,Ice Prophet,Prophet,0.7646760212151186,9780345307903,9780394404288,False
+461,Covers_642,Amazon_14933,How to be good.,How to be H.O.T.,0.8160698533085053,9783426615355,9781624142864,False
+462,Covers_21009,Amazon_3628,Pyramid,The Pyramid Principle,0.7111037723177287,9780395214077,9780273710516,False
+463,Covers_508,Amazon_4539,Twilight Eyes,Twilight,0.7378631173650977,9780425100653,9781904233657,False
+464,Covers_8898,Amazon_16346,Zen and the Art of Motorcycle Maintenance : An Inquiry into Values,Zen And The Art Of Motorcycle Maintenance,0.7254286769463574,9780688002305,9780099598169,False
+465,Covers_7586,Amazon_15219,Once Is Not Enough,No Is Not Enough,0.7888108027218992,9780802135452,9780241320884,False
+466,Covers_21884,Amazon_17626,Shame,Born In Shame,0.7474739278949013,9781888363692,9780749928919,False
+467,Covers_42119,Amazon_6964,The Happy Room,Room,0.7054130184993942,9780842354226,9780330519021,False
+468,Covers_3998,Amazon_8003,Tractatus Logico Philosophicus (Routledge Classics),Tractatus Logico-Philosophicus,0.8577497443524116,9780415254083,9780486404455,False
+469,Covers_38562,Amazon_7154,The Giraffe,Tears of the Giraffe,0.7563532996256408,9781568580265,9780349116655,False
+470,Covers_10607,Amazon_15131,The Works: Selected Poems,Selected Poems,0.7963815788485125,9780563367512,9780871401540,False
+471,Covers_40574,Amazon_12009,Mystery House,The House,0.7007398426973103,9780773674486,9781760295462,False
+472,Covers_26018,Amazon_1151,Six Easy Pieces : Easy Rawlins Stories,Six Easy Pieces,0.770992251536126,9780743442527,9780465025275,False
+473,Covers_33326,Amazon_17783,MIDNIGHT,Midnight's Children,0.7644094265856558,9780671834326,9780099511892,False
+474,Covers_49728,Amazon_22190,"Lonely Planet Morocco (Morocco, 5th ed)",Lonely Planet Morocco,0.8456054470902461,9780864427625,9781786570321,False
+475,Covers_38542,Amazon_14374,The Eye of the Tiger,The Tiger,0.742860308714019,9780312979393,9780340962589,False
+476,Covers_40126,Amazon_21877,GROUP SEX,Group B,0.7756781803416084,9780671643621,9783927458567,False
+477,Covers_37872,Amazon_13627,One True Love,True Love,0.8234906571759053,9780380794805,9781590304044,False
+478,Covers_1165,Amazon_7118,American Psycho (Vintage Contemporaries),American Psycho,0.7281777299197207,9780679735779,9781447277705,False
+479,Covers_8485,Amazon_4901,The Postman,The Jolly Postman,0.7610076513448201,9780786881277,9780316126441,False
+480,Covers_1241,Amazon_11135,A Book of Memories,Memories,0.858784557261501,9780140275674,9781449472399,False
+481,Covers_6782,Amazon_1792,Deep Secret,Deep,0.7805470663483685,9780765342478,9781781250662,False
+482,Covers_21630,Amazon_15628,Research Methods for Social Science: A Practical Introduction,Social Research Methods,0.7474715776716329,9780130404565,9780199689453,False
+483,Covers_8430,Amazon_14554,The Natural,Natural History,0.751091130786403,9780374502003,9780140444131,False
+484,Covers_3733,Amazon_14394,"Streams to the River, River to the Sea",To the River,0.8077264176507645,9780449702444,9781786891587,False
+485,Covers_42009,Amazon_3962,Dead Fish,Fish!,0.7828392199164351,9781857028775,9781444792805,False
+486,Covers_48239,Amazon_1032,On Free Choice of the Will,Free Will,0.7265465985481594,9780872201880,9781451683400,False
+487,Covers_49590,Amazon_6980,What Do You See?,I See You,0.7209086951818603,9780916119591,9780751554144,False
+488,Covers_279,Amazon_13137,The Restaurant at the End of the Universe (Hitchhiker's Trilogy (Paperback)),The Restaurant at the End of the Universe,0.7861368318180599,9780345391810,9780330491211,False
+489,Covers_38093,Amazon_17094,The Enduring Years,Enduring Love,0.7289480827562749,9780440124290,9780099481249,False
+490,Covers_11680,Amazon_14898,The Loving,The Art of Loving,0.7851690685984034,9780061041761,9781855385054,False
+491,Covers_24371,Amazon_4098,Prize the Epic Quest for Oil Money and Pow,"""The Prize: The Epic Quest for Oil, Money and Power """,0.8288114976031944,9780671757052,9781439110126,False
+492,Covers_33496,Amazon_21246,A Plague of Angels,Plague,0.7675196764367698,9780553568738,9781405277075,False
+493,Covers_23733,Amazon_2758,Image,The Image of the City,0.7244671496601082,9780446951456,9780262620017,False
+494,Covers_11366,Amazon_9671,Tender Thoughts (Tender Hearts),Tender,0.836737561737989,9781881830306,9780007248490,False
+495,Covers_22646,Amazon_11577,A Documentary History of the United States,A People's History of the United States,0.7111027104614012,9780451624130,9780060838652,False
+496,Covers_8256,Amazon_2910,The Flame and the Flower,The Flame,0.719935372894788,9780380005253,9781786893130,False
+497,Covers_29947,Amazon_13480,A Charlie Brown Christmas,A Charlie Brown Christmas Snow Globe,0.7242968453038587,9780689846083,9780762446155,False
+498,Covers_40515,Amazon_21071,Adventures of Huckleberry Finn (Watermill),The Adventures Of Huckleberry Finn,0.8312742338474032,9780816714643,9780007351039,False
+499,Covers_34651,Amazon_13145,Cat Intelligence Test,Test Your Cat,0.7084303674711853,9780207143274,9780002555029,False

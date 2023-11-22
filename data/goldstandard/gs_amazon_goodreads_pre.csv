@@ -1,0 +1,501 @@
+,amazon_id,goodreads_id,amazon_title,goodreads_title,similarity_score,amazon_isbn,goodreads_isbn,is_match
+0,Amazon_15439,Goodreads_books_37069,The Pillowman,The Pillowman,1.0,9780571220328,9780571220328,True
+1,Amazon_20810,Goodreads_books_31472,Illuminae,Illuminae,1.0,9780553499117,9780553499117,True
+2,Amazon_4619,Goodreads_books_27343,The Butterfly Lion,The Butterfly Lion,1.0,9780006751038,9780006751038,True
+3,Amazon_8805,Goodreads_books_8415,Puckoon,Puckoon,1.0,9780140023749,9780140023749,True
+4,Amazon_17460,Goodreads_books_16006,After I Do,After I Do,1.0,9781476712840,9781476712840,True
+5,Amazon_2537,Goodreads_books_24953,Paris Letters,Paris Letters,1.0,9781402288791,9781402288791,True
+6,Amazon_17235,Goodreads_books_5254,Dreaming of You,Dreaming of You,1.0,9780380773527,9780380773527,True
+7,Amazon_20862,Goodreads_books_149,Kensuke's Kingdom,Kensuke's Kingdom,1.0,9781405221740,9781405221740,True
+8,Amazon_3969,Goodreads_books_1950,Stumbling on Happiness,Stumbling on Happiness,1.0,9781400077427,9781400077427,True
+9,Amazon_16094,Goodreads_books_26538,On Becoming a Novelist,On Becoming a Novelist,1.0,9780393320039,9780393320039,True
+10,Amazon_11830,Goodreads_books_34551,The Fire Next Time,The Fire Next Time,1.0,9780679744726,9780679744726,True
+11,Amazon_18182,Goodreads_books_14580,Green Mars,Green Mars,1.0,9780553572391,9780553572391,True
+12,Amazon_10727,Goodreads_books_38218,Seconds,Seconds,1.0,9780345529374,9780345529374,True
+13,Amazon_1992,Goodreads_books_286,In the Blink of An Eye,In the Blink of an Eye,1.0,9781879505629,9781879505629,True
+14,Amazon_17482,Goodreads_books_29778,The Nonesuch,The Nonesuch,1.0,9780099474388,9780099474388,True
+15,Amazon_17293,Goodreads_books_4844,Bayou Moon,Bayou Moon,1.0,9780441019458,9780441019458,True
+16,Amazon_17365,Goodreads_books_33637,Ashes of Midnight,Ashes of Midnight,1.0,9780440244509,9780440244509,True
+17,Amazon_16852,Goodreads_books_30679,Fifty Shades Freed,Fifty Shades Freed,1.0,9780345803504,9780345803504,True
+18,Amazon_17555,Goodreads_books_7102,Candy,Candy,1.0,9780345423870,9780345423870,True
+19,Amazon_16619,Goodreads_books_38516,I Don't Have Enough Faith to Be an Atheist,I Don't Have Enough Faith to Be an Atheist,1.0,9781581345612,9781581345612,True
+20,Amazon_13240,Goodreads_books_25535,Shake,Shake,1.0,9780062242648,9780062242648,True
+21,Amazon_16965,Goodreads_books_31373,"Love, Rosie","Love, Rosie",1.0,9780786891085,9780786891085,True
+22,Amazon_1904,Goodreads_books_12865,It,It,1.0,9781846147548,9781846147548,True
+23,Amazon_15565,Goodreads_books_12706,Old School,Old School,1.0,9781419717017,9781419717017,True
+24,Amazon_10278,Goodreads_books_37918,The Prince and the Dressmaker,The Prince and the Dressmaker,1.0,9781626723634,9781626723634,True
+25,Amazon_7610,Goodreads_books_5433,Betrayal in Death,Betrayal in Death,1.0,9780425178577,9780425178577,True
+26,Amazon_13018,Goodreads_books_5051,Simon's Cat,Simon's Cat,1.0,9780446560061,9780446560061,True
+27,Amazon_17589,Goodreads_books_25785,Lawe's Justice,Lawe's Justice,1.0,9780425243954,9780425243954,True
+28,Amazon_20880,Goodreads_books_31839,The Wrath and The Dawn,The Wrath and the Dawn,1.0,9780399171611,9780399171611,True
+29,Amazon_2475,Goodreads_books_12853,The Shock of the New,The Shock of the New,1.0,9780500275825,9780500275825,True
+30,Amazon_18216,Goodreads_books_31878,Shadow's Edge,Shadow's Edge,1.0,9780316033657,9780316033657,True
+31,Amazon_15601,Goodreads_books_31250,Twenty Love Poems and a Song of Despair,Twenty Love Poems and a Song of Despair,1.0,9780143039969,9780143039969,True
+32,Amazon_8001,Goodreads_books_34069,Le petit Nicolas,Le Petit Nicolas,1.0,9782070364237,9782070364237,True
+33,Amazon_3398,Goodreads_books_31525,Hunger,Hunger,1.0,9780486431680,9780486431680,True
+34,Amazon_17349,Goodreads_books_35223,Eternal Rider,Eternal Rider,1.0,9780446574495,9780446574495,True
+35,Amazon_5081,Goodreads_books_34873,After We Fell,After We Fell,1.0,9781476792507,9781476792507,True
+36,Amazon_11059,Goodreads_books_35888,The Art Of Seduction,The Art of Seduction,1.0,9781861977694,9781861977694,True
+37,Amazon_18102,Goodreads_books_33010,Hounded,Hounded,1.0,9780345522474,9780345522474,True
+38,Amazon_17554,Goodreads_books_34461,Something about You,Something About You,1.0,9780425233382,9780425233382,True
+39,Amazon_13540,Goodreads_books_2450,Stillness Speaks,Stillness Speaks,1.0,9780340829745,9780340829745,True
+40,Amazon_18179,Goodreads_books_32539,Knife of Dreams,Knife of Dreams,1.0,9780812577563,9780812577563,True
+41,Amazon_17934,Goodreads_books_957,Ancillary Mercy,Ancillary Mercy,1.0,9780356502427,9780356502427,True
+42,Amazon_21200,Goodreads_books_11403,Cool!,Cool!,1.0,9780007131044,9780007131044,True
+43,Amazon_17346,Goodreads_books_32948,Midnight Rising,Midnight Rising,1.0,9780440244448,9780440244448,True
+44,Amazon_7138,Goodreads_books_33892,Joyland,Joyland,1.0,9781781162644,9781781162644,True
+45,Amazon_12862,Goodreads_books_32505,Pride And Prejudice And Zombies,Pride and Prejudice and Zombies,1.0,9781594743344,9781594743344,True
+46,Amazon_2987,Goodreads_books_17278,"3,096 Days","3,096 Days",1.0,9780670919994,9780670919994,True
+47,Amazon_11225,Goodreads_books_35037,The Freedom Writers Diary,The Freedom Writers Diary,1.0,9780385494229,9780385494229,True
+48,Amazon_22340,Goodreads_books_11473,A Time of Gifts,A Time of Gifts,1.0,9781590171653,9781590171653,True
+49,Amazon_10183,Goodreads_books_4168,My Lesbian Experience with Loneliness,My Lesbian Experience with Loneliness,1.0,9781626926035,9781626926035,True
+50,Amazon_7603,Goodreads_books_33163,Pattern Recognition,Pattern Recognition,1.0,9780425198681,9780425198681,True
+51,Amazon_16950,Goodreads_books_33108,Captivated by You,Captivated by You,1.0,9780425273869,9780425273869,True
+52,Amazon_10125,Goodreads_books_2981,Batman Hush,Batman: Hush,1.0,9781401223175,9781401223175,True
+53,Amazon_11010,Goodreads_books_36343,Lullabies,Lullabies,1.0,9781449461072,9781449461072,True
+54,Amazon_18357,Goodreads_books_33008,D'Aulaires Book of Greek Myths,D'Aulaires' Book of Greek Myths,1.0,9780440406945,9780440406945,True
+55,Amazon_13659,Goodreads_books_10056,What to Say When You Talk to Yourself,What to Say When You Talk to Yourself,1.0,9780722525111,9780722525111,True
+56,Amazon_15148,Goodreads_books_2139,Depression & Other Magic Tricks,Depression & Other Magic Tricks,1.0,9781943735204,9781943735204,True
+57,Amazon_10304,Goodreads_books_4364,solanin,Solanin,1.0,9781421523217,9781421523217,True
+58,Amazon_17550,Goodreads_books_27153,Count to Ten,Count to Ten,1.0,9780446616904,9780446616904,True
+59,Amazon_1954,Goodreads_books_31306,The Complete Persepolis,The Complete Persepolis,1.0,9780375714832,9780375714832,True
+60,Amazon_17255,Goodreads_books_35471,Sin Undone,Sin Undone,1.0,9780446556811,9780446556811,True
+61,Amazon_7016,Goodreads_books_33338,I Let You Go,I Let You Go,1.0,9780751554151,9780751554151,True
+62,Amazon_17206,Goodreads_books_31657,Magic Strikes,Magic Strikes,1.0,9780441017027,9780441017027,True
+63,Amazon_4405,Goodreads_books_30761,The Tales of Beedle the Bard,The Tales of Beedle the Bard,1.0,9780747599876,9780747599876,True
+64,Amazon_4562,Goodreads_books_2609,Heartstopper Volume Two,Heartstopper: Volume Two,1.0,9781444951400,9781444951400,True
+65,Amazon_5037,Goodreads_books_30496,The Cat in the Hat,The Cat in the Hat,1.0,9780394800011,9780394800011,True
+66,Amazon_21117,Goodreads_books_30659,Mockingjay,Mockingjay,1.0,9780439023511,9780439023511,True
+67,Amazon_13450,Goodreads_books_31935,Cold Comfort Farm,Cold Comfort Farm,1.0,9780143039594,9780143039594,True
+68,Amazon_11505,Goodreads_books_31187,Meditations,Meditations,1.0,9780140449334,9780140449334,True
+69,Amazon_18178,Goodreads_books_33567,The Bonehunters,The Bonehunters,1.0,9780553813159,9780553813159,True
+70,Amazon_17109,Goodreads_books_34489,Dirt Music,Dirt Music,1.0,9780330490269,9780330490269,True
+71,Amazon_19949,Goodreads_books_22947,Deschooling Society,Deschooling Society,1.0,9780714508795,9780714508795,True
+72,Amazon_2834,Goodreads_books_33736,Letters from a Stoic,Letters from a Stoic,1.0,9780140442106,9780140442106,True
+73,Amazon_20371,Goodreads_books_34140,The Grand Design,The Grand Design,1.0,9780553805376,9780553805376,True
+74,Amazon_10256,Goodreads_books_4340,Flashpoint,Flashpoint,1.0,9781401233389,9781401233389,True
+75,Amazon_17294,Goodreads_books_37624,It Happened One Autumn,It Happened One Autumn,1.0,9780060562496,9780060562496,True
+76,Amazon_1104,Goodreads_books_3816,Metaphors We Live by,Metaphors We Live By,1.0,9780226468013,9780226468013,True
+77,Amazon_11800,Goodreads_books_32257,Between the World and Me,Between the World and Me,1.0,9780812993547,9780812993547,True
+78,Amazon_18050,Goodreads_books_32226,Nevernight,Nevernight,1.0,9781250073020,9781250073020,True
+79,Amazon_15168,Goodreads_books_31392,Metamorphoses,Metamorphoses,1.0,9780140447897,9780140447897,True
+80,Amazon_17393,Goodreads_books_3039,Mine Till Midnight,Mine Till Midnight,1.0,9780312949808,9780312949808,True
+81,Amazon_3570,Goodreads_books_32245,The Richest Man In Babylon,The Richest Man in Babylon,1.0,9780451205360,9780451205360,True
+82,Amazon_17337,Goodreads_books_32360,Midnight Awakening,Midnight Awakening,1.0,9780553589399,9780553589399,True
+83,Amazon_13836,Goodreads_books_34467,The Pilgrimage,The Pilgrimage,1.0,9780722534878,9780722534878,True
+84,Amazon_15279,Goodreads_books_32331,The Complete Essays,The Complete Essays,1.0,9780140446043,9780140446043,True
+85,Amazon_7755,Goodreads_books_37738,The Institute,The Institute,1.0,9781982110567,9781982110567,True
+86,Amazon_2539,Goodreads_books_3215,My Story,My Story,1.0,9781589793163,9781589793163,True
+87,Amazon_21178,Goodreads_books_32688,Boy Meets Boy,Boy Meets Boy,1.0,9780375832994,9780375832994,True
+88,Amazon_17024,Goodreads_books_31226,Lover Enshrined,Lover Enshrined,1.0,9780451222725,9780451222725,True
+89,Amazon_15281,Goodreads_books_31301,Origin,Origin,1.0,9781622660759,9781622660759,True
+90,Amazon_11080,Goodreads_books_38015,The Universe of Us,The Universe of Us,1.0,9781449480127,9781449480127,True
+91,Amazon_15369,Goodreads_books_1560,Birthday Letters,Birthday Letters,1.0,9780374525811,9780374525811,True
+92,Amazon_18231,Goodreads_books_31952,Memories of Ice,Memories of Ice,1.0,9780765348807,9780765348807,True
+93,Amazon_18099,Goodreads_books_31063,The Ocean at the End of the Lane,The Ocean at the End of the Lane,1.0,9780062255655,9780062255655,True
+94,Amazon_13080,Goodreads_books_10255,The Gospel of the Flying Spaghetti Monster,The Gospel of the Flying Spaghetti Monster,1.0,9780812976564,9780812976564,True
+95,Amazon_11600,Goodreads_books_31459,Hiroshima,Hiroshima,1.0,9780679721031,9780679721031,True
+96,Amazon_7113,Goodreads_books_114,The Kill Artist,The Kill Artist,1.0,9780451209337,9780451209337,True
+97,Amazon_17739,Goodreads_books_30398,J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and the Lord of the Rings,J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings,1.0,9780345538376,9780345538376,True
+98,Amazon_15141,Goodreads_books_12993,Bluets,Bluets,1.0,9781933517407,9781933517407,True
+99,Amazon_1736,Goodreads_books_24492,The Nature of Things,The Nature of Things,1.0,9780140447965,9780140447965,True
+100,Amazon_8202,Goodreads_books_13244,Oxford Advanced Learner's Dictionary: Paperback + DVD + Premium Online Access Code,Small Business Management: Launching and Growing Entrepreneurial Ventures (with Online Premium Site Printed Access Card),0.2770928442115532,9780194798792,9780324827835,False
+101,Amazon_9446,Goodreads_books_11939,Nourishing Broth,Nourishing Traditions: The Cookbook That Challenges Politically Correct Nutrition and the Diet Dictocrats,0.22175905208470126,9781455529223,9780967089737,False
+102,Amazon_19838,Goodreads_books_37108,Mindup Curriculum Grades 3-5 Brain Focused Strategies for Living,The Living,0.2780964414051171,9780545267137,9780060924119,False
+103,Amazon_4074,Goodreads_books_8209,The Sell,Sell More Books!: Book Marketing and Publishing for Low Profile and Debut Authors Rethinking Book Publicity after the Digital Revolutions,0.26217449593116665,9780349408187,9780981875637,False
+104,Amazon_22427,Goodreads_books_26589,DK Eyewitness Travel Guide Portugal,Travel Team,0.2817508193183775,9780241358306,9780142404621,False
+105,Amazon_6791,Goodreads_books_11308,Beginner's Book of Modular Origami Polyhedra,Beginner's Greek,0.28342683085078124,9780486461724,9780316021555,False
+106,Amazon_14182,Goodreads_books_32002,Macca the Alpaca,The War of the End of the World,0.05710913536781358,9781407193618,9780571139613,False
+107,Amazon_21993,Goodreads_books_2623,The British Battleship,The British Museum Is Falling Down,0.29911712150540926,9781848322257,9780140124194,False
+108,Amazon_20295,Goodreads_books_30206,Creating Robust Vocabulary,Amazing Grace: A Vocabulary of Faith,0.28540128026533884,9781593857530,9781573227216,False
+109,Amazon_19776,Goodreads_books_24183,"Mindset Mathematics: Visualizing and Investigating Big Ideas, Grade 3",Investigating the Hottie,0.2982816961082603,9781119358701,9781481977562,False
+110,Amazon_4333,Goodreads_books_4363,Human Resource Management: Strategy and Practice with Online Study Tools 12 months,Human.4,0.25522122822920124,9780170369862,9781606840993,False
+111,Amazon_22114,Goodreads_books_19544,The Complete Book of Classic Dodge and Plymouth Muscle,"Burn the Fat, Feed the Muscle",0.2661181505907566,9780760344774,9780972413206,False
+112,Amazon_8426,Goodreads_books_13377,Grammar and Vocabulary for Advanced Book with Answers and Audio,Advanced Magick for Beginners,0.26714705465760286,9781107481114,9781904658412,False
+113,Amazon_9777,Goodreads_books_17414,Great British Bake Off: How to Bake,Off-side,0.23967247624153587,9781849902687,9788466321150,False
+114,Amazon_16153,Goodreads_books_21504,"Merriam-Webster's Collegiate Dictionary, Eleventh Edition: Revised and Updated","The Biblical Basis for Modern Science: The Revised and Updated Classic! (Revised, Expanded)",0.2898743461337581,9780877798095,9780890513699,False
+115,Amazon_2359,Goodreads_books_3327,Jean Haines' Atmospheric Watercolours,Jean de Florette,0.2644272128424271,9781844486748,9782877065115,False
+116,Amazon_6403,Goodreads_books_22333,Collins Complete Woodworker's Manual,Complete Me,0.2567165814673079,9780007164424,9780345545855,False
+117,Amazon_3797,Goodreads_books_23233,Managing successful projects with PRINCE2,With,0.26878929142657604,9780113310593,9781592640508,False
+118,Amazon_20081,Goodreads_books_17688,"Level 3 Diploma Supporting teaching and learning in schools, Primary, Candidate Handbook","The Buddhist Handbook: A Complete Guide to Buddhist Schools, Teaching, Practice, and History",0.28222628854548626,9780435032043,9780892817610,False
+119,Amazon_21679,Goodreads_books_22202,Tortillas to Totems,To Darkness and to Death,0.14987964480704538,9780955657337,9780312988876,False
+120,Amazon_21859,Goodreads_books_25797,Toyota Mr2 Performance,Holden's Performance: A Novel,0.28215202782102844,9781557885531,9780312420802,False
+121,Amazon_3675,Goodreads_books_37324,Doughnut Economics,Human Action: A Treatise on Economics,0.2828657866080881,9781847941398,9780865976306,False
+122,Amazon_22281,Goodreads_books_15740,"Lonely Planet Bali, Lombok & Nusa Tenggara",Chokher Bali,0.27398491521038504,9781786575104,9788129103635,False
+123,Amazon_20320,Goodreads_books_2014,The Australian Beekeeping Manual,The Manual of Detection,0.2562705370516088,9781921966880,9781594202117,False
+124,Amazon_13755,Goodreads_books_10602,Crowley Thoth Tarot Deck,The Confessions of Aleister Crowley: An Autohagiography,0.2793569396133565,9781572815100,9780140191899,False
+125,Amazon_12458,Goodreads_books_3413,Auguste Racinet. The Costume History,History,0.29597886723247663,9783836555401,9781586420048,False
+126,Amazon_19102,Goodreads_books_6664,"Messi, Neymar, Ronaldo",Messi: The Inside Story of the Boy Who Became a Legend,0.2902179025645098,9781785784323,9781906850111,False
+127,Amazon_21570,Goodreads_books_29044,101 Projects for Your Porsche Boxster,101 Dalmatians,0.22960418242579117,9780760335543,9780307623461,False
+128,Amazon_21497,Goodreads_books_8477,"Porsche 911 Performance Handbook, 1963-1998",The Death of a President: November 1963,0.2521489403652981,9780760331804,9780671049607,False
+129,Amazon_20139,Goodreads_books_2391,"Fountas & Pinnell Literacy Continuum, Expanded Edition",Expanded Universe,0.282073671606211,9780325060781,9780743499156,False
+130,Amazon_19416,Goodreads_books_36637,Moleskine Ruled Cahier Xl - Kraft Cover (3 Set),Perfect Cover,0.2611111342445167,9788883705014,9780385734547,False
+131,Amazon_9052,Goodreads_books_21412,"Music Theory Practice Papers 2017 Model Answers, ABRSM Grade 5",Model Home,0.28970957746236636,9781786010131,9780743270489,False
+132,Amazon_5927,Goodreads_books_10253,"The Nine Old Men: Lessons, Techniques, and Inspiration from Disney's Great Animators",Lessons From the Mountain,0.29335841060365064,9780415843355,9780758263667,False
+133,Amazon_20663,Goodreads_books_13315,Pearson Baccalaureate: Environmental Systems and Societies bundle 2nd edition,The Highlander Series: 7-Book Bundle,0.23236030026969856,9781447990420,9780345538260,False
+134,Amazon_7914,Goodreads_books_31684,Oxford A-Z of Grammar and Punctuation,"Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation",0.2641239895569412,9780199669189,9781592402038,False
+135,Amazon_6173,Goodreads_books_19913,Engineering Mathematics Through Applications,Mathematics: Is God Silent?,0.29490733035419175,9780230274792,9781879998223,False
+136,Amazon_9033,Goodreads_books_2586,Lynch on Lynch,On War,0.14015906291668223,9780571220182,9780691018546,False
+137,Amazon_21626,Goodreads_books_17432,Japanese Secret Projects: Experimental Aircraft of the IJA and IJN 1922-1945: Book 2,The Secret,0.218042871266577,9781906537418,9781472229991,False
+138,Amazon_8672,Goodreads_books_20125,English Vocabulary in Use Upper-Intermediate Book with Answers,Mr. Fixer Upper,0.2710365411390865,9781316631751,9781945631092,False
+139,Amazon_12519,Goodreads_books_11474,Cacti and Succulents,Etta and Otto and Russell and James,0.10663148486080891,9781861268723,9780670067749,False
+140,Amazon_21844,Goodreads_books_16994,Honda CRf250 & CRf450 (02 - 06),"Bleach, Volume 06",0.2965305024417119,9781563926303,9781591167280,False
+141,Amazon_16171,Goodreads_books_38452,IB Geography Course Book: Oxford IB Diploma Programme,Geography Club,0.2845032201990392,9780198389170,9780060012236,False
+142,Amazon_11370,Goodreads_books_7337,The Fitness Mindset,Mindset: by Carol Dweck | Summary & Analysis,0.2877594848483643,9781781332528,9781535188920,False
+143,Amazon_22113,Goodreads_books_24777,Aufklarer: Luftwaffe Reconnaissance Aircraft and Units 1935-1941 v. 1,"Î¤Î± ÏÎ¿Î¹Î®Î¼Î±ÏÎ±, 1941-1971",0.18686445685114134,9781857802689,9789602115381,False
+144,Amazon_9073,Goodreads_books_12162,"Sopranos Sessions, The",The Complete Beatles Recording Sessions: The Official Story of the Abbey Road Years 1962-1970,0.26679748151145527,9781419734946,9780600612070,False
+145,Amazon_5675,Goodreads_books_10994,Applied Predictive Modeling,The Art of Predictive Astrology: Forcasting Your Life Events,0.28342364055350533,9781461468486,9780738701646,False
+146,Amazon_19865,Goodreads_books_37664,"Scholastic Success with Reading Comprehension, Grade 5",Law of Success,0.28016552880359114,9780545200806,9781932429244,False
+147,Amazon_5521,Goodreads_books_31907,CCNA Routing and Switching Complete Study Guide,Magic Study,0.2697805335503636,9781119288282,9780373802494,False
+148,Amazon_8217,Goodreads_books_13216,The Screenwriter's Workbook,Changes That Heal: Workbook,0.25726644579661195,9780385339049,25986606336,False
+149,Amazon_18804,Goodreads_books_32002,Eddy Merckx: The Cannibal,The War of the End of the World,0.04647527512607243,9780091943165,9780571139613,False
+150,Amazon_562,Goodreads_books_18641,The Autoimmune Paleo Cookbook,Ottolenghi: The Cookbook,0.272064347464984,9780578135212,9780091922344,False
+151,Amazon_979,Goodreads_books_26788,Oxford Handbook of Obstetrics and Gynaecology (flexicover),The Dead Wife's Handbook,0.171375646732274,9780199698400,9780718178147,False
+152,Amazon_22058,Goodreads_books_19821,Mikoyan MiG-23 & MiG-27: Famous Russian Aircraft,Dead Famous,0.23090931813251897,9781910809310,9780552999458,False
+153,Amazon_6854,Goodreads_books_15627,"Succulents Simplified: Growing, Designing and Crafting with 100 Easy-Care Varieties",100%,0.26586277123120566,9781604693935,9781401203498,False
+154,Amazon_805,Goodreads_books_29542,Oxford Handbook of Psychiatry,"Steps to an Ecology of Mind: Collected Essays in Anthropology, Psychiatry, Evolution, and Epistemology",0.2693027308483623,9780199693887,9780226039053,False
+155,Amazon_22161,Goodreads_books_5706,Kar Kraft,"Mach Deine TrÃ¤ume Wahrverwirkliche Deine Ziele Durch Die Kraft Deiner Gedanken, Deiner GefÃ¼hle Und Deines Verhaltens ; Die ""3 G Methode""",0.12227880342147165,9781613252864,9783866161276,False
+156,Amazon_11802,Goodreads_books_32002,The Hermetica,The War of the End of the World,0.07875504406014952,9781585426928,9780571139613,False
+157,Amazon_17195,Goodreads_books_32002,The Unhoneymooners,The War of the End of the World,0.08158166694280998,9781501128035,9780571139613,False
+158,Amazon_21635,Goodreads_books_21018,Mazda 3 2004-2011 (Aus),The Unofficial Guide: Walt Disney World 2011,0.26508928984315844,9781563929151,9780470615294,False
+159,Amazon_19668,Goodreads_books_31416,Knock Knock What to Eat Pad,What Is the What,0.23237547514071105,9781601061539,9781932416640,False
+160,Amazon_12501,Goodreads_books_26681,Essentials Weekly Planner Stickers (Set of 575 Stickers),Essentials of Hypnosis,0.20743145528219958,9781441324092,9780876307618,False
+161,Amazon_22118,Goodreads_books_17743,Obd-II (96 On) Engine Management Systems,The Difference Engine,0.26946069460028677,9781563926129,9780553294613,False
+162,Amazon_6709,Goodreads_books_5051,Simon Leach's Pottery Handbook:A Comprehensive Guide to Throwing,Simon's Cat,0.28083668592898026,9781617690228,9780446560061,False
+163,Amazon_22122,Goodreads_books_14102,FRAM: The Functional Resonance Analysis Method,Self Analysis,0.2856676692165551,9781409445517,9780884042648,False
+164,Amazon_7922,Goodreads_books_38339,Kodansha'S Furigana Japanese Dictionary,The Japanese Lover,0.2729240172369203,9781568364575,9781501116971,False
+165,Amazon_11637,Goodreads_books_32002,The Plantagenets,The War of the End of the World,0.08158166694280998,9780007213948,9780571139613,False
+166,Amazon_1770,Goodreads_books_9592,507 Mechanical Movements,Reaching Out: The Three Movements of the Spiritual Life,0.2669533587295288,9780486443607,9780385236829,False
+167,Amazon_906,Goodreads_books_31271,Sports Injury Prevention and Rehabilitation,Saving the World and Other Extreme Sports,0.2454730777747869,9780415815062,9780316155601,False
+168,Amazon_21513,Goodreads_books_30005,SU Carburettors Tuning Tips and Techniques,The Soundscape: Our Environment and the Tuning of the World,0.22023328647759688,9781855202559,9780892814558,False
+169,Amazon_2567,Goodreads_books_15220,Directing Actors,The Magic Behind the Voices: A Who's Who of Cartoon Voice Actors,0.29620616181595677,9780941188241,9781578066964,False
+170,Amazon_8650,Goodreads_books_28231,New Headway: Pre-Intermediate A2 - B1: Student's Book and iTutor Pack,Pack of Lies,0.18476557077014388,9780194769662,9780373803248,False
+171,Amazon_320,Goodreads_books_29743,Eat Right for Your Type Comple,The Right Side,0.28210011785647504,9781573229203,9781501118401,False
+172,Amazon_20479,Goodreads_books_11939,Nourishing Fats,Nourishing Traditions: The Cookbook That Challenges Politically Correct Nutrition and the Diet Dictocrats,0.22175905208470126,9781455592555,9780967089737,False
+173,Amazon_20055,Goodreads_books_5156,Reflective Practice in Supervision,The Practice Effect,0.26873352133815226,9781925595055,9780553269819,False
+174,Amazon_14389,Goodreads_books_38531,Really Relaxing Colouring Book 5,If You Really Loved Me,0.26853315185819426,9781908707482,9780671769208,False
+175,Amazon_12111,Goodreads_books_8352,Grow Your Own Vegetables in Pots and Containers,In Your Own Backyard: How to Create and Enjoy Your Own Private Retreat,0.29292551456955757,9781472137050,9780836279887,False
+176,Amazon_6282,Goodreads_books_38248,20 to Knit: Mini Christmas Knits,Last Christmas,0.274131831132412,9781844487226,9781416913696,False
+177,Amazon_570,Goodreads_books_18596,Oxford Handbook of Clinical Specialties,Peripheral Neuropathies in Clinical Practice,0.22800475798791658,9780198719021,9780195183269,False
+178,Amazon_588,Goodreads_books_7421,Neurokinetic Therapy,Cupping Therapy Encyclopedia: New Edition,0.24331736685545752,9781556438776,9781986200486,False
+179,Amazon_19066,Goodreads_books_1032,The Healing Promise of Qi: Creating Extraordinary Wellness Through Qigong and Tai Chi,The Promise,0.28643565698737095,9780809295289,9781467930574,False
+180,Amazon_3340,Goodreads_books_10325,"Cordially Invited: A seasonal guide to celebrations and hosting, perfect for festive planning, crafting and baking in the run up to Christmas!",Run To Earth,0.21985101564642023,9781473687776,9781495290008,False
+181,Amazon_20044,Goodreads_books_29797,A Parent's Guide to High-Functioning Autism Spectrum Disorder,A Sweet Disorder,0.29947335677235265,9781462517473,9781423112457,False
+182,Amazon_6056,Goodreads_books_17212,Microeconometrics Using Stata,Computer Science: A Structured Programming Approach Using C,0.20753382127575987,9781597180733,9780534374822,False
+183,Amazon_20445,Goodreads_books_34377,Making Natural Milk Soap: Storey's Country Wisdom Bulletin A.199,The Natural,0.27456409092637235,9781580172202,9780374502003,False
+184,Amazon_9981,Goodreads_books_29098,Creative Baking: Chiffon Cakes,Baking Artisan Bread: 10 Expert Formulas for Baking Better Bread at Home,0.25239429839094535,9789814721424,9781592534531,False
+185,Amazon_10021,Goodreads_books_32876,Meehan's Bartender Manual,Life: A User's Manual,0.2185750246735878,9781607748625,9780879237516,False
+186,Amazon_2681,Goodreads_books_6104,"Music Theory Past Papers 2014, ABRSM Grade 5",Blood Past,0.2720383944362026,9781848497245,9781463779047,False
+187,Amazon_13803,Goodreads_books_4036,Complete Aromatherapy and Essential Oils Handbook,Essential Tales and Poems,0.2893645421402149,9780778804864,9781593080648,False
+188,Amazon_19753,Goodreads_books_26623,Hug a Sloth Kit,Kit's Surprise: A Christmas Story,0.2587664028425183,9781441317117,723232050208,False
+189,Amazon_14221,Goodreads_books_32002,The Dogist,The War of the End of the World,0.07875504406014952,9781579656713,9780571139613,False
+190,Amazon_20388,Goodreads_books_34252,Botanical Inks,"Botanical Shakespeare: An Illustrated Compendium of All the Flowers, Fruits, Herbs, Trees, Seeds, and Grasses Cited by the World's Greatest Playwright",0.17138873054916837,9781787131569,9780062469892,False
+191,Amazon_21832,Goodreads_books_748,Compilation C28 C32 C31 & Db1,The History of the QurÊ¾anic Text from Revelation to Compilation: A Comparative Study with the Old and New Testaments,0.13602718614448275,9780872883659,9781872531656,False
+192,Amazon_8718,Goodreads_books_21361,Mastering Arabic Grammar,Mastering the Art of French Cooking,0.2979830490654886,9781403941091,9780375413407,False
+193,Amazon_19430,Goodreads_books_17414,Landmarks: Scratch-Off NightScapes,Off-side,0.2899701806432479,9781454710059,9788466321150,False
+194,Amazon_935,Goodreads_books_4760,Netter's Anatomy Coloring Book Updated Edition,The Anatomy of Being,0.27703074407841527,9780323545037,9781300631750,False
+195,Amazon_9940,Goodreads_books_11474,Platters and Boards,Etta and Otto and Russell and James,0.09634201431890646,9781452164151,9780670067749,False
+196,Amazon_6738,Goodreads_books_15415,The Backyard Foundry,Backyard Chickens for Beginners: Everything You Need to Know,0.27238822305193755,9781854861467,9781508745440,False
+197,Amazon_10957,Goodreads_books_3280,"Horimiya, Vol. 1","Saga, Vol. 2",0.22479100228608356,9780316342032,9781607066927,False
+198,Amazon_19914,Goodreads_books_29484,"Helping Children to Cope with Change, Stress and Anxiety",Oops!: Helping Children Learn Accidentally,0.2826836748287769,9781843109600,9781781350096,False
+199,Amazon_21599,Goodreads_books_20034,Lowrider Coloring Book,A Court of Thorns and Roses Coloring Book,0.2983798476925937,9789185639410,9781681195766,False
+200,Amazon_502,Goodreads_books_37193,Dynamic Alignment Through Imagery,Through the Dark,0.24767605894795827,9780736067898,9781484756874,False
+201,Amazon_19832,Goodreads_books_24183,"Mindset Mathematics: Visualizing and Investigating Big Ideas, Grade 6",Investigating the Hottie,0.2982816961082603,9781119358831,9781481977562,False
+202,Amazon_16434,Goodreads_books_37523,In Sinu Jesu,In Time,0.13550035089428242,9781621382195,9781423199236,False
+203,Amazon_20424,Goodreads_books_9592,507 Mechanical Movements,Reaching Out: The Three Movements of the Spiritual Life,0.2669533587295288,9789650060213,9780385236829,False
+204,Amazon_1258,Goodreads_books_24807,Pearson Baccalaureate Chemistry Higher Level 2nd edition print and online edition for the IB Diploma,Chemistry for Beginners,0.2481216593197762,9781447959755,9781439108475,False
+205,Amazon_22097,Goodreads_books_38714,Autocourse Annual 2016 : The World's Leading Grand Prix Annual 2016,"The Mercury Annual (Valiant Razalia, Vol. 1)",0.2393627496159223,9781910584224,9780956153302,False
+206,Amazon_22073,Goodreads_books_32876,Focke Wulf Fw190 Manual,Life: A User's Manual,0.18054838034285758,9780857337894,9780879237516,False
+207,Amazon_15543,Goodreads_books_32212,The Rubaiyat of Omar Khayyam,RubÃ¡iyÃ¡t of Omar KhayyÃ¡m,0.2843498901388217,9781853261879,9781905432455,False
+208,Amazon_6862,Goodreads_books_28019,"Dungeons and Dragons Art and Arcana: Special Edition, Boxed Book and Ephemera Set",Dan and Phil Boxed Set,0.2803495106324069,9780399582752,9781524716189,False
+209,Amazon_6391,Goodreads_books_22170,Love to Sew: Mug Rugs,Love,0.2780763159975312,9781844489268,9781400078479,False
+210,Amazon_234,Goodreads_books_3090,The Original Reiki Handbook of Dr. Mikao Usui,Original Sin,0.24272329309342425,9780914955573,9780765328090,False
+211,Amazon_18751,Goodreads_books_29152,"HBR's 10 Must Reads for New Managers (with bonus article ""How Managers Become Leaders"" by Michael D. Watkins) (HBR's 10 Must Reads)",10-10-10: A Life-Transforming Idea,0.24907801324567178,9781633693029,9781416591825,False
+212,Amazon_8111,Goodreads_books_5772,Aula Internacional - Nueva edicion,"Nueva Biblia De Estudio Scofield: Version Ampliada; Reina-Valera 1960; Con Introducciones, notas ampliadas y actualizadas, un sistema de refrencias tematicas, cronologia e indices",0.10185920075740375,9788415640097,9781558197985,False
+213,Amazon_7958,Goodreads_books_38408,Integrated Korean,In Order to Live: A North Korean Girl's Journey to Freedom,0.27349875754885744,9780824834401,9781594206795,False
+214,Amazon_154,Goodreads_books_28202,"Medical Interviews - a Comprehensive Guide to Ct, St and Registrar Interview Skills",Life Skills,0.24354933359372186,9781905812172,9780312263539,False
+215,Amazon_5968,Goodreads_books_1813,Designing for Interaction,I For You,0.20203067951773437,9780321643391,9789797805548,False
+216,Amazon_16020,Goodreads_books_32002,The Landmark Thucydides,The War of the End of the World,0.05710913536781358,9780684827902,9780571139613,False
+217,Amazon_5729,Goodreads_books_13377,Advanced Excel Reporting for Management Accountants,Advanced Magick for Beginners,0.2611803052384166,9781118657720,9781904658412,False
+218,Amazon_19767,Goodreads_books_37664,"Scholastic Success with Reading Comprehension, Grade 2",Law of Success,0.28016552880359114,9780545200837,9781932429244,False
+219,Amazon_20422,Goodreads_books_11474,Soldering and Brazing,Etta and Otto and Russell and James,0.09634201431890646,9780852428450,9780670067749,False
+220,Amazon_6222,Goodreads_books_8338,Couture Sewing Techniques,Texture Techniques for Winning Watercolors,0.21495639083619097,9781600853357,9780891348924,False
+221,Amazon_835,Goodreads_books_32002,The Physiotherapist's Pocketbook,The War of the End of the World,0.057825260457884956,9780702055065,9780571139613,False
+222,Amazon_6681,Goodreads_books_20347,101 Textures in Colored Pencil,The Autobiography of an Ex-Colored Man,0.2595016553208612,9781633223400,9780809000326,False
+223,Amazon_16034,Goodreads_books_19951,Manhattan GMAT Test Simulation Booklet w/ Marker,Simulacra and Simulation,0.2866550912013176,9780979017582,9780472065219,False
+224,Amazon_9750,Goodreads_books_32002,The Unbakery,The War of the End of the World,0.07875504406014952,9781743365649,9780571139613,False
+225,Amazon_404,Goodreads_books_18596,Oxford Handbook of Clinical Dentistry,Peripheral Neuropathies in Clinical Practice,0.22800475798791658,9780199679850,9780195183269,False
+226,Amazon_1445,Goodreads_books_13957,Yoga Mat Companion 1: Vinyasa Flow & Standing Poses,Go with the Flow,0.2929388878528862,9781607439431,9781250143174,False
+227,Amazon_8379,Goodreads_books_10023,IELTS Trainer Six Practice Tests with Answers and Audio CDs (3),The Non-Runner's Marathon Trainer,0.23498342537961628,9780521128209,9781570281822,False
+228,Amazon_517,Goodreads_books_3259,Compassion Focused Therapy,Tattoos on the Heart: The Power of Boundless Compassion,0.28049034228107217,9780415448079,9781439153024,False
+229,Amazon_8161,Goodreads_books_18995,Gwynne's Grammar,An Introduction to Functional Grammar,0.27201761445113365,9780091951450,9780340761670,False
+230,Amazon_18742,Goodreads_books_34187,"HBR's 10 Must Reads on Making Smart Decisions (with featured article ""Before You Make That Big Decision..."" by Daniel Kahneman, Dan Lovallo, and Olivier Sibony)",Article 5,0.22394542730249303,9781422189894,9780765329585,False
+231,Amazon_293,Goodreads_books_30133,Contented Dementia,"Life in the Balance: A Physician's Memoir of Life, Love, and Loss with Parkinson's Disease and Dementia",0.26744645627308417,9780091901813,9781402753411,False
+232,Amazon_19038,Goodreads_books_20375,Pays Du Mont-Blanc 2003,Point Blanc: The Graphic Novel,0.2798151956135337,9782841822065,9781844281121,False
+233,Amazon_12580,Goodreads_books_947,"The Monocle Guide To Hotels, Inns and Hideaways",The Guide,0.25123157916160643,9783899559521,9780143039648,False
+234,Amazon_12132,Goodreads_books_33481,RHS Botany for Gardeners,The Botany of Desire: A Plant's-Eye View of the World,0.2579607736698824,9781845338336,9780375760396,False
+235,Amazon_10300,Goodreads_books_3280,Lumberjanes Vol. 1,"Saga, Vol. 2",0.2316650453344197,9781608866878,9781607066927,False
+236,Amazon_5641,Goodreads_books_15981,Adobe Illustrator CS5 Classroom in a Book,The Adobe Photoshop CS4 Book for Digital Photographers,0.22823753895936022,9780321701787,9780321580092,False
+237,Amazon_5990,Goodreads_books_8608,"Objects First with Java: A Practical Introduction Using BlueJ, Global Edition",The History of Java,0.2902211217761847,9781292159041,9789791680998,False
+238,Amazon_5741,Goodreads_books_30170,Bitcoin and Cryptocurrency Technologies,"How to Survive the End of the World as We Know It: Tactics, Techniques, and Technologies for Uncertain Times",0.21155988473605786,9780691171692,9780452295834,False
+239,Amazon_8541,Goodreads_books_9016,BBC ITALIAN PHRASE BOOK & DICTIONARY,The Italian Party,0.2997578045847725,9780563519201,9781250147837,False
+240,Amazon_342,Goodreads_books_18128,Introduction to Veterinary Anatomy and Physiology Textbook,An Introduction To C Programming,0.278393988455678,9780702057359,9780697170033,False
+241,Amazon_22046,Goodreads_books_9659,"Air Ministry Pilot's Notes: Supermarine Spitfire IX, XI and XVI",Air,0.2618568910046446,9780859790468,9780312261214,False
+242,Amazon_14515,Goodreads_books_11561,"Cavoodles. Ultimate Cavoodle Dog Manual. Cavoodle Care, Costs, Feeding, Grooming, Health and Training All Included.",A Dragon's Guide to the Care and Feeding of Humans,0.23114107368284836,9781910410691,9780385392280,False
+243,Amazon_9257,Goodreads_books_1411,The Noma Guide to Fermentation (Foundations of Flavor),Screenplay: The Foundations of Screenwriting,0.2810519344883579,9781579657185,9780385339032,False
+244,Amazon_2338,Goodreads_books_11474,Botanicals Labels and Stickers,Etta and Otto and Russell and James,0.08768921976779782,9781452107509,9780670067749,False
+245,Amazon_22543,Goodreads_books_3427,Kyoto Pocket Precincts,Pocket Apocalypse,0.27956221473258946,9781741175172,9780756408121,False
+246,Amazon_12825,Goodreads_books_28218,Basilius Besler's Florilegium. The Book of Plants,The Book of the Book,0.25523704557596977,9783836557870,9780900860126,False
+247,Amazon_5850,Goodreads_books_5341,Installing and Configuring Windows Server (R) 2012 R2,High Windows,0.27577246107238407,9780735684249,9780571114511,False
+248,Amazon_5923,Goodreads_books_8063,"Web Design with HTML, CSS, JavaScript and jQuery Set",Beginning JavaScript,0.2699788396128116,9781119038634,9780764555879,False
+249,Amazon_3445,Goodreads_books_37523,In Extremis,In Time,0.1861982000901375,9781784740931,9781423199236,False
+250,Amazon_8135,Goodreads_books_23233,English Phonetics and Phonology Paperback with Audio CDs (2),With,0.216089981567651,9780521717403,9781592640508,False
+251,Amazon_19180,Goodreads_books_19099,"Moleskine Art Collection Watercolour Notebook, Large, Plain, Black, Hard Cover (5 X 8.25)",The Collection,0.252120193260696,8058341715635,9780451206091,False
+252,Amazon_18800,Goodreads_books_22202,Chamonix to Zermatt,To Darkness and to Death,0.14987964480704538,9781852847807,9780312988876,False
+253,Amazon_9330,Goodreads_books_27763,Paleo Diet Cookbook,The South Beach Diet,0.29202014802023646,9780470913048,9781579548148,False
+254,Amazon_468,Goodreads_books_29542,The Maudsley Prescribing Guidelines in Psychiatry,"Steps to an Ecology of Mind: Collected Essays in Anthropology, Psychiatry, Evolution, and Epistemology",0.1900987128098515,9781118754603,9780226039053,False
+255,Amazon_8746,Goodreads_books_21187,Peng's Fun with Chinese Characters for Children,The Children,0.29773398352604064,9789814561143,9780449004395,False
+256,Amazon_6860,Goodreads_books_7785,Kaffe Fassett's Quilts in the Cotswolds,In the Dark,0.12803678914283653,9781641550840,9780843949162,False
+257,Amazon_10406,Goodreads_books_30802,"JoJo's Bizarre Adventure: Part 2--Battle Tendency, Vol. 3",The Last Battle,0.26555258825392164,9781421578842,9780007202324,False
+258,Amazon_21992,Goodreads_books_32002,Powering the Luftwaffe,The War of the End of the World,0.05838587801324361,9781460215845,9780571139613,False
+259,Amazon_10046,Goodreads_books_23437,International School of Sugarcraft: Book One Beginners,Magic for Beginners,0.2975136822164172,9781853917486,9780156031875,False
+260,Amazon_18466,Goodreads_books_32002,The Lido,The War of the End of the World,0.07875504406014952,9781409175223,9780571139613,False
+261,Amazon_319,Goodreads_books_13192,Neurological Rehabilitation,To Believe or Not to Believe: The Social and Neurological Consequences of Belief Systems,0.25362631871880803,9780702040511,9781441587275,False
+262,Amazon_4203,Goodreads_books_32002,The Trusted Advisor,The War of the End of the World,0.05611334090284497,9780743212342,9780571139613,False
+263,Amazon_672,Goodreads_books_18596,Clinical Naturopathy,Peripheral Neuropathies in Clinical Practice,0.2769313101766384,9780729541732,9780195183269,False
+264,Amazon_8321,Goodreads_books_38408,Integrated Korean,In Order to Live: A North Korean Girl's Journey to Freedom,0.27349875754885744,9780824835156,9781594206795,False
+265,Amazon_1708,Goodreads_books_23114,"Oxford IB Diploma Programme: IB Mathematics: analysis and approaches, Higher Level, Print and Enhanced Online Course Book Pack",Eastern Approaches,0.22456051246106587,9780198427162,9780140132717,False
+266,Amazon_21939,Goodreads_books_18986,"Yamaha Mt-09, Tracer And Xsr900 (13 - 16)","Bleach, Volume 09",0.2564622893870988,9781785213335,9781591169246,False
+267,Amazon_19031,Goodreads_books_28218,Miniature Book of Miniature Golf,The Book of the Book,0.20607834306005193,9780761154136,9780900860126,False
+268,Amazon_9679,Goodreads_books_18641,The Autoimmune Paleo Cookbook,Ottolenghi: The Cookbook,0.272064347464984,9781743368190,9780091922344,False
+269,Amazon_4195,Goodreads_books_38339,Japanese Candlestick Charting Techniques,The Japanese Lover,0.2625809842213464,9780735201811,9781501116971,False
+270,Amazon_350,Goodreads_books_32273,"Ganong's Review of Medical Physiology, Twenty-Fifth Edition",Fifth Business,0.2661727369268034,9780071825108,9780141181363,False
+271,Amazon_5934,Goodreads_books_5341,MCSA Windows Server 2012 R2 Complete Study Guide,High Windows,0.2760925000667282,9781118859919,9780571114511,False
+272,Amazon_12472,Goodreads_books_12959,"Braids, Buns, and Twists!",Golden Braids and Dragon Blades: Steampunk Rapunzel,0.28736852951305286,9781452124841,9781726205016,False
+273,Amazon_538,Goodreads_books_2059,Helping Your Child with Extreme Picky Eating,The Child,0.29611074547675703,9781626251106,9780552172455,False
+274,Amazon_14370,Goodreads_books_21578,Collins Stargazing,Michael Collins: The Man Who Made Ireland,0.294678601577386,9780008196271,9781570980756,False
+275,Amazon_9002,Goodreads_books_8524,The Filmmaker's Handbook 2013 Edition,Carter G. Woodson Lecture 2013: Sparking the Genius,0.2410637530248848,9780452297289,9781627200127,False
+276,Amazon_16027,Goodreads_books_13103,"Encyclopedia of Electronic Components: LEDs, LCDs, Audio, Thyristors, Digital Logic, and Amplification: Volume 2",The Encyclopedia of Immaturity: Volume 2,0.19807435827483327,9781449334185,9781591746898,False
+277,Amazon_5833,Goodreads_books_32002,The Stack,The War of the End of the World,0.07875504406014952,9780262029575,9780571139613,False
+278,Amazon_21662,Goodreads_books_13448,Volkswagen Workshop Manual: Vw Transporter 1954-67: Part No Owm834,Dziennik 1954,0.2363119171381133,9781855201972,9788361297055,False
+279,Amazon_20306,Goodreads_books_32002,The Ignorant Schoolmaster,The War of the End of the World,0.05611334090284497,9780804719698,9780571139613,False
+280,Amazon_5305,Goodreads_books_19723,Hands-On Machine Learning with Scikit-Learn and TensorFlow,The Tree of Hands,0.27863431324480636,9781491962299,9780345312006,False
+281,Amazon_8470,Goodreads_books_20369,Nuevo Espanol en Marcha Basico : Student Book + CD,Honor Student,0.20189029709914216,9788497785297,9781475005448,False
+282,Amazon_12752,Goodreads_books_19900,Building Small Projects: The New Best of Fine Woodworking,A Fine Passion,0.29984690579440826,9781561587308,9780060593315,False
+283,Amazon_9088,Goodreads_books_19402,The Geeky Chef Cookbook,"The Devil in the Kitchen: Sex, Pain, Madness and the Making of a Great Chef",0.26702626685489844,9781631060496,9781596913615,False
+284,Amazon_5296,Goodreads_books_8063,"Web Design with HTML, CSS, JavaScript and jQuery Set",Beginning JavaScript,0.2699788396128116,9781118907443,9780764555879,False
+285,Amazon_4188,Goodreads_books_29152,"HBR's 10 Must Reads on Emotional Intelligence (with featured article ""What Makes a Leader?"" by Daniel Goleman)(HBR's 10 Must Reads)",10-10-10: A Life-Transforming Idea,0.2724362773443943,9781633690196,9781416591825,False
+286,Amazon_9907,Goodreads_books_14773,Yum-Yum Bento Box,The Box Man,0.21203901036362435,9781594744471,9780375726514,False
+287,Amazon_19641,Goodreads_books_36637,Moleskine Ruled Cahier L - Navy Cover (3 Set),Perfect Cover,0.2943284707045052,9788862931045,9780385734547,False
+288,Amazon_10388,Goodreads_books_30802,"JoJo's Bizarre Adventure: Part 2--Battle Tendency, Vol. 2",The Last Battle,0.26555258825392164,9781421578835,9780007202324,False
+289,Amazon_19470,Goodreads_books_3628,Iclip Magnetic Bookmark Cupcakes,It's Raining Cupcakes,0.29515413436069865,9781441305343,9781416990840,False
+290,Amazon_8643,Goodreads_books_8096,700 Classroom Activities New Edition,The New Life,0.2280597152971972,9781405080019,9780571193783,False
+291,Amazon_21928,Goodreads_books_27477,How to Power Tune Ford SOHC 'Pinto' and Sierra Cosworth DOHC Engines,My First Summer in the Sierra,0.22503401676247184,9781903706787,9780486437354,False
+292,Amazon_21879,Goodreads_books_3090,Original Porsche 911 1964-1998,Original Sin,0.265909570056484,9780760352090,9780765328090,False
+293,Amazon_18329,Goodreads_books_18925,"Revisit, Reflect, Retell",The Good Immigrant: 26 Writers Reflect on America,0.27664072130652495,9780325025797,9780316524285,False
+294,Amazon_2437,Goodreads_books_32002,The Advancing Guitarist,The War of the End of the World,0.05611334090284497,9780881885897,9780571139613,False
+295,Amazon_1512,Goodreads_books_33462,Yoga Mat Companion 2: Hip Openers & Forward Bends,Only Forward,0.27468297546108145,9781607439424,9780006512660,False
+296,Amazon_5390,Goodreads_books_20613,Dungeons & Dragons Guildmasters' Guide to Ravnica (D&d/Magic: The Gathering Adventure Book and Campaign Setting),The Gathering,0.2998577425047418,9780786966592,9780399247262,False
+297,Amazon_22019,Goodreads_books_11474,Subaru Impreza WRX and WRX STI,Etta and Otto and Russell and James,0.05431201899002176,9781847974228,9780670067749,False
+298,Amazon_5639,Goodreads_books_11696,Terraria: Crafting and Construction Handbook,The Power of Meaning: Crafting a Life That Matters,0.27606166822996625,9780141369907,9780553419993,False
+299,Amazon_19655,Goodreads_books_32374,Moleskine Volant Extra Small Plain Black 2-set,Plain Truth,0.285376525058818,9788867320455,9780743275019,False
+300,Amazon_7740,Goodreads_books_32002,The Whistler,The War of the End of the World,0.08158166694280998,9781444791105,9780571139613,False
+301,Amazon_12322,Goodreads_books_21922,Making Herbal Hand Creams and Salves: Storey's Country Wisdom Bulletin A.256,In Country,0.22314298926358953,9781580173032,9780060835170,False
+302,Amazon_8258,Goodreads_books_19014,"Oxford Reading Tree Biff, Chip and Kipper Stories Decode and Develop: Level 7: Holiday in Japan",Holiday Horse,0.22047748161950803,9780198300267,9780553484274,False
+303,Amazon_1912,Goodreads_books_38531,Really RELAXING Colouring Book 6,If You Really Loved Me,0.26853315185819426,9781908707499,9780671769208,False
+304,Amazon_6102,Goodreads_books_9841,DK Workbooks: Computer Coding,Error Control Coding,0.2902374373706365,9781465426857,9780130426727,False
+305,Amazon_3373,Goodreads_books_32002,The Volunteer,The War of the End of the World,0.07875504406014952,9780753545171,9780571139613,False
+306,Amazon_22044,Goodreads_books_30802,Battle Story: Ypres 1914-1915,The Last Battle,0.2815992060867128,9780752461960,9780007202324,False
+307,Amazon_18968,Goodreads_books_8850,Danube Bike Trail: Slovakian and Hungarian Danube from Vienna to Budapest - BIKE.HU.06.E v. 3,Mastering Mountain Bike Skills,0.23682718519308632,9783850002127,9780736083713,False
+308,Amazon_12339,Goodreads_books_18222,Woodworking Basics,Basics of Buddhism: Key principles and how to practise,0.26754952300860346,9781561586202,9781902056005,False
+309,Amazon_8567,Goodreads_books_28202,Cambridge English: Proficiency (CPE) Masterclass: Student's Book with Online Skills and Language Practice Pack,Life Skills,0.23354562466207807,9780194705240,9780312263539,False
+310,Amazon_1969,Goodreads_books_21361,Mastering Copperplate Calligraphy,Mastering the Art of French Cooking,0.26432310168178463,9780486409511,9780375413407,False
+311,Amazon_20698,Goodreads_books_26638,Level 2 Certificate Children and Young People's Workforce Candidate Handbook,Level 7,0.2826851684485264,9780435031329,9780299200640,False
+312,Amazon_19966,Goodreads_books_15506,Teaching Humanities and Social Sciences,The Social Animal,0.2811181242370814,9780170369350,9780716757153,False
+313,Amazon_8933,Goodreads_books_19975,The Movie Art of Syd Mead: Visual Futurist,The Spiderwick Chronicles Movie : The Movie Storybook,0.2763859682661542,9781785651182,9781416949473,False
+314,Amazon_22314,Goodreads_books_23575,Lonely Planet Honolulu Waikiki & Oahu,Planet X,0.28923627549871583,9781786577078,9781419953859,False
+315,Amazon_10680,Goodreads_books_3280,"Haikyu!!, Vol. 4","Saga, Vol. 2",0.24432091390493613,9781421587691,9781607066927,False
+316,Amazon_6268,Goodreads_books_27062,Gertie's New Book for Better Sewing:A Modern Guide to Couture-Sty,"For Better, for Worse",0.2590728253359267,9781584799917,9780380820443,False
+317,Amazon_21704,Goodreads_books_32002,The Tube,The War of the End of the World,0.0869049444142511,9780747812272,9780571139613,False
+318,Amazon_3317,Goodreads_books_32002,The Argonauts,The War of the End of the World,0.08158166694280998,9781555977351,9780571139613,False
+319,Amazon_4187,Goodreads_books_32412,Venture Deals,"Why They Stay: Sex Scandals, Deals, and Hidden Agendas of Nine Political Wives",0.2530518671156406,9781119259756,9780997663310,False
+320,Amazon_8607,Goodreads_books_17755,English Grammar in Use Book with Answers and Interactive eBook,Dear John: Letters From a Fan in New York City: An Interactive Book,0.24673353102677026,9781108586627,9780972125604,False
+321,Amazon_20619,Goodreads_books_16361,"Schaum's Outline of Basic Mathematics with Applications to Science and Technology, 2ed",Outline of a Theory of Practice,0.26469031756312594,9780071611596,9780521291644,False
+322,Amazon_450,Goodreads_books_7421,Schema Therapy,Cupping Therapy Encyclopedia: New Edition,0.2628502600509947,9780415462990,9781986200486,False
+323,Amazon_6528,Goodreads_books_17267,RSN Essential Stitch Guides: Blackwork,A Stitch on Time,0.29655730174620876,9781844485512,9781619223639,False
+324,Amazon_9306,Goodreads_books_4885,Pinch of Nom Food Planner,The Wedding Planner's Daughter,0.29733717937297643,9781529023060,9781416918547,False
+325,Amazon_6115,Goodreads_books_7449,"Invent Your Own Computer Games With Python, 4e",Learning Python,0.27287346621627134,9781593277956,9780596002817,False
+326,Amazon_21428,Goodreads_books_26209,First Beetle: Resurrecting a 1938 Prototype,Beetle in the Anthill,0.28800848415004004,9783768838504,9780026151207,False
+327,Amazon_14717,Goodreads_books_20657,Equine Fitness,Reshaping It All: Motivation for Physical and Spiritual Fitness,0.2609750007759418,9781603424639,9781433669736,False
+328,Amazon_10705,Goodreads_books_24808,Citrus: Volume 1,"Heaven!!, Volume 1",0.2747809307406728,9781626921405,9781598168167,False
+329,Amazon_19984,Goodreads_books_35476,Cambridge Checkpoint Science Coursebook 7,Bad Science,0.2556699202057969,9781107613331,9780007240197,False
+330,Amazon_6887,Goodreads_books_11763,Alola Region Handbook,Taliessin Through Logres and the Region of the Summer Stars,0.27972006133836125,9781338148626,9781944769314,False
+331,Amazon_9578,Goodreads_books_38990,Neven Maguire's Complete Baby & Toddler Cookbook,Baby Love,0.2637909182822168,9780717166046,9780380799374,False
+332,Amazon_3941,Goodreads_books_23381,Stan Weinstein's Secrets For Profiting in Bull and Bear Markets,The Bear,0.29751868037220264,9781556236839,9780316230124,False
+333,Amazon_6035,Goodreads_books_30142,Administering Microsoft (R) SQL Server (R) 2012 Databases,SQL Antipatterns,0.25279692766332384,9780735666078,9781934356555,False
+334,Amazon_2306,Goodreads_books_28278,Tilda's Studio,"Manga Studio with Mark Crilley: More People, Poses and Perspective",0.2533276345234425,9781446301586,9781440328305,False
+335,Amazon_2671,Goodreads_books_11953,Cello Time Joggers + CD,From Time to Time,0.2988997378702307,9780193220874,9780684818443,False
+336,Amazon_22123,Goodreads_books_28897,British Destroyers 1939-45,"The People's War: Britain, 1939-1945",0.27573347678721555,9781472825803,9780224616539,False
+337,Amazon_343,Goodreads_books_28010,"The Autism Discussion Page on anxiety, behavior, school, and parenting strategies",Off the Page,0.28948726664840624,9781849059954,9780553535587,False
+338,Amazon_8100,Goodreads_books_26788,MLA Handbook,The Dead Wife's Handbook,0.2840350742506032,9781603292627,9780718178147,False
+339,Amazon_7951,Goodreads_books_18995,Jumpstart! Grammar,An Introduction to Functional Grammar,0.28078814251396905,9781138182783,9780340761670,False
+340,Amazon_5882,Goodreads_books_14102,Microsoft Excel Data Analysis and Business Modeling,Self Analysis,0.28466701354380924,9781509304219,9780884042648,False
+341,Amazon_12138,Goodreads_books_26428,Marijuana Horticulture,The Emperor Wears No Clothes: The Authoritative Historical Record of Cannabis and the Conspiracy Against Marijuana,0.2298750511702363,9781878823236,9781878125026,False
+342,Amazon_697,Goodreads_books_5584,Cardiorespiratory Physiotherapy: Adults and Paediatrics,Bible Stories for Adults,0.29687081780207997,9780702047312,9780156002448,False
+343,Amazon_20167,Goodreads_books_22946,Reflective Supervision Toolkit,Open: A Toolkit for How Magic and Messed Up Life Can Be,0.22653301339549245,9781925595062,9781509836116,False
+344,Amazon_11130,Goodreads_books_32002,The Panicosaurus,The War of the End of the World,0.07875504406014952,9781849053563,9780571139613,False
+345,Amazon_2586,Goodreads_books_11953,Fiddle Time Sprinters + CD,From Time to Time,0.28948966029477724,9780193386792,9780684818443,False
+346,Amazon_22119,Goodreads_books_11612,Honda 50-110cc Ohc Singles 1965-1,50 Hours,0.2302547696561077,9780892878055,9781946329349,False
+347,Amazon_19355,Goodreads_books_37607,"Moleskine Ltd. Edition Notebook, Harry Potter, Marauder's Map, Large, Ruled, Hard Cover (5 X 8.25)","Harry Potter Boxed Set, Books 1-5 (Harry Potter, #1-5)",0.2915862606310834,8058341717684,9780439682589,False
+348,Amazon_10299,Goodreads_books_3280,"Haikyu!!, Vol. 1","Saga, Vol. 2",0.24432091390493613,9781421587660,9781607066927,False
+349,Amazon_8086,Goodreads_books_1609,"Project X Origins: Brown Book Band, Oxford Level 11: Strong Defences: Attack of the X-bots",The Attack,0.288821105099351,9780198302834,9780385517485,False
+350,Amazon_11842,Goodreads_books_20253,Marine Sniper: 93 Confirmed Kills,Marine Sniper: 93 Confirmed Kills: The Explosive True Story of a Vietnam Hero,0.7819201766162477,9780425103555,9780425103555,True
+351,Amazon_10593,Goodreads_books_20314,Shadowhunters and Downworlders,Shadowhunters and Downworlders: A Mortal Instruments Reader,0.7216717248033309,9781937856229,9781937856229,True
+352,Amazon_18081,Goodreads_books_30849,2001,2001: A Space Odyssey,0.650700214613224,9780451457998,9780451457998,True
+353,Amazon_10358,Goodreads_books_1829,Amulet: The Last Council,The Last Council,0.7657144654742886,9780545208871,9780545208871,True
+354,Amazon_12073,Goodreads_books_34761,Romance of the Three Kingdoms Volume 1: Volume 1,"Romance of the Three Kingdoms, Vol. 1 of 2",0.7370733567989132,9780804834674,9780804834674,True
+355,Amazon_2743,Goodreads_books_10398,Rhett & Link's Book of Mythicality,"Rhett & Link's Book of Mythicality: A Field Guide to Curiosity, Creativity, and Tomfoolery",0.6747816660890461,9780751570571,9780751570571,True
+356,Amazon_13085,Goodreads_books_20447,The Sh!t No One Tells You,The Sh!t No One Tells You: A Guide to Surviving Your Baby's First Year,0.6972684235810385,9781580054843,9781580054843,True
+357,Amazon_9685,Goodreads_books_2234,Meet Me At The Cupcake Cafe,Meet Me at the Cupcake CafÃ©,0.722888927829997,9780751544497,9780751544497,True
+358,Amazon_18346,Goodreads_books_7778,Rules For Radicals,Rules for Radicals: A Pragmatic Primer for Realistic Radicals,0.7822679017080933,9780679721130,9780679721130,True
+359,Amazon_99,Goodreads_books_467,Maps of Meaning,Maps of Meaning: The Architecture of Belief,0.6977466366933179,9780415922227,9780415922227,True
+360,Amazon_10827,Goodreads_books_34261,"Death Note, Vol. 12","Death Note, Vol. 12: Finis",0.777993577454714,9781421513270,9781421513270,True
+361,Amazon_14642,Goodreads_books_4266,Teaching a Stone to Talk,Teaching a Stone to Talk: Expeditions and Encounters,0.6759534433527552,9780060915414,9780060915414,True
+362,Amazon_1550,Goodreads_books_34723,Moonwalking with Einstein,Moonwalking with Einstein: The Art and Science of Remembering Everything,0.6932019819181988,9781594202292,9781594202292,True
+363,Amazon_827,Goodreads_books_17316,Messages from the Masters,Messages from the Masters: Tapping into the Power of Love,0.6830805690275181,9780446676922,9780446676922,True
+364,Amazon_3470,Goodreads_books_20636,The Unlikely Voyage of Jack De Crow,The Unlikely Voyage of Jack De Crow: A Mirror Odyssey from North Wales to the Black Sea,0.6714929208014476,9781574091526,9781574091526,True
+365,Amazon_17256,Goodreads_books_34103,Immortals After Dark #3: Wicked Deeds on a Winter's Night,Wicked Deeds on a Winter's Night,0.7899184365878957,9781416547037,9781416547037,True
+366,Amazon_11203,Goodreads_books_19322,The Yamas & Niyamas,The Yamas  Niyamas: Exploring Yoga's Ethical Practice,0.6734739243711929,9780974470641,9780974470641,True
+367,Amazon_373,Goodreads_books_38583,The Brain That Changes Itself,The Brain that Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science,0.689138870771814,9780670038305,9780670038305,True
+368,Amazon_21326,Goodreads_books_23724,Yeager,Yeager: An Autobiography,0.7669253706301029,9780553256741,9780553256741,True
+369,Amazon_12107,Goodreads_books_33916,The Life-Changing Magic of Tidying Up,The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing,0.685573950197682,9781607747307,9781607747307,True
+370,Amazon_16555,Goodreads_books_30157,Is God a Moral Monster?,Is God a Moral Monster?: Making Sense of the Old Testament God,0.712879370084363,9780801072758,9780801072758,True
+371,Amazon_13919,Goodreads_books_37553,Peace is Every Step,Peace Is Every Step: The Path of Mindfulness in Everyday Life,0.6800033078239596,9780553351392,9780553351392,True
+372,Amazon_20899,Goodreads_books_21311,Henderson's Boys: Grey Wolves,Grey Wolves,0.69993281585977,9780340999165,9780340999165,True
+373,Amazon_18732,Goodreads_books_26785,100 Greatest Cycling Climbs,100 Greatest Cycling Climbs: A Road Cyclist's Guide To Britain's Hills,0.6831170099625878,9780711231207,9780711231207,True
+374,Amazon_2631,Goodreads_books_10240,One Direction: Who We Are,One Direction: Who We Are: Our Official Autobiography,0.7754772047029428,9780007577316,9780007577316,True
+375,Amazon_20856,Goodreads_books_9147,Walt Disney's Peter Pan (Disney Classic),Walt Disney's Peter Pan (A Little Golden Book),0.756957733129275,9780736402385,9780736402385,True
+376,Amazon_11092,Goodreads_books_16753,Brain Rules for Baby (Updated and Expanded),Brain Rules for Baby (Updated and Expanded): How to Raise a Smart and Happy Child from Zero to Five,0.6510127830073065,9780983263388,9780983263388,True
+377,Amazon_12175,Goodreads_books_14511,How to Be Parisian Wherever You Are,"How to Be Parisian Wherever You Are: Love, Style, and Bad Habits",0.7762724697704269,9780385538657,9780385538657,True
+378,Amazon_14629,Goodreads_books_3303,The Sixth Extinction,The Sixth Extinction: An Unnatural History,0.7436978605411684,9780805092998,9780805092998,True
+379,Amazon_4465,Goodreads_books_30766,Pippi Longstocking (Puffin Modern Classics),Pippi Longstocking,0.6952009336262235,9780142402498,9780142402498,True
+380,Amazon_11061,Goodreads_books_2075,Wherever You Go There You are,"Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life",0.7620059061773142,9781401307783,9781401307783,True
+381,Amazon_5314,Goodreads_books_28487,The Mythical Man-Month,The Mythical Man-Month: Essays on Software Engineering,0.6987075149907096,9780201835953,9780201835953,True
+382,Amazon_9807,Goodreads_books_22102,Hestons Fantastical Feasts,Heston's Fantastical Feasts,0.6524927570180121,9781408808603,9781408808603,True
+383,Amazon_15395,Goodreads_books_37979,The Collected Poems of Emily Dickinson (Barnes & Noble Classics Series),The Collected Poems of Emily Dickinson,0.7046272156549575,9781593080501,9781593080501,True
+384,Amazon_1141,Goodreads_books_13793,Rewire Your Brain,Rewire Your Brain: Think Your Way to a Better Life,0.7327871734401704,9780470487297,9780470487297,True
+385,Amazon_2983,Goodreads_books_37690,Genghis Khan,Genghis Khan and the Making of the Modern World,0.7341357299248699,9780609809648,9780609809648,True
+386,Amazon_11902,Goodreads_books_12972,The Silk Roads,The Silk Roads: A New History of the World,0.7893014976979537,9781408839973,9781408839973,True
+387,Amazon_13503,Goodreads_books_35413,The Untethered Soul,The Untethered Soul: The Journey Beyond Yourself,0.7207190481126543,9781572245372,9781572245372,True
+388,Amazon_10739,Goodreads_books_13868,Paper Girls Volume 4,"Paper Girls, Vol. 4",0.7850449057803672,9781534305106,9781534305106,True
+389,Amazon_18739,Goodreads_books_29759,When Pride Still Mattered,When Pride Still Mattered: A Life Of Vince Lombardi,0.7052937366776028,9780684870182,9780684870182,True
+390,Amazon_811,Goodreads_books_3966,Why We Get Fat,Why We Get Fat: And What to Do About It,0.7217541223649432,9780307272706,9780307272706,True
+391,Amazon_13297,Goodreads_books_10226,Zen Pencils-Volume Two,Zen Pencils: Dream the Impossible Dream - Volume Two,0.6777749719499024,9781449471927,9781449471927,True
+392,Amazon_7874,Goodreads_books_28839,On Writing Well,On Writing Well: The Classic Guide to Writing Nonfiction,0.7103796101605105,9780060891541,9780060891541,True
+393,Amazon_16420,Goodreads_books_28116,God and Stephen Hawking,God and Stephen Hawking: Whose Design Is It Anyway?,0.6672232673745977,9780745955490,9780745955490,True
+394,Amazon_5259,Goodreads_books_9597,You Get So Alone at Times,You Get So Alone at Times That it Just Makes Sense,0.7211653583905033,9780876856833,9780876856833,True
+395,Amazon_9535,Goodreads_books_7606,Vegan Cookies Invade Your Cookie Jar,Vegan Cookies Invade Your Cookie Jar: 100 Dairy-Free Recipes for Everyone's Favorite Treats,0.6893449653424969,9781600940484,9781600940484,True
+396,Amazon_1923,Goodreads_books_16397,Harry Potter: A Pop-Up Book,Harry Potter: A Pop-Up Book: Based on the Film Phenomenon,0.6807259619099232,9781608870080,9781608870080,True
+397,Amazon_10843,Goodreads_books_37145,"Death Note, Vol. 10","Death Note, Vol. 10: Deletion",0.7595059963849761,9781421511559,9781421511559,True
+398,Amazon_3597,Goodreads_books_17076,The Five Dysfunctions of a Team,The Five Dysfunctions of a Team: A Leadership Fable,0.7732212745258781,9780787960759,9780787960759,True
+399,Amazon_1678,Goodreads_books_11097,The Road to Reality,The Road to Reality: A Complete Guide to the Laws of the Universe,0.6715312957129256,9780679776314,9780679776314,True
+400,Amazon_2171,Goodreads_books_34361,Hamilton,Hamilton: The Revolution,0.7770117736575353,9781455539741,9781455539741,True
+401,Amazon_1101,Goodreads_books_11502,How Not to Be Wrong,How Not to Be Wrong: The Hidden Maths of Everyday Life,0.6689233407804607,9780718196042,9780718196042,True
+402,Amazon_11739,Goodreads_books_38105,1066 and All That,1066 and All That: A Memorable History of England,0.694010236340163,9780413772701,9780413772701,True
+403,Amazon_1486,Goodreads_books_34285,A Sand County Almanac,A Sand County Almanac and Sketches Here and There,0.7056669625034311,9780195007770,9780195007770,True
+404,Amazon_3472,Goodreads_books_34676,The Psychopath Test,The Psychopath Test: A Journey Through the Madness Industry,0.6561531926497265,9781594485756,9781594485756,True
+405,Amazon_15477,Goodreads_books_9195,The Story of the Stone: Golden Days Volume 1,The Golden Days,0.6812312289860862,9780140442939,9780140442939,True
+406,Amazon_11806,Goodreads_books_26546,The Essential Neruda,The Essential Neruda: Selected Poems,0.7955809559474705,9780872864283,9780872864283,True
+407,Amazon_21015,Goodreads_books_38939,The Adventures of Tintin: Destination Moon,Destination Moon,0.7164629060221098,9780316358453,9780316358453,True
+408,Amazon_10479,Goodreads_books_17488,Wings of Fire Graphic Novel #1: The Dragonet Prophecy,The Dragonet Prophecy,0.6751308095933186,9780545942157,9780545942157,True
+409,Amazon_15321,Goodreads_books_24060,A Book of Luminous Things,A Book of Luminous Things: An International Anthology of Poetry,0.6674839532738948,9780156005746,9780156005746,True
+410,Amazon_1589,Goodreads_books_36444,Billions & Billions,Billions & Billions: Thoughts on Life and Death at the Brink of the Millennium,0.7342997265701231,9780345379184,9780345379184,True
+411,Amazon_15561,Goodreads_books_17832,"Plague, Fall, Exile And The Kingdom And Selected Essays","The Plague, The Fall, Exile and The Kingdom and Selected Essays (Everyman's Library Classics, #278)",0.7352084758371532,9781857152784,9781857152784,True
+412,Amazon_10223,Goodreads_books_33129,"Naruto, Vol. 1","Naruto, Vol. 01: Uzumaki Naruto",0.788907344936972,9781569319000,9781569319000,True
+413,Amazon_5347,Goodreads_books_578,Structure and Interpretation of Computer Programs,Structure and Interpretation of Computer Programs (MIT Electrical Engineering and Computer Science),0.7757232533255742,9780262510875,9780262510875,True
+414,Amazon_3439,Goodreads_books_25439,Quiet Girl in a Noisy World,Quiet Girl in a Noisy World: An Introvert's Story,0.7748669448980707,9781449486068,9781449486068,True
+415,Amazon_16537,Goodreads_books_17411,When Heaven Invades Earth,When Heaven Invades Earth: A Practical Guide to a Life of Miracles,0.7376596725361699,9780768429527,9780768429527,True
+416,Amazon_21221,Goodreads_books_1637,Amulet: Prince of the Elves,Prince of the Elves,0.7867944619535827,9780545208895,9780545208895,True
+417,Amazon_12229,Goodreads_books_22569,Dialectic of Enlightenment,Dialectic of Enlightenment: Philosophical Fragments,0.7207466368065059,9780804736336,9780804736336,True
+418,Amazon_4324,Goodreads_books_18384,The Day the World Came to Town,"The Day the World Came to Town: 9/11 in Gander, Newfoundland",0.66095675040656,9780060559717,9780060559717,True
+419,Amazon_1090,Goodreads_books_35177,Fingerprints Of The Gods,Fingerprints of the Gods: The Evidence of Earth's Lost Civilization,0.6627465969494137,9780517887295,9780517887295,True
+420,Amazon_7135,Goodreads_books_20763,Veronica Mars: The Thousand-Dollar Tan Line,The Thousand-Dollar Tan Line,0.7982612317782354,9780804170703,9780804170703,True
+421,Amazon_5193,Goodreads_books_38952,Knuffle Bunny,Knuffle Bunny: A Cautionary Tale,0.7430864899781637,9781844280599,9781844280599,True
+422,Amazon_1743,Goodreads_books_24240,Reason For Hope,Reason for Hope: A Spiritual Journey,0.759029634468858,9780446676137,9780446676137,True
+423,Amazon_12927,Goodreads_books_1006,Who Ordered This Truckload of Dung?,Who Ordered This Truckload of Dung?: Inspiring Stories for Welcoming Life's Difficulties,0.7194344051237922,9780861712786,9780861712786,True
+424,Amazon_199,Goodreads_books_15364,The Body Keeps the Score,"The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",0.7420646095801752,9780670785933,9780670785933,True
+425,Amazon_17142,Goodreads_books_1032,The French Promise,The Promise,0.7396864145357722,9780749015657,9781467930574,False
+426,Amazon_16183,Goodreads_books_8358,This Is an Uprising,The Uprising,0.7045901406482176,9781568585703,9781490569864,False
+427,Amazon_7903,Goodreads_books_4494,How to Read Literature Like a Professor Revised Edition,How to Read Literature Like a Professor,0.8753759877331224,9780062301673,9780060009427,False
+428,Amazon_14665,Goodreads_books_22953,A Cloud A Day,The Cloud,0.7904268852939395,9781849945783,9781608867257,False
+429,Amazon_13715,Goodreads_books_12495,The Illusion of Money,Illusion,0.7451721377627972,9781401957445,9781439192672,False
+430,Amazon_18598,Goodreads_books_3170,My Fight Your Fight,The Fight,0.8871954539842956,9781784753122,9780375700385,False
+431,Amazon_14872,Goodreads_books_20327,The Champion's Mind,The Champion,0.8010093988945157,9781623365622,9780312192464,False
+432,Amazon_9977,Goodreads_books_6629,My New Roots,Roots,0.7578866300761288,9780804185387,9781628390643,False
+433,Amazon_1902,Goodreads_books_13991,Colour and Light,The Colour of Light,0.9044152822646792,9780740797712,9780446325875,False
+434,Amazon_10837,Goodreads_books_21778,"Dragon Ball, Vol. 1","Dragon Ball, Vol. 1: The Monkey King",0.7364483564354338,9781569319208,9780575077355,False
+435,Amazon_10507,Goodreads_books_35518,The Walking Dead Book 5,"The Walking Dead, Book One",0.8901442566339038,9781607061717,9781582406190,False
+436,Amazon_17688,Goodreads_books_34647,A Dance With Dragons,A Dance with Dragons 2: After the Feast,0.7347808877930524,9780006486114,9780007466078,False
+437,Amazon_4773,Goodreads_books_31448,The Meltdown: Diary of a Wimpy Kid (13),Diary of a Wimpy Kid,0.7219743496206739,9780143309352,9780810993136,False
+438,Amazon_1197,Goodreads_books_34285,Sand County Almanac,A Sand County Almanac and Sketches Here and There,0.7056669625034311,9780345345059,9780195007770,False
+439,Amazon_10654,Goodreads_books_1145,"Neon Genesis Evangelion 3-in-1 Edition, Vol. 2","Neon Genesis Evangelion, Vol. 1",0.9195745109181349,9781421553054,9781591164005,False
+440,Amazon_1951,Goodreads_books_9055,At Home,Home,0.7469367685921966,9780552777353,9780765393104,False
+441,Amazon_16576,Goodreads_books_4139,The Religions Book,The World's Religions,0.8113758289468435,9781409324911,9780062508119,False
+442,Amazon_21094,Goodreads_books_7785,The Dance in the Dark,In the Dark,0.7214914893329226,9780007589227,9780843949162,False
+443,Amazon_7523,Goodreads_books_13593,The Complete Sherlock Holmes (Knickerbocker Classic),Classic Sherlock Holmes,0.7548156355844177,9781937994303,9780143068600,False
+444,Amazon_2189,Goodreads_books_35341,Wreck This Journal: Now in Colour,Wreck This Journal,0.7453531526597525,9781846149504,9780399533464,False
+445,Amazon_16771,Goodreads_books_33540,The Universe Next Door,The Girl Next Door,0.7403378551855084,9781844744206,9780843955439,False
+446,Amazon_339,Goodreads_books_6710,True Refuge,Refuge,0.8366196745928391,9781781802663,9780615695402,False
+447,Amazon_12434,Goodreads_books_14274,The Gardener's Garden,The Gardener,0.7995680154303068,9780714867472,9780312370169,False
+448,Amazon_20067,Goodreads_books_9862,Inside the Black Box: v. 1,Black Box,0.7721764140669087,9780708713815,9781493768820,False
+449,Amazon_17415,Goodreads_books_23883,Archangel's Heart,Archangel,0.8031516831127603,9780451488008,9780515127485,False
+450,Amazon_21294,Goodreads_books_30806,Wings of Fire #2: The Lost Heir,Heir of Fire,0.7225957128572121,9780545349246,9781619630659,False
+451,Amazon_6521,Goodreads_books_23802,Little Birds,Birds,0.7894961669473485,9781607050032,9780198721772,False
+452,Amazon_21205,Goodreads_books_32548,The Evolution of Mara Dyer,The Retribution of Mara Dyer,0.7325816061691035,9780857073655,9781442484238,False
+453,Amazon_18919,Goodreads_books_23385,Healing Light of the Tao,The Healing Light,0.7505794418934971,9781594771132,9780345306609,False
+454,Amazon_9657,Goodreads_books_29514,River Cottage Veg,River Cottage Veg Every Day!,0.8406053969806131,9781607744726,9781408812129,False
+455,Amazon_17546,Goodreads_books_9116,Love and Other Words,In Other Words,0.754591119863945,9780349417561,9781101875551,False
+456,Amazon_8527,Goodreads_books_32257,Between You & Me,Between the World and Me,0.7150021678866797,9780393352146,9780812993547,False
+457,Amazon_18930,Goodreads_books_16148,My World,My,0.7002271739485272,9781787290358,9788379438549,False
+458,Amazon_3211,Goodreads_books_23178,The Gifts of Reading,Gifts,0.7409090376382237,9780241978313,9780152051242,False
+459,Amazon_18133,Goodreads_books_30510,The Hitchhiker's Guide To The Galaxy,The Ultimate Hitchhiker's Guide to the Galaxy,0.9102678168395457,9780575115347,9780345453747,False
+460,Amazon_20732,Goodreads_books_14671,The Way Home,The Long Way Home,0.7868452874199302,9781786076021,9781250022066,False
+461,Amazon_7529,Goodreads_books_16693,Seven Ancient Wonders,The Seven Wonders,0.8111673467122037,9780330525589,9780312359843,False
+462,Amazon_14637,Goodreads_books_6546,Beyond Words,Beyond,0.7090463451431929,9780805098884,9781479329458,False
+463,Amazon_2705,Goodreads_books_18458,Paris in Bloom,In Bloom,0.7894837743142307,9781419724060,9780008216726,False
+464,Amazon_9243,Goodreads_books_19901,Jamie's 15-Minute Meals,Jamie's 30-Minute Meals,0.759338130609186,9780718157807,9780718154776,False
+465,Amazon_14536,Goodreads_books_9659,Life on Air,Air,0.7394417239806579,9781849908528,9780312261214,False
+466,Amazon_10119,Goodreads_books_2072,Saga Volume 4,Saga,0.8071959093590477,9781632150776,9782070408450,False
+467,Amazon_17459,Goodreads_books_13625,Diamond Fire,Diamond,0.8162773949007296,9780062878434,9780857531070,False
+468,Amazon_15574,Goodreads_books_19169,Arguably,Arguably: Selected Essays,0.7151210814892266,9781455502783,9780771041419,False
+469,Amazon_2996,Goodreads_books_3395,Shakespeare,Shakespeare's Secret,0.7862106521474348,9780007197903,9780805073874,False
+470,Amazon_14924,Goodreads_books_29994,The Emotional Life of Your Brain,The Emotional Brain: The Mysterious Underpinnings of Emotional Life,0.701380114971064,9781444708820,9780684836591,False
+471,Amazon_1613,Goodreads_books_34084,Chemistry,The Chemistry of Death,0.78957885143544,9780730311058,9780385340045,False
+472,Amazon_13872,Goodreads_books_37108,The Art of Living,The Living,0.746833930363486,9781846045097,9780060924119,False
+473,Amazon_7814,Goodreads_books_25457,The Other Wife,The Wife,0.8009157117921677,9780751562811,9780743456661,False
+474,Amazon_4637,Goodreads_books_17598,How Full Is Your Bucket? For Kids,How Full Is Your Bucket?,0.881169116569743,9781595620279,9781595620033,False
+475,Amazon_5709,Goodreads_books_35799,The Age of Earthquakes,Little Earthquakes,0.705909923478048,9780399173868,9781416528630,False
+476,Amazon_20495,Goodreads_books_30418,Brave New Work,Brave New World,0.7209893314109993,9780241361801,9780060929879,False
+477,Amazon_1878,Goodreads_books_9897,Darth Vader and Son,The Rise of Darth Vader,0.7356546799653081,9781452106557,9780345477330,False
+478,Amazon_10677,Goodreads_books_20109,A Silent Voice Volume 2,"A Silent Voice, Vol. 1",0.8142821590012279,9781632360571,9781632360564,False
+479,Amazon_22598,Goodreads_books_26235,Blue Highways,Highways to a War,0.7002192750415223,9780316353298,9780140247572,False
+480,Amazon_10374,Goodreads_books_8765,"No Game No Life, Vol. 3 (light novel)","No Game, No Life Vol. 1",0.8642306602163334,9780316385190,9781626920798,False
+481,Amazon_17211,Goodreads_books_10973,The Wild Rose,Rose,0.723758742505901,9781401307479,9781888963106,False
+482,Amazon_15953,Goodreads_books_25874,"I, Steve",Steve & Me,0.8516424883036287,9781932841664,9781416953883,False
+483,Amazon_1671,Goodreads_books_6663,The Emperor's New Mind,The Emperor,0.7064467864224583,9780198784920,9780679722038,False
+484,Amazon_13818,Goodreads_books_15857,The Book of Enoch,Enoch's Ghost,0.7142777202184986,9780486454665,9780899578712,False
+485,Amazon_21084,Goodreads_books_38417,The Wizard of Oz,Oz: The Wonderful Wizard of Oz,0.8740843999313089,9780141321028,9780785129219,False
+486,Amazon_17592,Goodreads_books_30329,The King's Curse,The Curse,0.7715499977335909,9780857207593,9780749957636,False
+487,Amazon_11825,Goodreads_books_37302,Eleanor Of Aquitaine,Eleanor of Aquitaine: A Life,0.9437794932807977,9780099523550,9780345434876,False
+488,Amazon_13524,Goodreads_books_37894,A New Earth,Earth,0.7635522142249338,9780452289963,9780553290240,False
+489,Amazon_18953,Goodreads_books_17348,Unstoppable,Mission Unstoppable,0.7484769439820204,9780141987521,9780061827648,False
+490,Amazon_10057,Goodreads_books_10198,River Cottage Fruit Every Day!,River Cottage Every Day,0.8479326061241261,9781408828595,9780747598404,False
+491,Amazon_14289,Goodreads_books_5760,Island Home,Island,0.7518959920416995,9781926428741,9780843949780,False
+492,Amazon_3671,Goodreads_books_9862,Black Box Thinking,Black Box,0.7698644494118223,9781473613805,9781493768820,False
+493,Amazon_17486,Goodreads_books_36580,The Doll Factory,The Doll,0.711843895543194,9781529002393,9781858660653,False
+494,Amazon_11158,Goodreads_books_17697,The New Encyclopedia of Modern Bodybuilding,"The New Encyclopedia of Modern Bodybuilding: The Bible of Bodybuilding, Fully Updated and Revis",0.759685026056659,9780684857213,9781451697131,False
+495,Amazon_2747,Goodreads_books_25619,Daily Painting,The Painting,0.7034137257213077,9780770435332,9781565124417,False
+496,Amazon_22567,Goodreads_books_18510,The Most Beautiful Walk in the World,The Most Beautiful Place in the World,0.7363239461408811,9780061998546,9780394804248,False
+497,Amazon_16319,Goodreads_books_13625,Immortal Diamond,Diamond,0.7395454068996374,9780281070176,9780857531070,False
+498,Amazon_11610,Goodreads_books_14559,The Darkening Age,The Darkening,0.8220574534372618,9781509816071,9781770800724,False
+499,Amazon_17502,Goodreads_books_22561,The Inheritance Trilogy,The Inheritance,0.7836040500293557,9780316334006,9781595546326,False
