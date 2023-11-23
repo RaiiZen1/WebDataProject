@@ -8,6 +8,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaroWinklerSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.TitlePreprocessor;
 
 public class BookTitleComparatorPreprocessedJaroWinkler implements Comparator<Book, Attribute> {
 
@@ -31,7 +32,10 @@ public class BookTitleComparatorPreprocessedJaroWinkler implements Comparator<Bo
             this.comparisonLog.setRecord2Value(s2);
         }
 
-        s1 = StringPreprocessor.preprocess(s1);
+        s1 = TitlePreprocessor.preprocess(s1);
+		s2 = TitlePreprocessor.preprocess(s2);
+		
+		s1 = StringPreprocessor.preprocess(s1);
         s2 = StringPreprocessor.preprocess(s2);
 
         double similarity = sim.calculate(s1, s2);

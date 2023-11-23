@@ -133,8 +133,8 @@ public class GoodreadsCovers_IR_pipeline {
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
 			matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
-			matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
-			matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
+			// matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
+			// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
 			matchingRule.addComparator(new BookTitleComparatorMongeElkan());
 

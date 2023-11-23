@@ -54,7 +54,7 @@ public class BookAuthorComparatorPreprocessedJaccard implements Comparator<Book,
 		}
 		
 		// postprocessing
-		int postSimilarity = 1;
+		double postSimilarity = 1;
 		if (maxSimilarity <= 0.3) {
 			postSimilarity = 0;
 		}

@@ -7,6 +7,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.TitlePreprocessor;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
 
 public class BookTitleComparatorPreprocessedLevenshtein implements Comparator<Book, Attribute> {
@@ -30,6 +31,9 @@ public class BookTitleComparatorPreprocessedLevenshtein implements Comparator<Bo
 			this.comparisonLog.setRecord1Value(s1);
 			this.comparisonLog.setRecord2Value(s2);
 		}
+
+		s1 = TitlePreprocessor.preprocess(s1);
+		s2 = TitlePreprocessor.preprocess(s2);
 
 		s1 = StringPreprocessor.preprocess(s1);
 		s2 = StringPreprocessor.preprocess(s2);
