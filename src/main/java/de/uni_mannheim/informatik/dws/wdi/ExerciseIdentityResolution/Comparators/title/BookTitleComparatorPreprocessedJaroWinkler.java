@@ -22,18 +22,24 @@ public class BookTitleComparatorPreprocessedJaroWinkler implements Comparator<Bo
             Book record2,
             Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-        // Get the titles from the Book instances
-        String s1 = StringPreprocessor.preprocess(record1.getTitle());
-        String s2 = StringPreprocessor.preprocess(record2.getTitle());
+        String s1 = record1.getTitle();
+        String s2 = record1.getTitle();
 
-        // Calculate the Jaro-Winkler similarity between the titles
-        double similarity = sim.calculate(s1, s2);
-
-        // Log the comparison details if a logger is provided
         if (this.comparisonLog != null) {
             this.comparisonLog.setComparatorName(getClass().getName());
             this.comparisonLog.setRecord1Value(s1);
             this.comparisonLog.setRecord2Value(s2);
+        }
+
+        s1 = StringPreprocessor.preprocess(s1);
+        s2 = StringPreprocessor.preprocess(s2);
+
+        double similarity = sim.calculate(s1, s2);
+
+        // Log the comparison details if a logger is provided
+        if (this.comparisonLog != null) {
+            this.comparisonLog.setRecord1PreprocessedValue(s1);
+			this.comparisonLog.setRecord2PreprocessedValue(s2);
             this.comparisonLog.setSimilarity(Double.toString(similarity));
         }
 

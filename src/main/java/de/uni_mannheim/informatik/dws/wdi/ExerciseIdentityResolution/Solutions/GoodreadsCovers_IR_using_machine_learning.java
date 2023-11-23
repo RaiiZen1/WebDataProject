@@ -15,6 +15,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparator10Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparatorEuclideanDistance;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparatorManhattanDistance;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaccard;
@@ -90,7 +92,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -134,6 +136,8 @@ public class GoodreadsCovers_IR_using_machine_learning {
 
 		matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
 		matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
+		// matchingRule.addComparator(new BookPublicationYearComparator10Years());
+		// matchingRule.addComparator(new BookPublicationYearComparator2Years());
 		
 		
 		// train the matching rule's model

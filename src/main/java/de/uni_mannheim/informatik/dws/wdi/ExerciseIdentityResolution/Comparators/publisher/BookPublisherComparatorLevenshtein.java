@@ -12,7 +12,7 @@ public class BookPublisherComparatorLevenshtein implements Comparator<Book, Attr
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
-	
+
 	private ComparatorLogger comparisonLog;
 
 	@Override
@@ -23,20 +23,20 @@ public class BookPublisherComparatorLevenshtein implements Comparator<Book, Attr
 
 		String s1 = record1.getPublisher();
 		String s2 = record1.getPublisher();
-		
+
 		double similarity = sim.calculate(s1, s2);
-		
-		if(this.comparisonLog != null){
+
+		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
-		
+
 			this.comparisonLog.setRecord1Value(s1);
 			this.comparisonLog.setRecord2Value(s2);
-    	
+
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
+
 		return similarity;
-		
+
 	}
 
 	@Override

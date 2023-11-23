@@ -31,8 +31,10 @@ public class BookPublisherComparatorJaro implements Comparator<Book, Attribute> 
         // Log the comparison details if a logger is provided
         if (this.comparisonLog != null) {
             this.comparisonLog.setComparatorName(getClass().getName());
+
             this.comparisonLog.setRecord1Value(s1);
             this.comparisonLog.setRecord2Value(s2);
+
             this.comparisonLog.setSimilarity(Double.toString(similarity));
         }
 

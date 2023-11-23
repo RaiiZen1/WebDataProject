@@ -21,15 +21,17 @@ public class BookTitleComparatorSmithWaterman implements Comparator<Book, Attrib
             Book record2,
             Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-        String title1 = record1.getTitle();
-        String title2 = record2.getTitle();
+        String s1 = record1.getTitle();
+        String s2 = record2.getTitle();
 
-        double similarity = sim.calculate(title1, title2);
+        double similarity = sim.calculate(s1, s2);
 
         if (this.comparisonLog != null) {
             this.comparisonLog.setComparatorName(getClass().getName());
-            this.comparisonLog.setRecord1Value(title1);
-            this.comparisonLog.setRecord2Value(title2);
+
+            this.comparisonLog.setRecord1Value(s1);
+            this.comparisonLog.setRecord2Value(s2);
+
             this.comparisonLog.setSimilarity(Double.toString(similarity));
         }
 

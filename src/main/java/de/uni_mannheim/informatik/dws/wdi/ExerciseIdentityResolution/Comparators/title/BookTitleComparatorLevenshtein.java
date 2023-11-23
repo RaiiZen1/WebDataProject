@@ -12,7 +12,7 @@ public class BookTitleComparatorLevenshtein implements Comparator<Book, Attribut
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
-	
+
 	private ComparatorLogger comparisonLog;
 
 	@Override
@@ -20,23 +20,23 @@ public class BookTitleComparatorLevenshtein implements Comparator<Book, Attribut
 			Book record1,
 			Book record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-		
+
 		String s1 = record1.getTitle();
 		String s2 = record2.getTitle();
 
 		double similarity = sim.calculate(s1, s2);
-		
-		if(this.comparisonLog != null){
+
+		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
-		
+
 			this.comparisonLog.setRecord1Value(s1);
 			this.comparisonLog.setRecord2Value(s2);
-    	
+
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
+
 		return similarity;
-		
+
 	}
 
 	@Override
