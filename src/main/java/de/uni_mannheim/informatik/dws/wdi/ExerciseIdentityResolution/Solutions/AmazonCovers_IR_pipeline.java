@@ -32,6 +32,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookX
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
@@ -75,8 +76,7 @@ public class AmazonCovers_IR_pipeline {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training.csv"));
 
 		long startTime = System.currentTimeMillis();
-		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95,
-				0.975, 0.99 };
+		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99 };
 		double bestF1 = 0;
 		double bestPrec = 0;
 		double bestRec = 0;
@@ -86,8 +86,8 @@ public class AmazonCovers_IR_pipeline {
 		for (double t : thresholds) {
 
 			// create a matching rule
-			String options[] = new String[] { "-S" };
-			String modelType = "SimpleLogistic"; // use a logistic regression
+			String options[] = new String[] { "-U" };
+			String modelType = "J48"; // use a logistic regression
 			WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(t, modelType, options);
 			matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversML.csv",
 					1000, gsTraining);
@@ -124,6 +124,7 @@ public class AmazonCovers_IR_pipeline {
 			logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 
 			// create a blocker (blocking strategy)
+			// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
 			StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(
 					new BookBlockingKeyByTitleStringGenerator());
 			// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new
@@ -166,7 +167,9 @@ public class AmazonCovers_IR_pipeline {
 			logger.info(String.format(
 					"F1: %.4f", perfTest.getF1()));
 
-			if (perfTest.getF1() > bestF1) {
+			f1Scores.add(perfTest.getF1());
+
+			if (perfTest.getF1() >= bestF1) {
 				bestF1 = perfTest.getF1();
 				bestPrec = perfTest.getPrecision();
 				bestRec = perfTest.getRecall();

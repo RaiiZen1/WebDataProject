@@ -5,7 +5,9 @@ import java.util.ArrayList;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaroWinkler;
@@ -87,8 +89,7 @@ public class GoodreadsCovers_IR_pipeline {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_covers_training.csv"));
 
 		long startTime = System.currentTimeMillis();
-		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95,
-				0.975, 0.99 };
+		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99 };
 		double bestF1 = 0;
 		double bestPrec = 0;
 		double bestRec = 0;
@@ -98,8 +99,8 @@ public class GoodreadsCovers_IR_pipeline {
 		for (double t : thresholds) {
 
 			// create a matching rule
-			String options[] = new String[] { "-S" };
-			String modelType = "SimpleLogistic"; // use a logistic regression
+			String options[] = new String[] { "-U" };
+			String modelType = "J48"; // use a logistic regression
 			WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(t, modelType, options);
 			matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv",
 					1000, gsTraining);
@@ -148,8 +149,8 @@ public class GoodreadsCovers_IR_pipeline {
 
 			matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
 			matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
-			// matchingRule.addComparator(new BookPublicationYearComparator10Years());
-			// matchingRule.addComparator(new BookPublicationYearComparator2Years());
+			matchingRule.addComparator(new BookPublicationYearComparator10Years());
+			matchingRule.addComparator(new BookPublicationYearComparator2Years());
 
 			// train the matching rule's model
 			logger.info("*\tLearning matching rule\t*");
@@ -201,7 +202,7 @@ public class GoodreadsCovers_IR_pipeline {
 
 			f1Scores.add(perfTest.getF1());
 
-			if (perfTest.getF1() > bestF1) {
+			if (perfTest.getF1() >= bestF1) {
 				bestF1 = perfTest.getF1();
 				bestPrec = perfTest.getPrecision();
 				bestRec = perfTest.getRecall();

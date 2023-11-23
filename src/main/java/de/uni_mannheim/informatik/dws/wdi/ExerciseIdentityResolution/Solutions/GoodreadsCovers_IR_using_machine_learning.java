@@ -86,9 +86,9 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_covers_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -128,8 +128,8 @@ public class GoodreadsCovers_IR_using_machine_learning {
 
 		matchingRule.addComparator(new BookPublicationYearComparatorEuclideanDistance());
 		matchingRule.addComparator(new BookPublicationYearComparatorManhattanDistance());
-		// matchingRule.addComparator(new BookPublicationYearComparator10Years());
-		// matchingRule.addComparator(new BookPublicationYearComparator2Years());
+		matchingRule.addComparator(new BookPublicationYearComparator10Years());
+		matchingRule.addComparator(new BookPublicationYearComparator2Years());
 		
 		
 		// train the matching rule's model

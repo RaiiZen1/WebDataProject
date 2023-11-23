@@ -4,7 +4,6 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleFirstGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
@@ -79,9 +78,9 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
