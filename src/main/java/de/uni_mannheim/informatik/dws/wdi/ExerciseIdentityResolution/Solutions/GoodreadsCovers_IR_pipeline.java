@@ -1,6 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Solutions;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import org.slf4j.Logger;
 
@@ -29,20 +30,16 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedSmithWaterman;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorSmithWaterman;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -90,12 +87,13 @@ public class GoodreadsCovers_IR_pipeline {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_covers_training.csv"));
 
 		long startTime = System.currentTimeMillis();
-		double[] thresholds = new double[] { 0.2, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9, 0.925, 0.95,
+		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95,
 				0.975, 0.99 };
 		double bestF1 = 0;
 		double bestPrec = 0;
 		double bestRec = 0;
 		double bestThreshold = 0;
+		ArrayList<Double> f1Scores = new ArrayList<>();
 
 		for (double t : thresholds) {
 
@@ -121,10 +119,8 @@ public class GoodreadsCovers_IR_pipeline {
 			// matchingRule.addComparator(new
 			// BookPublisherComparatorPreprocessedMongeElkan());
 
-			matchingRule.addComparator(new BookTitleComparatorEqual());
 			matchingRule.addComparator(new BookTitleComparatorJaccard());
 			matchingRule.addComparator(new BookTitleComparatorLevenshtein());
-			matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
 			// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads,
@@ -134,7 +130,8 @@ public class GoodreadsCovers_IR_pipeline {
 			matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
 			// matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
-			// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
+			// matchingRule.addComparator(new
+			// BookTitleComparatorPreprocessedSmithWaterman());
 			matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
 			matchingRule.addComparator(new BookTitleComparatorMongeElkan());
 
@@ -202,6 +199,8 @@ public class GoodreadsCovers_IR_pipeline {
 			logger.info(String.format(
 					"F1: %.4f", perfTest.getF1()));
 
+			f1Scores.add(perfTest.getF1());
+
 			if (perfTest.getF1() > bestF1) {
 				bestF1 = perfTest.getF1();
 				bestPrec = perfTest.getPrecision();
@@ -209,20 +208,23 @@ public class GoodreadsCovers_IR_pipeline {
 				bestThreshold = t;
 			}
 		}
+
+		System.out.println("Alle F1-Scores: " + f1Scores);
+
 		System.out.println("Das beste Ergebnis wurde erzielt mit der Threshold " + bestThreshold + ":");
 		System.out.println("Precision: " + bestPrec);
 		System.out.println("Recall: " + bestRec);
 		System.out.println("F1: " + bestF1);
 
 		long endTime = System.currentTimeMillis();
-        long totalTimeMillis = endTime - startTime;
+		long totalTimeMillis = endTime - startTime;
 
-        long hours = totalTimeMillis / (1000 * 60 * 60);
-        long minutes = (totalTimeMillis % (1000 * 60 * 60)) / (1000 * 60);
-        long seconds = (totalTimeMillis % (1000 * 60)) / 1000;
-        long milliseconds = totalTimeMillis % 1000;
+		long hours = totalTimeMillis / (1000 * 60 * 60);
+		long minutes = (totalTimeMillis % (1000 * 60 * 60)) / (1000 * 60);
+		long seconds = (totalTimeMillis % (1000 * 60)) / 1000;
+		long milliseconds = totalTimeMillis % 1000;
 
-        System.out.println("Laufzeit: " + hours + " Stunden, " + minutes + " Minuten, " +
-                seconds + " Sekunden, " + milliseconds + " Millisekunden.");
+		System.out.println("Laufzeit: " + hours + " Stunden, " + minutes + " Minuten, " +
+				seconds + " Sekunden, " + milliseconds + " Millisekunden.");
 	}
 }

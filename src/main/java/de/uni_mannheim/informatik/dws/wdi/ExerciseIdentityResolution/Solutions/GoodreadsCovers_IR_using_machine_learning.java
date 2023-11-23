@@ -29,20 +29,16 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedSmithWaterman;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorSmithWaterman;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -107,10 +103,8 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookPublisherComparatorMongeElkan());
 		// matchingRule.addComparator(new BookPublisherComparatorPreprocessedMongeElkan());
 
-		matchingRule.addComparator(new BookTitleComparatorEqual());
 		matchingRule.addComparator(new BookTitleComparatorJaccard());
 		matchingRule.addComparator(new BookTitleComparatorLevenshtein());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
@@ -118,8 +112,6 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
 		matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
-		// matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
-		// matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
 		matchingRule.addComparator(new BookTitleComparatorMongeElkan());
 

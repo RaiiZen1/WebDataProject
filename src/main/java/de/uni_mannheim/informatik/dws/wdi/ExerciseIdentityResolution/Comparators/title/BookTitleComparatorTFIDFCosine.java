@@ -75,6 +75,14 @@ public class BookTitleComparatorTFIDFCosine implements Comparator<Book, Attribut
 			similarity = cor.getSimilarityScore();
 		}
     	
+		// postprocessing
+		double postSimilarity = 1;
+		if (similarity <= 0.3) {
+			postSimilarity = 0;
+		}
+
+		postSimilarity *= similarity;
+		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -82,9 +90,9 @@ public class BookTitleComparatorTFIDFCosine implements Comparator<Book, Attribut
 			this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
+			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));
 		}
-		
-		return similarity;
+		return postSimilarity;
 	}
 
 	public void initialiseIndices(){
