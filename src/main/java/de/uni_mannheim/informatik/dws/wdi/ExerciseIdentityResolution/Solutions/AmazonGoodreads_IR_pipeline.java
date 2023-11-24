@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleAuthorString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
@@ -77,7 +78,7 @@ public class AmazonGoodreads_IR_pipeline {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training.csv"));
 
 		long startTime = System.currentTimeMillis();
-		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99 };
+		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9 };
 		double bestF1 = 0;
 		double bestPrec = 0;
 		double bestRec = 0;
@@ -85,10 +86,11 @@ public class AmazonGoodreads_IR_pipeline {
 		ArrayList<Double> f1Scores = new ArrayList<>();
 
 		for (double t : thresholds) {
+			System.out.println("Threshold: " + t);
 
 			// create a matching rule
-			String options[] = new String[] { "-U" };
-			String modelType = "J48"; // use a logistic regression
+			String options[] = new String[] { "-S" };
+			String modelType = "SimpleLogistic"; // use a logistic regression
 			WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(t, modelType, options);
 			matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv",
 					1000, gsTraining);
@@ -132,7 +134,7 @@ public class AmazonGoodreads_IR_pipeline {
 
 			// create a blocker (blocking strategy)
 			StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(
-					new BookBlockingKeyByTitleStringGenerator());
+					new BookBlockingKeyByTitleAuthorString());
 			// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new
 			// SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(),
 			// 30);

@@ -4,9 +4,12 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleAuthorString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -51,23 +54,23 @@ public class AmazonCovers_IR_using_linear_combination {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_amazon_covers.csv"));
+				"data/goldstandard/test/gs_amazon_covers_test.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.85);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversLC.csv", 10000,
 				gsTest);
 
 		// add comparators
 		// matchingRule.addComparator(new BookTitleComparatorEqual(), 1);
-		matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
+		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataAmazon, dataCovers, null), 0);
-		// matchingRule.addComparator(new BookTitleComparatorJaro(), 0);
+		matchingRule.addComparator(new BookTitleComparatorJaro(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler(), 0);
@@ -80,16 +83,16 @@ public class AmazonCovers_IR_using_linear_combination {
 		// matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorLevenshtein(), 0);
-		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0);
+		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0.2);
 		// matchingRule.addComparator(new BookAuthorComparatorJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan(), 0);
-		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.4);
+		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.2);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(
-				new BookBlockingKeyByTitleStringGenerator());
+				new BookBlockingKeyByTitleAuthorString());
 		// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
 		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new
 		// SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleGenerator2(), 100);
@@ -108,7 +111,7 @@ public class AmazonCovers_IR_using_linear_combination {
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter()
-				.writeCSV(new File("data/output/correspondences/amazon_covers_correspondences.csv"), correspondences);
+				.writeCSV(new File("data/output/correspondences/amazon_covers_correspondencesLC.csv"), correspondences);
 
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result

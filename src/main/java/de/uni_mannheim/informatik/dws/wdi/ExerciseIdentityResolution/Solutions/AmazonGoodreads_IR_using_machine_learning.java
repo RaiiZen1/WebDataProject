@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleAuthorString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
@@ -78,7 +79,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -119,7 +120,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleStringGenerator());
+		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleAuthorString());
 		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(), 30);
 
 		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlocking.csv", 100);

@@ -31,7 +31,7 @@ public class BookBlockingKeyByTitleAuthorString extends
 		List<String> authors = record.getAuthors();
 
 		// Extract the first three letters of the book title
-        String titleKey = title.length() > 2 ? title.substring(0, 3).toUpperCase() : title.toUpperCase();
+        String titleKey = title.length() > 4 ? title.substring(0, 5).toUpperCase() : title.toUpperCase();
 
 		// Extract the first two letters of the first author's name, if available
 		String authorKey = "";
