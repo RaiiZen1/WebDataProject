@@ -5,9 +5,7 @@ import java.util.ArrayList;
 
 import org.slf4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaroWinkler;
@@ -27,11 +25,6 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedJaro;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedJaroWinkler;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorPreprocessedMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaroWinkler;
