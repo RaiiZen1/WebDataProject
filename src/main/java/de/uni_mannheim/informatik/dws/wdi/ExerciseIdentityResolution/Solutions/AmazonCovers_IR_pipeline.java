@@ -71,10 +71,10 @@ public class AmazonCovers_IR_pipeline {
 
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training_new.csv"));
 
 		long startTime = System.currentTimeMillis();
-		double[] thresholds = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9 };
+		double[] thresholds = new double[] { 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 };
 		double bestF1 = 0;
 		double bestPrec = 0;
 		double bestRec = 0;
@@ -143,13 +143,13 @@ public class AmazonCovers_IR_pipeline {
 
 			// write the correspondences to the output file
 			new CSVCorrespondenceFormatter().writeCSV(
-					new File("data/output/correspondences/amazon_covers_correspondencesML.csv"), correspondences);
+					new File("data/output/correspondences/amazon_covers_correspondencesML_p" + t + ".csv"), correspondences);
 
 			// load the gold standard (test set)
 			logger.info("*\tLoading gold standard\t*");
 			MatchingGoldStandard gsTest = new MatchingGoldStandard();
 			gsTest.loadFromCSVFile(new File(
-					"data/goldstandard/test/gs_amazon_covers_test.csv"));
+					"data/goldstandard/test/gs_amazon_covers_test_new.csv"));
 
 			// evaluate your result
 			logger.info("*\tEvaluating result\t*");

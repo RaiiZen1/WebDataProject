@@ -74,7 +74,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training_new.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
@@ -135,13 +135,13 @@ public class AmazonGoodreads_IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondencesML.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondencesML_markus_neu.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_amazon_goodreads_test.csv"));
+				"data/goldstandard/test/gs_amazon_goodreads_test_new.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
