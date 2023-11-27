@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xsi:noNamespaceSchemaLocation="file:///E:/WDI/Schema%20Mapping/target_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<book>
+		<id>Amazon_21234</id>
+		<title>Brian's Winter</title>
+		<authors>
+			<author>Gary Paulsen</author>
+		</authors>
+		<publisher>Laurel Leaf</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_4624</id>
+		<title>Matilda</title>
+		<authors>
+			<author>Roald Dahl</author>
+		</authors>
+		<publisher>Puffin Books</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_4861</id>
+		<title>The Magic Finger</title>
+		<authors>
+			<author>Roald Dahl</author>
+		</authors>
+		<publisher>Puffin Books</publisher>
+		<publication_date>
+			<year>1966</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_4317</id>
+		<title>Who Moved The Cheese?</title>
+		<authors>
+			<author>Spencer Johnson</author>
+		</authors>
+		<publisher>Putnam Adult</publisher>
+		<publication_date>
+			<year>1988</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_4885</id>
+		<title>The Giving Tree</title>
+		<authors>
+			<author>Shel Silverstein</author>
+		</authors>
+		<publisher>Harper &amp; Row</publisher>
+		<publication_date>
+			<year>1964</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_3569</id>
+		<title>The Tipping Point: How Little Things Can Make a Big Difference</title>
+		<authors>
+			<author>Malcom Gladwell</author>
+		</authors>
+		<publisher>Little, Brown and Company</publisher>
+		<publication_date>
+			<year>2000</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_5671</id>
+		<title>Quantum Computation and Quantum Information</title>
+		<authors>
+			<author>Michael Nielsen</author>
+			<author>Isaac Chuang</author>
+		</authors>
+		<publisher>Camebridge University Press</publisher>
+		<publication_date>
+			<year>2000</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_15161</id>
+		<title>Slouching Towards Bethlehem</title>
+		<authors>
+			<author>Joan Didion</author>
+		</authors>
+		<publisher>Farrar Straus Giroux</publisher>
+		<publication_date>
+			<year>1968</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_15210</id>
+		<title>Harry Potter and the Chamber of Secrets</title>
+		<authors>
+			<author>J. K. Rowling</author>
+		</authors>
+		<publisher>Bloomsbury</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_8128</id>
+		<title>The Mother Tongue</title>
+		<authors>
+			<author>Bill Bryson</author>
+		</authors>
+		<publisher>William Morrow</publisher>
+		<publication_date>
+			<year>1990</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_3068</id>
+		<title>A Heartbreaking Work of Staggering Genius</title>
+		<authors>
+			<author>Dave Eggers</author>
+		</authors>
+		<publisher>Simon and Schuster</publisher>
+		<publication_date>
+			<year>2000</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_21443</id>
+		<title>Passage To Juneau: A Sea and Its Meanings</title>
+		<authors>
+			<author>Jonathan Raban</author>
+		</authors>
+		<publisher>Pantheon Books</publisher>
+		<publication_date>
+			<year>1999</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_18105</id>
+		<title>Daughter of the Empire</title>
+		<authors>
+			<author>Raymond E. Feist</author>
+			<author>Janny Wurts</author>
+		</authors>
+		<publisher>Doubleday</publisher>
+		<publication_date>
+			<year>1987</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_7601</id>
+		<title>Affinity</title>
+		<authors>
+			<author>Sarah Waters</author>
+		</authors>
+		<publisher>Virago</publisher>
+		<publication_date>
+			<year>1999</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_18062</id>
+		<title>Endymion</title>
+		<authors>
+			<author>Dan Simmons</author>
+		</authors>
+		<publisher>Headline Books Publishing</publisher>
+		<publication_date>
+			<year>1996</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_15025</id>
+		<title>Twelve Angry Men</title>
+		<authors>
+			<author>Reginald Rose</author>
+		</authors>
+		<publisher>Penguin LLC US</publisher>
+		<publication_date>
+			<year>2006</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_18181</id>
+		<title>The Master and Margarita</title>
+		<authors>
+			<author>Mikhall Bulgakov</author>
+		</authors>
+		<publisher>YMCA Press</publisher>
+		<publication_date>
+			<year>1967</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_23</id>
+		<title>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition</title>
+		<authors>
+			<author>American Psychiatric Association</author>
+		</authors>
+		<publisher>American Psychiatric Association</publisher>
+		<publication_date>
+			<year>2013</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_3437</id>
+		<title>I Have Lived A Thousand Years: Growing up in the Holocaust</title>
+		<authors>
+			<author>Livia Bitton Jackson</author>
+		</authors>
+		<publisher>Simon &amp; Schuster Books for Young Readers</publisher>
+		<publication_date>
+			<year>1997</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_11009</id>
+		<title>Light on Yoga</title>
+		<authors>
+			<author>B.K.S. Iyengar</author>
+		</authors>
+		<publisher>Knopf Doubleday Publishing Group</publisher>
+		<publication_date>
+			<year>1995</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_13450</id>
+		<title>Cold Comfort Farm</title>
+		<authors>
+			<author>Stella Gibbons</author>
+		</authors>
+		<publisher>Longman</publisher>
+		<publication_date>
+			<year>1932</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_17895</id>
+		<title>The Martian Chronicles</title>
+		<authors>
+			<author>Ray Bradbury</author>
+		</authors>
+		<publisher>Doubleday</publisher>
+		<publication_date>
+			<year>1950</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_7645</id>
+		<title>Lost in a Good Book</title>
+		<authors>
+			<author>Jasper Fforde</author>
+		</authors>
+		<publisher>Hoster &amp; Stoughton</publisher>
+		<publication_date>
+			<year>2002</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_7479</id>
+		<title>I Have No Mouth, and I Must Scream</title>
+		<authors>
+			<author>Harlan Ellison</author>
+		</authors>
+		<publisher>Galaxy Publishing Corp</publisher>
+		<publication_date>
+			<year>1967</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_8376</id>
+		<title>Madame Bovary</title>
+		<authors>
+			<author>Gustave Flaubert</author>
+		</authors>
+		<publisher>Michel Lévy Frères</publisher>
+		<publication_date>
+			<year>1857</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_684</id>
+		<title>How the Mind Works</title>
+		<authors>
+			<author>Steven Pinker</author>
+		</authors>
+		<publisher>W. W. Norton &amp; Company</publisher>
+		<publication_date>
+			<year>1997</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_18268</id>
+		<title>God Emperor of Dune</title>
+		<authors>
+			<author>Frank Herbert</author>
+		</authors>
+		<publisher>Putnam</publisher>
+		<publication_date>
+			<year>1981</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_15167</id>
+		<title>The Aeneid (Vintage Classics)</title>
+		<authors>
+			<author>Virgil</author>
+		</authors>
+		<publisher>Vintage</publisher>
+		<publication_date>
+			<year>1990</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_14439</id>
+		<title>The Tracker</title>
+		<authors>
+			<author>Tom Brown Jr.</author>
+		</authors>
+		<publisher>Penguin Books</publisher>
+		<publication_date>
+			<year>1978</year>
+		</publication_date>
+	</book>
+	<book>
+		<id>Amazon_18651</id>
+		<title>Brave New World</title>
+		<authors>
+			<author>Aldous Huxley</author>
+		</authors>
+		<publisher>Chatto &amp; Windus</publisher>
+		<publication_date>
+			<year>1932</year>
+		</publication_date>
+	</book>

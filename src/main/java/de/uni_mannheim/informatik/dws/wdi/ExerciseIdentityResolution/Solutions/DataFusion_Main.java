@@ -44,15 +44,15 @@ public class DataFusion_Main {
 		// Load the Data into FusibleDataSet
 		logger.info("*\tLoading datasets\t*");
 		FusibleDataSet<Book_DF, Attribute> ds1 = new FusibleHashedDataSet<>();
-		new Book_DFXMLReader().loadFromXML(new File("data/input/Amazon_2.xml"), "/books/book", ds1);
+		new Book_DFXMLReader().loadFromXML(new File("data/input/Amazon_final.xml"), "/books/book", ds1);
 		ds1.printDataSetDensityReport();
 
 		FusibleDataSet<Book_DF, Attribute> ds2 = new FusibleHashedDataSet<>();
-		new Book_DFXMLReader().loadFromXML(new File("data/input/Covers_2.xml"), "/books/book", ds2);
+		new Book_DFXMLReader().loadFromXML(new File("data/input/Covers_final.xml"), "/books/book", ds2);
 		ds2.printDataSetDensityReport();
 
 		FusibleDataSet<Book_DF, Attribute> ds3 = new FusibleHashedDataSet<>();
-		new Book_DFXMLReader().loadFromXML(new File("data/input/Goodreads_2.xml"), "/books/book", ds3);
+		new Book_DFXMLReader().loadFromXML(new File("data/input/Goodreads_final.xml"), "/books/book", ds3);
 		ds3.printDataSetDensityReport();
 
 		// Maintain Provenance
@@ -76,9 +76,9 @@ public class DataFusion_Main {
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Book_DF, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/output/correspondences/goodreads_covers_correspondencesML_3.csv"),ds3, ds2);
-		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_covers_correspondencesML_3.csv"),ds2, ds1);
-		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_goodreads_correspondencesML_3.csv"),ds1, ds3);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/goodreads_covers_correspondencesML_p0.7.csv"),ds3, ds2);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_covers_correspondencesML_p0.7.csv"),ds2, ds1);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_goodreads_correspondencesML_p0.7.csv"),ds1, ds3);
 		
 
 		// write group size distribution
