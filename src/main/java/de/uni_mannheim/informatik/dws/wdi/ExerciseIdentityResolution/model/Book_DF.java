@@ -10,8 +10,6 @@ import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend.Attr;
-
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
@@ -22,12 +20,12 @@ public class Book_DF extends AbstractRecord<Attribute> implements Serializable{
     private List<String> genres;
     private String publisher;
     private LocalDateTime publicationDate;
-    private double averageRating;
-    private int pageNumber;
+    private double averageRating = -1.0;
+    private int pageNumber = -1;
     private List<String> characters;
     private List<String> awards;
     private String bookFormat;
-    private double price;
+    private double price = -1.0;
     private String currency;
 
     public Book_DF(String identifier, String provenance) {
@@ -167,6 +165,12 @@ public class Book_DF extends AbstractRecord<Attribute> implements Serializable{
     public static final Attribute PUBLISHER = new Attribute("Publisher");
     public static final Attribute PUBLICATION_DATE = new Attribute("PublicationDate");
     public static final Attribute AVERAGE_RATING = new Attribute("AverageRating");
+    public static final Attribute PAGE_NUMBER = new Attribute("PageNumber");
+    public static final Attribute CHARACTERS = new Attribute("Characters");
+    public static final Attribute AWARDS = new Attribute("Awards");
+    public static final Attribute BOOK_FORMAT = new Attribute("BookFormat");
+    public static final Attribute PRICE = new Attribute("Price");
+    public static final Attribute CURRENCY = new Attribute("Currency");
 
     @Override
     public boolean hasValue(Attribute attribute) {
@@ -181,7 +185,19 @@ public class Book_DF extends AbstractRecord<Attribute> implements Serializable{
         if (attribute == PUBLICATION_DATE)
             return getPublicationDate() != null;
         if (attribute == AVERAGE_RATING)
-            return getTitle() != null;
+            return getAverageRating() != -1.0;
+        if (attribute == PAGE_NUMBER)
+            return getPageNumber() != -1;
+        if (attribute == CHARACTERS)
+            return getCharacters() != null && getCharacters().size() > 0;
+        if (attribute == AWARDS)
+            return getAwards() != null && getAwards().size() > 0;
+        if (attribute == BOOK_FORMAT)
+            return getBookFormat() != null && !getBookFormat().isEmpty();
+        if (attribute == PRICE)
+            return getPrice() != -1.0;
+        if (attribute == CURRENCY)
+            return getCurrency() != null && !getCurrency().isEmpty();
         else
             return false;
     }

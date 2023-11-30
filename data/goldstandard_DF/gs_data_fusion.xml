@@ -10,6 +10,10 @@
 		<publication_date>
 			<year>1998</year>
 		</publication_date>
+		<genres>
+			<genre>Young Adult</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
 	</book>
 	<book>
 		<id>Amazon_4624</id>
@@ -21,6 +25,11 @@
 		<publication_date>
 			<year>1998</year>
 		</publication_date>
+		<genres>
+			<genre>Children's literature</genre>
+			<genre>Fantasy</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_4861</id>
@@ -32,6 +41,12 @@
 		<publication_date>
 			<year>1966</year>
 		</publication_date>
+		<genres>
+			<genre>Children's picture book</genre>
+			<genre>Fantasy</genre>
+			<genre>Comedy</genre>
+		</genres>
+		<average_rating>5.0</average_rating>
 	</book>
 	<book>
 		<id>Amazon_4317</id>
@@ -43,6 +58,15 @@
 		<publication_date>
 			<year>1988</year>
 		</publication_date>
+		<genres>
+			<genre>Self-help</genre>
+			<genre>Motivational</genre>
+			<genre>Business fable</genre>
+			<genre>Psychology</genre>
+			<genre>Leadership</genre>
+			<genre>Parable</genre>
+		</genres>
+		<average_rating></average_rating>
 	</book>
 	<book>
 		<id>Amazon_4885</id>
@@ -54,6 +78,10 @@
 		<publication_date>
 			<year>1964</year>
 		</publication_date>
+		<genres>
+			<genre>Children's picture book</genre>
+		</genres>
+		<average_rating>3.0</average_rating>
 	</book>
 	<book>
 		<id>Amazon_3569</id>
@@ -65,6 +93,10 @@
 		<publication_date>
 			<year>2000</year>
 		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
 	</book>
 	<book>
 		<id>Amazon_5671</id>
@@ -77,6 +109,10 @@
 		<publication_date>
 			<year>2000</year>
 		</publication_date>
+		<genres>
+			<genre>Textbook</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_15161</id>
@@ -88,10 +124,16 @@
 		<publication_date>
 			<year>1968</year>
 		</publication_date>
+		<genres>
+			<genre>Fiction</genre>
+			<genre>Essay</genre>
+			<genre></genre>
+		</genres>
+		<average_rating>4.7</average_rating>
 	</book>
 	<book>
 		<id>Amazon_15210</id>
-		<title>Harry Potter and the Chamber of Secrets</title>
+		<title>Harry Potter 2</title>
 		<authors>
 			<author>J. K. Rowling</author>
 		</authors>
@@ -99,6 +141,10 @@
 		<publication_date>
 			<year>1998</year>
 		</publication_date>
+		<genres>
+			<genre>Fantasy</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_8128</id>
@@ -110,6 +156,10 @@
 		<publication_date>
 			<year>1990</year>
 		</publication_date>
+		<genres>
+			<genre>Language</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
 	</book>
 	<book>
 		<id>Amazon_3068</id>
@@ -121,6 +171,10 @@
 		<publication_date>
 			<year>2000</year>
 		</publication_date>
+		<genres>
+			<genre>Memoir</genre>
+		</genres>
+		<average_rating>3.8</average_rating>
 	</book>
 	<book>
 		<id>Amazon_21443</id>
@@ -132,6 +186,12 @@
 		<publication_date>
 			<year>1999</year>
 		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+			<genre>Travel</genre>
+			<genre></genre>
+		</genres>
+		<average_rating>3.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_18105</id>
@@ -144,6 +204,10 @@
 		<publication_date>
 			<year>1987</year>
 		</publication_date>
+		<genres>
+			<genre>Fantasy</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_7601</id>
@@ -155,6 +219,10 @@
 		<publication_date>
 			<year>1999</year>
 		</publication_date>
+		<genres>
+			<genre>Historical fiction</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
 	</book>
 	<book>
 		<id>Amazon_18062</id>
@@ -166,6 +234,10 @@
 		<publication_date>
 			<year>1996</year>
 		</publication_date>
+		<genres>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>4.5</average_rating>
 	</book>
 	<book>
 		<id>Amazon_15025</id>
@@ -177,6 +249,10 @@
 		<publication_date>
 			<year>2006</year>
 		</publication_date>
+		<genres>
+			<genre>American play</genre>
+		</genres>
+		<average_rating>4.8</average_rating>
 	</book>
 	<book>
 		<id>Amazon_18181</id>
@@ -188,6 +264,16 @@
 		<publication_date>
 			<year>1967</year>
 		</publication_date>
+		<genres>
+			<genre>Fantasy</genre>
+			<genre>Farce</genre>
+			<genre>Supernatural</genre>
+			<genre>Romance</genre>
+			<genre>Satire</genre>
+			<genre>Modernist</genre>
+			<genre>Literature</genre>
+		</genres>
+		<average_rating>4.0</average_rating>
 	</book>
 	<book>
 		<id>Amazon_23</id>
@@ -199,6 +285,10 @@
 		<publication_date>
 			<year>2013</year>
 		</publication_date>
+		<genres>
+			<genre>Psychology</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
 	</book>
 	<book>
 		<id>Amazon_3437</id>
@@ -210,6 +300,10 @@
 		<publication_date>
 			<year>1997</year>
 		</publication_date>
+		<genres>
+			<genre>Memoir</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
 	</book>
 	<book>
 		<id>Amazon_11009</id>
@@ -221,6 +315,10 @@
 		<publication_date>
 			<year>1995</year>
 		</publication_date>
+		<genres>
+			<genre>Health + Wellness</genre>
+		</genres>
+		<average_rating>4.1</average_rating>
 	</book>
 	<book>
 		<id>Amazon_13450</id>
@@ -232,6 +330,10 @@
 		<publication_date>
 			<year>1932</year>
 		</publication_date>
+		<genres>
+			<genre>Comic novel</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
 	</book>
 	<book>
 		<id>Amazon_17895</id>
@@ -243,6 +345,13 @@
 		<publication_date>
 			<year>1950</year>
 		</publication_date>
+		<genres>
+			<genre>Science fiction</genre>
+			<genre>post-apocalyptic fiction</genre>
+			<genre>horro fiction</genre>
+			<genre>dystopian fiction</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
 	</book>
 	<book>
 		<id>Amazon_7645</id>
@@ -254,6 +363,11 @@
 		<publication_date>
 			<year>2002</year>
 		</publication_date>
+		<genres>
+			<genre>Alternate history</genre>
+			<genre>Fantasy novel</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
 	</book>
 	<book>
 		<id>Amazon_7479</id>
@@ -265,6 +379,11 @@
 		<publication_date>
 			<year>1967</year>
 		</publication_date>
+		<genres>
+			<genre>Post-apocalyptic fiction</genre>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>5.0</average_rating>
 	</book>
 	<book>
 		<id>Amazon_8376</id>
@@ -276,6 +395,10 @@
 		<publication_date>
 			<year>1857</year>
 		</publication_date>
+		<genres>
+			<genre>Realist novel</genre>
+		</genres>
+		<average_rating>3.4</average_rating>
 	</book>
 	<book>
 		<id>Amazon_684</id>
@@ -287,6 +410,11 @@
 		<publication_date>
 			<year>1997</year>
 		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+			<genre>Psychology</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
 	</book>
 	<book>
 		<id>Amazon_18268</id>
@@ -298,6 +426,10 @@
 		<publication_date>
 			<year>1981</year>
 		</publication_date>
+		<genres>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
 	</book>
 	<book>
 		<id>Amazon_15167</id>
@@ -309,6 +441,10 @@
 		<publication_date>
 			<year>1990</year>
 		</publication_date>
+		<genres>
+			<genre>Fiction</genre>
+		</genres>
+		<average_rating>4.1</average_rating>
 	</book>
 	<book>
 		<id>Amazon_14439</id>
@@ -320,6 +456,10 @@
 		<publication_date>
 			<year>1978</year>
 		</publication_date>
+		<genres>
+			<genre>Nature</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
 	</book>
 	<book>
 		<id>Amazon_18651</id>
@@ -332,3 +472,10 @@
 			<year>1932</year>
 		</publication_date>
 	</book>
+	<genres>
+			<genre>Science fiction</genre>
+			<genre>Dystopian fiction</genre>
+			<genre></genre>
+		</genres>
+		<average_rating>4.2</average_rating>
+</books>

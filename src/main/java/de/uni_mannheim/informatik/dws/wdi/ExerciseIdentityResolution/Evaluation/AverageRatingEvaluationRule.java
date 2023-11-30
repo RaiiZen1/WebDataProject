@@ -9,12 +9,12 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 public class AverageRatingEvaluationRule extends EvaluationRule<Book_DF, Attribute>{
     @Override
 	public boolean isEqual(Book_DF record1, Book_DF record2, Attribute schemaElement) {
-		if(record1.getAverageRating()==null && record2.getAverageRating()==null)
+		if(record1.getAverageRating()==-1.0 && record2.getAverageRating()==-1.0)
 			return true;
-		else if(record1.getDate()==null ^ record2.getDate()==null)
+		else if(record1.getAverageRating()==-1.0 ^ record2.getAverageRating()==-1.0)
 			return false;
 		else
-			return record1.getDate().getYear() == record2.getDate().getYear();
+			return record1.getAverageRating() == record2.getAverageRating();
 	}
 
 	/* (non-Javadoc)

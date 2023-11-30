@@ -7,8 +7,34 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.AuthorsEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.AverageRatingEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.AwardsEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.BookFormatEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.CharactersEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.CurrencyEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.GenresEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.PageNumberEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.PriceEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.PublicationDateEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.PublisherEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.TitleEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserIntersection;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AverageRatingFuserAverage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AwardsFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.BookFormatFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.CharactersFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.CurrencyFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.GenresFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.GenresFuserIntersection;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PageNumberFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PriceFuserDummy;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublicationDateFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublisherFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.TitleFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DF;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DFXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DFXMLReader;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
@@ -37,7 +63,7 @@ public class DataFusion_Main {
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("trace");
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
 	
 	public static void main( String[] args ) throws Exception
     {
@@ -85,46 +111,55 @@ public class DataFusion_Main {
 		correspondences.printGroupSizeDistribution();
 
 		// load the gold standard
-		// logger.info("*\tEvaluating results\t*");
-		// DataSet<Movie, Attribute> gs = new FusibleHashedDataSet<>();
-		// new MovieXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/movies/movie", gs);
+		logger.info("*\tEvaluating results\t*");
+		DataSet<Book_DF, Attribute> gs = new FusibleHashedDataSet<>();
+		new Book_DFXMLReader().loadFromXML(new File("data/goldstandard_DF/gs_data_fusion.xml"), "/books/book", gs);
 
-		// for(Movie m : gs.get()) {
-		// 	logger.info(String.format("gs: %s", m.getIdentifier()));
-		// }
+		for(Book_DF m : gs.get()) {
+			logger.info(String.format("gs: %s", m.getIdentifier()));
+		}
 
-		// // define the fusion strategy
-		// DataFusionStrategy<Movie, Attribute> strategy = new DataFusionStrategy<>(new MovieXMLReader());
-		// // write debug results to file
-		// strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
+		// define the fusion strategy
+		DataFusionStrategy<Book_DF, Attribute> strategy = new DataFusionStrategy<>(new Book_DFXMLReader());
+		// write debug results to file
+		strategy.activateDebugReport("data/output_DF/debugResultsDatafusion.csv", -1, gs);
 		
-		// // add attribute fusers
-		// strategy.addAttributeFuser(Movie.TITLE, new TitleFuserShortestString(),new TitleEvaluationRule());
-		// strategy.addAttributeFuser(Movie.DIRECTOR,new DirectorFuserLongestString(), new DirectorEvaluationRule());
-		// strategy.addAttributeFuser(Movie.DATE, new DateFuserFavourSource(),new DateEvaluationRule());
-		// strategy.addAttributeFuser(Movie.ACTORS,new ActorsFuserUnion(),new ActorsEvaluationRule());
+		// add attribute fusers
+		strategy.addAttributeFuser(Book_DF.TITLE, new TitleFuserLongestString(),new TitleEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.AUTHORS,new AuthorsFuserIntersection(), new AuthorsEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.GENRES, new GenresFuserFavourSource(),new GenresEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PUBLISHER,new PublisherFuserFavourSource(),new PublisherEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PUBLICATION_DATE,new PublicationDateFuserFavourSource(),new PublicationDateEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.AVERAGE_RATING,new AverageRatingFuserAverage(),new AverageRatingEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PAGE_NUMBER,new PageNumberFuserDummy(), new PageNumberEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.CHARACTERS,new CharactersFuserDummy(),new CharactersEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.AWARDS,new AwardsFuserDummy(),new AwardsEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.BOOK_FORMAT,new BookFormatFuserDummy(),new BookFormatEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PRICE,new PriceFuserDummy(),new PriceEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.CURRENCY,new CurrencyFuserDummy(),new CurrencyEvaluationRule());
 		
-		// // create the fusion engine
-		// DataFusionEngine<Movie, Attribute> engine = new DataFusionEngine<>(strategy);
-
-		// // print consistency report
-		// engine.printClusterConsistencyReport(correspondences, null);
 		
-		// // print record groups sorted by consistency
-		// engine.writeRecordGroupsByConsistency(new File("data/output/recordGroupConsistencies.csv"), correspondences, null);
+		// create the fusion engine
+		DataFusionEngine<Book_DF, Attribute> engine = new DataFusionEngine<>(strategy);
 
-		// // run the fusion
-		// logger.info("*\tRunning data fusion\t*");
-		// FusibleDataSet<Movie, Attribute> fusedDataSet = engine.run(correspondences, null);
-
-		// // write the result
-		// new MovieXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
-
-		// // evaluate
-		// DataFusionEvaluator<Movie, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Movie, Attribute>());
+		// print consistency report
+		engine.printClusterConsistencyReport(correspondences, null);
 		
-		// double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
+		// print record groups sorted by consistency
+		engine.writeRecordGroupsByConsistency(new File("data/output_DF/recordGroupConsistencies.csv"), correspondences, null);
 
-		// logger.info(String.format("*\tAccuracy: %.2f", accuracy));
+		// run the fusion
+		logger.info("*\tRunning data fusion\t*");
+		FusibleDataSet<Book_DF, Attribute> fusedDataSet = engine.run(correspondences, null);
+
+		// write the result
+		new Book_DFXMLFormatter().writeXML(new File("data/output_DF/fused.xml"), fusedDataSet);
+
+		// evaluate
+		DataFusionEvaluator<Book_DF, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Book_DF, Attribute>());
+		
+		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
+
+		logger.info(String.format("*\tAccuracy: %.2f", accuracy));
     }
 }

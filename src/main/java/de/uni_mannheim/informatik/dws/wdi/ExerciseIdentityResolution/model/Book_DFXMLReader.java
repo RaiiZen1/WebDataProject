@@ -29,6 +29,12 @@ public class Book_DFXMLReader extends XMLMatchableReader<Book_DF, Attribute> imp
         dataset.addAttribute(Book_DF.PUBLISHER);
         dataset.addAttribute(Book_DF.PUBLICATION_DATE);
         dataset.addAttribute(Book_DF.AVERAGE_RATING);
+        dataset.addAttribute(Book_DF.PAGE_NUMBER);
+        dataset.addAttribute(Book_DF.CHARACTERS);
+        dataset.addAttribute(Book_DF.AWARDS);
+        dataset.addAttribute(Book_DF.BOOK_FORMAT);
+        dataset.addAttribute(Book_DF.PRICE);
+        dataset.addAttribute(Book_DF.CURRENCY);
     }
 
 
@@ -54,19 +60,19 @@ public class Book_DFXMLReader extends XMLMatchableReader<Book_DF, Attribute> imp
             book.setPublicationDate(LocalDateTime.of(1970, 1, 1, 0, 0));
         }
 
-        String averageRating = getValueFromChildElement(node, "averageRating");
+        String averageRating = getValueFromChildElement(node, "average_rating");
         if(averageRating != null && !averageRating.isEmpty()) {
             book.setAverageRating(Double.parseDouble(averageRating));
         }
 
-        String pageNumber = getValueFromChildElement(node, "pageNumber");
+        String pageNumber = getValueFromChildElement(node, "page_numbers");
         if(pageNumber != null && !pageNumber.isEmpty()) {
             book.setPageNumber(Integer.parseInt(pageNumber));
         }
 
         book.setCharacters(getListFromChildElement(node, "characters"));
         book.setAwards(getListFromChildElement(node, "awards"));
-        book.setBookFormat(getValueFromChildElement(node, "bookFormat"));
+        book.setBookFormat(getValueFromChildElement(node, "book_format"));
 
         String price = getValueFromChildElement(node, "price");
         if(price != null && !price.isEmpty()) {
