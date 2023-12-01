@@ -21,6 +21,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Evaluation.TitleEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserIntersection;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AverageRatingFuserAverage;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AwardsFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.BookFormatFuserDummy;
@@ -28,11 +29,14 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.Char
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.CurrencyFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.GenresFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.GenresFuserIntersection;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.GenresFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PageNumberFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PriceFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublicationDateFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublicationDateFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublisherFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.TitleFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.TitleFuserShortestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DF;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DFXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DFXMLReader;
@@ -46,6 +50,7 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 import org.slf4j.Logger;
 
@@ -83,9 +88,9 @@ public class DataFusion_Main {
 
 		// Maintain Provenance
 		// Scores (e.g. from rating)
-		ds1.setScore(2.0);
+		ds1.setScore(3.0);
 		ds2.setScore(1.0);
-		ds3.setScore(3.0);
+		ds3.setScore(2.0);
 
 		// Date (e.g. last update)
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -113,7 +118,7 @@ public class DataFusion_Main {
 		// load the gold standard
 		logger.info("*\tEvaluating results\t*");
 		DataSet<Book_DF, Attribute> gs = new FusibleHashedDataSet<>();
-		new Book_DFXMLReader().loadFromXML(new File("data/goldstandard_DF/gs_data_fusion.xml"), "/books/book", gs);
+		new Book_DFXMLReader().loadFromXML(new File("data/goldstandard_DF/gs_data_fusion_2.0.xml"), "/books/book", gs);
 
 		for(Book_DF m : gs.get()) {
 			logger.info(String.format("gs: %s", m.getIdentifier()));
@@ -125,11 +130,11 @@ public class DataFusion_Main {
 		strategy.activateDebugReport("data/output_DF/debugResultsDatafusion.csv", -1, gs);
 		
 		// add attribute fusers
-		strategy.addAttributeFuser(Book_DF.TITLE, new TitleFuserLongestString(),new TitleEvaluationRule());
-		strategy.addAttributeFuser(Book_DF.AUTHORS,new AuthorsFuserIntersection(), new AuthorsEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.TITLE, new TitleFuserShortestString(),new TitleEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.AUTHORS,new AuthorsFuserFavourSource(), new AuthorsEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.GENRES, new GenresFuserFavourSource(),new GenresEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.PUBLISHER,new PublisherFuserFavourSource(),new PublisherEvaluationRule());
-		strategy.addAttributeFuser(Book_DF.PUBLICATION_DATE,new PublicationDateFuserFavourSource(),new PublicationDateEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PUBLICATION_DATE,new PublicationDateFuserMostRecent(),new PublicationDateEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.AVERAGE_RATING,new AverageRatingFuserAverage(),new AverageRatingEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.PAGE_NUMBER,new PageNumberFuserDummy(), new PageNumberEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.CHARACTERS,new CharactersFuserDummy(),new CharactersEvaluationRule());
@@ -154,6 +159,7 @@ public class DataFusion_Main {
 
 		// write the result
 		new Book_DFXMLFormatter().writeXML(new File("data/output_DF/fused.xml"), fusedDataSet);
+		fusedDataSet.printDataSetDensityReport();
 
 		// evaluate
 		DataFusionEvaluator<Book_DF, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Book_DF, Attribute>());

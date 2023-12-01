@@ -14,7 +14,7 @@ public class AverageRatingEvaluationRule extends EvaluationRule<Book_DF, Attribu
 		else if(record1.getAverageRating()==-1.0 ^ record2.getAverageRating()==-1.0)
 			return false;
 		else
-			return record1.getAverageRating() == record2.getAverageRating();
+			return Math.abs(record1.getAverageRating() - record2.getAverageRating()) < 0.5;
 	}
 
 	/* (non-Javadoc)

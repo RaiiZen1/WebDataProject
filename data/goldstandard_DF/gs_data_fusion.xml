@@ -50,7 +50,7 @@
 	</book>
 	<book>
 		<id>Amazon_4317</id>
-		<title>Who Moved The Cheese?</title>
+		<title>Who Moved My Cheese?</title>
 		<authors>
 			<author>Spencer Johnson</author>
 		</authors>
@@ -105,7 +105,7 @@
 			<author>Michael Nielsen</author>
 			<author>Isaac Chuang</author>
 		</authors>
-		<publisher>Camebridge University Press</publisher>
+		<publisher>Cambridge University Press</publisher>
 		<publication_date>
 			<year>2000</year>
 		</publication_date>
