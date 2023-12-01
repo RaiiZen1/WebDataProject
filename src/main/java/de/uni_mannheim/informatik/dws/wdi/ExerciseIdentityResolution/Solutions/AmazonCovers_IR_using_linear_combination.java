@@ -54,23 +54,23 @@ public class AmazonCovers_IR_using_linear_combination {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_amazon_covers_test.csv"));
+				"data/goldstandard/test/gs_amazon_covers_test_new.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.85);
+				0.7);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversLC.csv", 10000,
 				gsTest);
 
 		// add comparators
 		// matchingRule.addComparator(new BookTitleComparatorEqual(), 1);
-		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
+		matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataAmazon, dataCovers, null), 0);
-		matchingRule.addComparator(new BookTitleComparatorJaro(), 0.6);
+		// matchingRule.addComparator(new BookTitleComparatorJaro(), 0.6);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler(), 0);
@@ -83,12 +83,12 @@ public class AmazonCovers_IR_using_linear_combination {
 		// matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorLevenshtein(), 0);
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0.2);
+		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0.4);
 		// matchingRule.addComparator(new BookAuthorComparatorJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan(), 0);
-		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.2);
+		// matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.25);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(
