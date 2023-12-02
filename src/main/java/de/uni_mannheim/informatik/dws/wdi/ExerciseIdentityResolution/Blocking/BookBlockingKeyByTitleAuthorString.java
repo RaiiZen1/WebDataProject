@@ -36,7 +36,7 @@ public class BookBlockingKeyByTitleAuthorString extends
 		// Extract the first two letters of the first author's name, if available
 		String authorKey = "";
 		if (!authors.isEmpty()) {
-			String firstAuthor = authors.get(0).replaceAll("[^a-zA-Z0-9]", "");
+			String firstAuthor = authors.get(1).replaceAll("[^a-zA-Z0-9]", "");
             authorKey = firstAuthor.length() > 1 ? firstAuthor.substring(0, 2).toUpperCase() : firstAuthor.toUpperCase();
         }
 	

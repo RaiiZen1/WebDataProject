@@ -70,12 +70,12 @@ public class AmazonCovers_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_covers_training_new.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_covers_amazon_train.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -131,7 +131,7 @@ public class AmazonCovers_IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_amazon_covers_test_new.csv"));
+				"data/goldstandard/test/gs_covers_amazon_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

@@ -54,11 +54,11 @@ public class AmazonCovers_IR_using_linear_combination {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_amazon_covers_test_new.csv"));
+				"data/goldstandard/test/gs_covers_amazon_test.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.9);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversLC.csv", 10000,
 				gsTest);
 
