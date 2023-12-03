@@ -31,19 +31,17 @@ public class BookGenreComparatorPreprocessedJaccard implements Comparator<Book, 
 
 		// calculate similarity
 		double maxSimilarity = 0;
-		String s1 = "", s2 = "", s1_pre = "", s2_pre = "";
+		String s1 = "", s2 = "";
 		try {
 			for(String genre1 : l1){
-				String genre1_pre = StringPreprocessor.preprocess(genre1);
+				genre1 = StringPreprocessor.preprocess(genre1);
 				for(String genre2 : l2){
-					String genre2_pre = StringPreprocessor.preprocess(genre2);
-					double similarity = sim.calculate(genre1_pre, genre2_pre);
+					genre2 = StringPreprocessor.preprocess(genre2);
+					double similarity = sim.calculate(genre1, genre2);
 					if(similarity > maxSimilarity){
 						maxSimilarity = similarity;
 						s1 = genre1;
 						s2 = genre2;
-						s1_pre = genre1_pre;
-						s2_pre = genre2_pre;
 					}
 				}
 			}
@@ -66,8 +64,6 @@ public class BookGenreComparatorPreprocessedJaccard implements Comparator<Book, 
 		
 			this.comparisonLog.setRecord1Value(s1);
 			this.comparisonLog.setRecord2Value(s2);
-			this.comparisonLog.setRecord1PreprocessedValue(s1_pre);
-			this.comparisonLog.setRecord2PreprocessedValue(s2_pre);
     	
 			this.comparisonLog.setSimilarity(Double.toString(maxSimilarity));
 			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));

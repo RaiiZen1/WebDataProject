@@ -4,7 +4,7 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleAuthorString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleFirstGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaro;
@@ -20,16 +20,21 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.genre.BookGenreComparatorPreprocessedJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.rating.BookRatingComparatorEuclideanDistance;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.rating.BookRatingComparatorManhattanDistance;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorPreprocessedSmithWaterman;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorSmithWaterman;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorTFIDFCosine;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -75,52 +80,58 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_amazon_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-U" };
-		String modelType = "J48"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		String options[] = new String[] { "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
+		matchingRule.addComparator(new BookTitleComparatorEqual());
 		matchingRule.addComparator(new BookTitleComparatorJaccard());
 		matchingRule.addComparator(new BookTitleComparatorLevenshtein());
+		matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein());
 		// matchingRule.addComparator(new BookTitleComparatorTFIDFCosine(dataGoodreads, dataAmazon, null));
-		matchingRule.addComparator(new BookTitleComparatorJaro());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
+		// matchingRule.addComparator(new BookTitleComparatorJaro());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaro());
 		matchingRule.addComparator(new BookTitleComparatorJaroWinkler());
 		matchingRule.addComparator(new BookTitleComparatorPreprocessedJaroWinkler());
-		matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
-		matchingRule.addComparator(new BookTitleComparatorMongeElkan());
+		matchingRule.addComparator(new BookTitleComparatorSmithWaterman());
+		matchingRule.addComparator(new BookTitleComparatorPreprocessedSmithWaterman());
+		// matchingRule.addComparator(new BookTitleComparatorPreprocessedMongeElkan());
+		// matchingRule.addComparator(new BookTitleComparatorMongeElkan());
 
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookAuthorComparatorJaccard());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
-		matchingRule.addComparator(new BookAuthorComparatorJaro());
+		matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
+		matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
+		// matchingRule.addComparator(new BookAuthorComparatorJaro());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler());
 		matchingRule.addComparator(new BookAuthorComparatorJaroWinkler());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
-		matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan());
+		// matchingRule.addComparator(new BookAuthorComparatorMongeElkan());
 
-		matchingRule.addComparator(new BookGenreComparatorJaccard());
-		matchingRule.addComparator(new BookGenreComparatorPreprocessedJaccard());
+		// matchingRule.addComparator(new BookGenreComparatorJaccard());
+		// matchingRule.addComparator(new BookGenreComparatorPreprocessedJaccard());
 
-		matchingRule.addComparator(new BookRatingComparatorEuclideanDistance());
-		matchingRule.addComparator(new BookRatingComparatorManhattanDistance());
+		// matchingRule.addComparator(new BookRatingComparatorEuclideanDistance());
+		// matchingRule.addComparator(new BookRatingComparatorManhattanDistance());
 		
 		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
 		RuleLearner<Book, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataGoodreads, dataAmazon, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(dataAmazon, dataGoodreads, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		// StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleAuthorString());
-		SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(), 20);
+		// StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleStringGenerator());
+		SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(), 30);
 
 		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlocking.csv", 100);
 		
@@ -130,17 +141,17 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Book, Attribute>> correspondences = engine.runIdentityResolution(
-				dataGoodreads, dataAmazon, null, matchingRule,
+				dataAmazon, dataGoodreads, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondencesML_new.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/amazon_goodreads_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_goodreads_amazon_test.csv"));
+				"data/goldstandard/test/gs_amazon_goodreads_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

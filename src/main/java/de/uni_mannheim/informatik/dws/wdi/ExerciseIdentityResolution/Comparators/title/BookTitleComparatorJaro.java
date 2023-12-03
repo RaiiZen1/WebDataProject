@@ -28,24 +28,16 @@ public class BookTitleComparatorJaro implements Comparator<Book, Attribute> {
         // Calculate the Jaro similarity between the titles
         double similarity = sim.calculate(s1, s2);
 
-        // postprocessing
-		double postSimilarity = 1;
-		if (similarity <= 0.3) {
-			postSimilarity = 0;
-		}
+        // Log the comparison details if a logger is provided
+        if (this.comparisonLog != null) {
+            this.comparisonLog.setComparatorName(getClass().getName());
+            this.comparisonLog.setRecord1Value(s1);
+            this.comparisonLog.setRecord2Value(s2);
+            this.comparisonLog.setSimilarity(Double.toString(similarity));
+        }
 
-		postSimilarity *= similarity;
-		
-		if(this.comparisonLog != null){
-			this.comparisonLog.setComparatorName(getClass().getName());
-		
-			this.comparisonLog.setRecord1Value(s1);
-			this.comparisonLog.setRecord2Value(s2);
-    	
-			this.comparisonLog.setSimilarity(Double.toString(similarity));
-			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));
-		}
-		return postSimilarity;
+        // Return the calculated similarity
+        return similarity;
     }
 
     @Override

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xsi:noNamespaceSchemaLocation="file:///E:/WDI/Schema%20Mapping/target_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<book>
+		<id>Amazon_21234</id>
+		<title>Brian's Winter</title>
+		<authors>
+			<author>Gary Paulsen</author>
+		</authors>
+		<publisher>Laurel Leaf</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+		<genres>
+			<genre>Young Adult</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
+	</book>
+	<book>
+		<id>Amazon_4624</id>
+		<title>Matilda</title>
+		<authors>
+			<author>Roald Dahl</author>
+		</authors>
+		<publisher>Puffin Books</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+		<genres>
+			<genre>Children's literature</genre>
+			<genre>Fantasy</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
+	</book>
+	<book>
+		<id>Amazon_4861</id>
+		<title>The Magic Finger</title>
+		<authors>
+			<author>Roald Dahl</author>
+		</authors>
+		<publisher>Puffin Books</publisher>
+		<publication_date>
+			<year>1966</year>
+		</publication_date>
+		<genres>
+			<genre>Children's picture book</genre>
+			<genre>Fantasy</genre>
+			<genre>Comedy</genre>
+		</genres>
+		<average_rating>5.0</average_rating>
+	</book>
+	<book>
+		<id>Amazon_4317</id>
+		<title>Who Moved My Cheese?</title>
+		<authors>
+			<author>Spencer Johnson</author>
+		</authors>
+		<publisher>Random House Book Group Ltd.</publisher>
+		<publication_date>
+			<year>2004</year>
+		</publication_date>
+		<genres>
+			<genre>Self-help</genre>
+			<genre>Motivational</genre>
+			<genre>Business fable</genre>
+			<genre>Psychology</genre>
+			<genre>Leadership</genre>
+			<genre>Parable</genre>
+		</genres>
+		<average_rating></average_rating>
+	</book>
+	<book>
+		<id>Amazon_4885</id>
+		<title>The Giving Tree</title>
+		<authors>
+			<author>Shel Silverstein</author>
+		</authors>
+		<publisher>HarperCollins Publishers</publisher>
+		<publication_date>
+			<year>2014</year>
+		</publication_date>
+		<genres>
+			<genre>Children's picture book</genre>
+		</genres>
+		<average_rating>3.0</average_rating>
+	</book>
+	<book>
+		<id>Amazon_3569</id>
+		<title>The Tipping Point</title>
+		<authors>
+			<author>Malcom Gladwell</author>
+		</authors>
+		<publisher>Back Bay Books</publisher>
+		<publication_date>
+			<year>2002</year>
+		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
+	</book>
+	<book>
+		<id>Amazon_5671</id>
+		<title>Quantum Computation and Quantum Information</title>
+		<authors>
+			<author>Michael Nielsen</author>
+			<author>Isaac Chuang</author>
+		</authors>
+		<publisher>Cambridge University Press</publisher>
+		<publication_date>
+			<year>2000</year>
+		</publication_date>
+		<genres>
+			<genre>Textbook</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
+	</book>
+	<book>
+		<id>Amazon_15161</id>
+		<title>Slouching Towards Bethlehem</title>
+		<authors>
+			<author>Joan Didion</author>
+		</authors>
+		<publisher>Farrar Straus Giroux</publisher>
+		<publication_date>
+			<year>1968</year>
+		</publication_date>
+		<genres>
+			<genre>Fiction</genre>
+			<genre>Essay</genre>
+			<genre></genre>
+		</genres>
+		<average_rating>4.7</average_rating>
+	</book>
+	<book>
+		<id>Amazon_15210</id>
+		<title>Harry Potter 2</title>
+		<authors>
+			<author>J. K. Rowling</author>
+		</authors>
+		<publisher>Scholastic Inc.</publisher>
+		<publication_date>
+			<year>1998</year>
+		</publication_date>
+		<genres>
+			<genre>Fantasy</genre>
+		</genres>
+		<average_rating>4.6</average_rating>
+	</book>
+	<book>
+		<id>Amazon_8128</id>
+		<title>The Mother Tongue</title>
+		<authors>
+			<author>Bill Bryson</author>
+		</authors>
+		<publisher>William Morrow Paperbacks</publisher>
+		<publication_date>
+			<year>2001</year>
+		</publication_date>
+		<genres>
+			<genre>Language</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
+	</book>
+	<book>
+		<id>Amazon_3068</id>
+		<title>A Heartbreaking Work of Staggering Genius</title>
+		<authors>
+			<author>Dave Eggers</author>
+		</authors>
+		<publisher>Vintage</publisher>
+		<publication_date>
+			<year>2001</year>
+		</publication_date>
+		<genres>
+			<genre>Memoir</genre>
+		</genres>
+		<average_rating>3.8</average_rating>
+	</book>
+	<book>
+		<id>Amazon_21443</id>
+		<title>Passage To Juneau</title>
+		<authors>
+			<author>Jonathan Raban</author>
+		</authors>
+		<publisher>Vintage</publisher>
+		<publication_date>
+			<year>2000</year>
+		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+			<genre>Travel</genre>
+			<genre></genre>
+		</genres>
+		<average_rating>3.6</average_rating>
+	</book>
+	<book>
+		<id>Amazon_7601</id>
+		<title>Affinity</title>
+		<authors>
+			<author>Sarah Waters</author>
+		</authors>
+		<publisher>Riverhead Books</publisher>
+		<publication_date>
+			<year>2002</year>
+		</publication_date>
+		<genres>
+			<genre>Historical fiction</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
+	</book>
+	<book>
+		<id>Amazon_18062</id>
+		<title>Endymion</title>
+		<authors>
+			<author>Dan Simmons</author>
+		</authors>
+		<publisher>Bantam Doubleday Dell Publishing Group Inc</publisher>
+		<publication_date>
+			<year>1996</year>
+		</publication_date>
+		<genres>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>4.5</average_rating>
+	</book>
+	<book>
+		<id>Amazon_15025</id>
+		<title>Twelve Angry Men</title>
+		<authors>
+			<author>Reginald Rose</author>
+		</authors>
+		<publisher>Penguin Publishing Group</publisher>
+		<publication_date>
+			<year>2006</year>
+		</publication_date>
+		<genres>
+			<genre>American play</genre>
+		</genres>
+		<average_rating>4.8</average_rating>
+	</book>
+	<book>
+		<id>Amazon_18181</id>
+		<title>The Master and Margarita</title>
+		<authors>
+			<author>Mikhall Bulgakov</author>
+		</authors>
+		<publisher>US Books</publisher>
+		<publication_date>
+			<year>1967</year>
+		</publication_date>
+		<genres>
+			<genre>Fantasy</genre>
+			<genre>Farce</genre>
+			<genre>Supernatural</genre>
+			<genre>Romance</genre>
+			<genre>Satire</genre>
+			<genre>Modernist</genre>
+			<genre>Literature</genre>
+		</genres>
+		<average_rating>4.0</average_rating>
+	</book>
+	<book>
+		<id>Amazon_23</id>
+		<title>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition</title>
+		<authors>
+			<author>American Psychiatric Association</author>
+		</authors>
+		<publisher>American Psychiatric Association</publisher>
+		<publication_date>
+			<year>2013</year>
+		</publication_date>
+		<genres>
+			<genre>Psychology</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
+	</book>
+	<book>
+		<id>Amazon_11009</id>
+		<title>Light on Yoga</title>
+		<authors>
+			<author>B.K.S. Iyengar</author>
+		</authors>
+		<publisher>Schocken Books</publisher>
+		<publication_date>
+			<year>1995</year>
+		</publication_date>
+		<genres>
+			<genre>Health + Wellness</genre>
+		</genres>
+		<average_rating>4.1</average_rating>
+	</book>
+	<book>
+		<id>Amazon_13450</id>
+		<title>Cold Comfort Farm</title>
+		<authors>
+			<author>Stella Gibbons</author>
+		</authors>
+		<publisher>Penguin Classics</publisher>
+		<publication_date>
+			<year>2006</year>
+		</publication_date>
+		<genres>
+			<genre>Comic novel</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
+	</book>
+	<book>
+		<id>Amazon_7645</id>
+		<title>Lost in a Good Book</title>
+		<authors>
+			<author>Jasper Fforde</author>
+		</authors>
+		<publisher>Penguin Books</publisher>
+		<publication_date>
+			<year>2004</year>
+		</publication_date>
+		<genres>
+			<genre>Alternate history</genre>
+			<genre>Fantasy novel</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
+	</book>
+	<book>
+		<id>Amazon_7479</id>
+		<title>I Have No Mouth, and I Must Scream</title>
+		<authors>
+			<author>Harlan Ellison</author>
+		</authors>
+		<publisher>Ace Books</publisher>
+		<publication_date>
+			<year>1983</year>
+		</publication_date>
+		<genres>
+			<genre>Post-apocalyptic fiction</genre>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>5.0</average_rating>
+	</book>
+	<book>
+		<id>Amazon_8376</id>
+		<title>Madame Bovary</title>
+		<authors>
+			<author>Gustave Flaubert</author>
+		</authors>
+		<publisher>Oxford University Press</publisher>
+		<publication_date>
+			<year>2008</year>
+		</publication_date>
+		<genres>
+			<genre>Realist novel</genre>
+		</genres>
+		<average_rating>3.4</average_rating>
+	</book>
+	<book>
+		<id>Amazon_684</id>
+		<title>How the Mind Works</title>
+		<authors>
+			<author>Steven Pinker</author>
+		</authors>
+		<publisher>W. W. Norton &amp; Company</publisher>
+		<publication_date>
+			<year>1997</year>
+		</publication_date>
+		<genres>
+			<genre>Non-fiction</genre>
+			<genre>Psychology</genre>
+		</genres>
+		<average_rating>3.9</average_rating>
+	</book>
+	<book>
+		<id>Amazon_18268</id>
+		<title>God Emperor of Dune</title>
+		<authors>
+			<author>Frank Herbert</author>
+		</authors>
+		<publisher>Ace Books</publisher>
+		<publication_date>
+			<year>2020</year>
+		</publication_date>
+		<genres>
+			<genre>Science fiction</genre>
+		</genres>
+		<average_rating>4.2</average_rating>
+	</book>
+	<book>
+		<id>Amazon_15167</id>
+		<title>The Aeneid (Vintage Classics)</title>
+		<authors>
+			<author>Virgil</author>
+		</authors>
+		<publisher>Vintage</publisher>
+		<publication_date>
+			<year>1990</year>
+		</publication_date>
+		<genres>
+			<genre>Fiction</genre>
+		</genres>
+		<average_rating>4.1</average_rating>
+	</book>
+	<book>
+		<id>Amazon_14439</id>
+		<title>The Tracker</title>
+		<authors>
+			<author>Tom Brown Jr.</author>
+		</authors>
+		<publisher>Berkley Publishing Group</publisher>
+		<publication_date>
+			<year>1986</year>
+		</publication_date>
+		<genres>
+			<genre>Nature</genre>
+		</genres>
+		<average_rating>4.3</average_rating>
+	</book>
+	<book>
+		<id>Amazon_13505</id>
+		<title>The Miracle Of Mindfulness</title>
+		<authors>
+			<author>Thich Nhat Hanh</author>
+		</authors>
+		<publisher>Beacon Press</publisher>
+		<publication_date>
+			<year>1999</year>
+		</publication_date>
+		<genres>
+			<genre>Religion</genre>
+			<genre>Meditation &amp; Mindfulness</genre>
+			<genre>Philosophy</genre>
+		</genres>
+		<average_rating>4.4</average_rating>
+	</book>
+	<book>
+		<id>Amazon_18101</id>
+		<title>The Miracle Of Mindfulness</title>
+		<authors>
+			<author>Isaac Asimov</author>
+		</authors>
+		<publisher>Bantam Books</publisher>
+		<publication_date>
+			<year>2004</year>
+		</publication_date>
+		<genres>
+			<genre>Foundation and Earth</genre>
+		</genres>
+		<average_rating>4.1</average_rating>
+	</book>
+</books>

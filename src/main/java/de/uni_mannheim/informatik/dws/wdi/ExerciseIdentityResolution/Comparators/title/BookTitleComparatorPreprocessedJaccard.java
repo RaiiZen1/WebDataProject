@@ -8,13 +8,13 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.StringPreprocessor;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.TitlePreprocessor;
+
 
 public class BookTitleComparatorPreprocessedJaccard implements Comparator<Book, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
-
+	
 	private ComparatorLogger comparisonLog;
 
 	@Override
@@ -22,32 +22,12 @@ public class BookTitleComparatorPreprocessedJaccard implements Comparator<Book, 
 			Book record1,
 			Book record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-
-		String s1 = record1.getTitle();
-		String s2 = record1.getTitle();
-
-		if (this.comparisonLog != null) {
-			this.comparisonLog.setComparatorName(getClass().getName());
-			this.comparisonLog.setRecord1Value(s1);
-			this.comparisonLog.setRecord2Value(s2);
-		}
-
-		s1 = TitlePreprocessor.preprocess(s1);
-		s2 = TitlePreprocessor.preprocess(s2);
 		
-		s1 = StringPreprocessor.preprocess(s1);
-		s2 = StringPreprocessor.preprocess(s2);
-
-		double similarity = sim.calculate(s1, s2);
-
-		// postprocessing
-		double postSimilarity = 1;
-		if (similarity <= 0.3) {
-			postSimilarity = 0;
-		}
-
-		postSimilarity *= similarity;
-		
+		String s1 = StringPreprocessor.preprocess(record1.getTitle());
+		String s2 = StringPreprocessor.preprocess(record2.getTitle());
+    	
+    	double similarity = sim.calculate(s1, s2);
+    	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -55,9 +35,9 @@ public class BookTitleComparatorPreprocessedJaccard implements Comparator<Book, 
 			this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
-			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));
 		}
-		return postSimilarity;
+		
+		return similarity;
 	}
 
 	@Override

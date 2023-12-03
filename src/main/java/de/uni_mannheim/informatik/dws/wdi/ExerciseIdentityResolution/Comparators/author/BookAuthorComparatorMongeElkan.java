@@ -48,7 +48,7 @@ public class BookAuthorComparatorMongeElkan implements Comparator<Book, Attribut
         }
 
         // postprocessing
-        double postSimilarity = 1;
+        int postSimilarity = 1;
         if (maxSimilarity <= 0.3) {
             postSimilarity = 0;
         }

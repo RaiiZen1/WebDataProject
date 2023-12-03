@@ -29,22 +29,20 @@ public class BookAuthorComparatorPreprocessedJaro implements Comparator<Book, At
 
         // calculate similarity
         double maxSimilarity = 0;
-		String s1 = "", s2 = "", s1_pre = "", s2_pre = "";
-		try {
-			for(String author1 : l1){
-				String author1_pre = StringPreprocessor.preprocess(author1);
-				for(String author2 : l2){
-					String author2_pre = StringPreprocessor.preprocess(author2);
-					double similarity = sim.calculate(author1_pre, author2_pre);
-					if(similarity > maxSimilarity){
-						maxSimilarity = similarity;
-						s1 = author1;
-						s2 = author2;
-						s1_pre = author1_pre;
-						s2_pre = author2_pre;
-					}
-				}
-			}
+        String s1 = "", s2 = "";
+        try {
+            for (String author1 : l1) {
+                author1 = StringPreprocessor.preprocess(author1);
+                for (String author2 : l2) {
+                    author2 = StringPreprocessor.preprocess(author2);
+                    double similarity = sim.calculate(author1, author2);
+                    if (similarity > maxSimilarity) {
+                        maxSimilarity = similarity;
+                        s1 = author1;
+                        s2 = author2;
+                    }
+                }
+            }
         } catch (Exception e) {
             System.out.println(record1.toString());
             System.out.println(record2.toString());
@@ -52,7 +50,7 @@ public class BookAuthorComparatorPreprocessedJaro implements Comparator<Book, At
         }
 
         // postprocessing
-        double postSimilarity = 1;
+        int postSimilarity = 1;
         if (maxSimilarity <= 0.3) {
             postSimilarity = 0;
         }
@@ -64,8 +62,6 @@ public class BookAuthorComparatorPreprocessedJaro implements Comparator<Book, At
 
             this.comparisonLog.setRecord1Value(s1);
             this.comparisonLog.setRecord2Value(s2);
-            this.comparisonLog.setRecord1PreprocessedValue(s1_pre);
-			this.comparisonLog.setRecord2PreprocessedValue(s2_pre);
 
             this.comparisonLog.setSimilarity(Double.toString(maxSimilarity));
             this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));

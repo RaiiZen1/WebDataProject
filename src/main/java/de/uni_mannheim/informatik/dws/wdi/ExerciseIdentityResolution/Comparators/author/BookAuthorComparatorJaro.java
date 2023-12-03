@@ -47,7 +47,7 @@ public class BookAuthorComparatorJaro implements Comparator<Book, Attribute> {
         }
 
         // postprocessing
-        double postSimilarity = 1;
+        int postSimilarity = 1;
         if (maxSimilarity <= 0.3) {
             postSimilarity = 0;
         }

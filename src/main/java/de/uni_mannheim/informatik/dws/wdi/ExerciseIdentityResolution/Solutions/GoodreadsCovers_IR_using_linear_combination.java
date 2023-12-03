@@ -4,21 +4,17 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleAuthorString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByTitleStringGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.BookBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorMongeElkan;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparator10Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publicationYear.BookPublicationYearComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.publisher.BookPublisherComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -60,22 +56,20 @@ public class GoodreadsCovers_IR_using_linear_combination
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_goodreads_covers_test.csv"));
+				"data/goldstandard/gs_goodreads_covers.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.5);
+				0.7);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversLC.csv", 10000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.4);
-		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.4);
-		matchingRule.addComparator(new BookPublisherComparatorJaroWinkler(), 0.1);
-		matchingRule.addComparator(new BookPublicationYearComparator2Years(), 0.1);
-
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.6);
+		matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0.3);
+		matchingRule.addComparator(new BookPublisherComparatorLevenshtein(), 0.1);
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleAuthorString());
+		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByYearGenerator());
 		// NoBlocker<Book, Attribute> blocker = new NoBlocker<>();
 		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByDecadeGenerator(), 100);
 		blocker.setMeasureBlockSizes(true);
@@ -92,7 +86,7 @@ public class GoodreadsCovers_IR_using_linear_combination
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/goodreads_covers_correspondencesLC.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences/goodreads_covers_correspondences.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
