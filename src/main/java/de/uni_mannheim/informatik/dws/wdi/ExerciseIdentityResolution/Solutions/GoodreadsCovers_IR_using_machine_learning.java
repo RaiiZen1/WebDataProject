@@ -79,12 +79,12 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_covers_training_new.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_covers_train.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleGoodreadsCoversML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -156,7 +156,7 @@ public class GoodreadsCovers_IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_goodreads_covers_test_new.csv"));
+				"data/goldstandard/test/gs_goodreads_covers_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

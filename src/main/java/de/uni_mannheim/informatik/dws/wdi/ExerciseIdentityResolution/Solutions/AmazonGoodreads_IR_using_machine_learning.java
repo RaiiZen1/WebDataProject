@@ -35,6 +35,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookX
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -74,12 +75,12 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_amazon_goodreads_training_new.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/training/gs_goodreads_amazon_train.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		String options[] = new String[] { "-U" };
+		String modelType = "J48"; // use a logistic regression
+		WekaMatchingRule<Book, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonGoodreadsML.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -97,8 +98,6 @@ public class AmazonGoodreads_IR_using_machine_learning {
 
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaccard());
 		matchingRule.addComparator(new BookAuthorComparatorJaccard());
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein());
-		matchingRule.addComparator(new BookAuthorComparatorLevenshtein());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro());
 		matchingRule.addComparator(new BookAuthorComparatorJaro());
 		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler());
@@ -116,12 +115,12 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
 		RuleLearner<Book, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataAmazon, dataGoodreads, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(dataGoodreads, dataAmazon, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleAuthorString());
-		// SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(), 30);
+		// StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(new BookBlockingKeyByTitleAuthorString());
+		SortedNeighbourhoodBlocker<Book, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new BookBlockingKeyByTitleStringGenerator(), 20);
 
 		blocker.collectBlockSizeData("data/output/blocking/debugResultsBlocking.csv", 100);
 		
@@ -131,7 +130,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Book, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAmazon, dataGoodreads, null, matchingRule,
+				dataGoodreads, dataAmazon, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
@@ -141,7 +140,7 @@ public class AmazonGoodreads_IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/test/gs_amazon_goodreads_test_new.csv"));
+				"data/goldstandard/test/gs_goodreads_amazon_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

@@ -10,6 +10,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.author.BookAuthorComparatorPreprocessedJaroWinkler;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorJaro;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.title.BookTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.BookXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -58,14 +59,14 @@ public class AmazonCovers_IR_using_linear_combination {
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Book, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.9);
+				0.5);
 		matchingRule.activateDebugReport("data/output/matchingrule/debugResultsMatchingRuleAmazonCoversLC.csv", 10000,
 				gsTest);
 
 		// add comparators
 		// matchingRule.addComparator(new BookTitleComparatorEqual(), 1);
-		matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
-		// matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 1);
+		// matchingRule.addComparator(new BookTitleComparatorJaccard(), 0.6);
+		matchingRule.addComparator(new BookTitleComparatorLevenshtein(), 0.4);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedEqual(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedJaccard(), 1);
 		// matchingRule.addComparator(new BookTitleComparatorPreprocessedLevenshtein(), 1);
@@ -83,12 +84,12 @@ public class AmazonCovers_IR_using_linear_combination {
 		// matchingRule.addComparator(new BookAuthorComparatorJaccard(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedLevenshtein(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorLevenshtein(), 0);
-		matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0.4);
+		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaroWinkler(), 0.4);
 		// matchingRule.addComparator(new BookAuthorComparatorJaroWinkler(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorJaro(), 0);
 		// matchingRule.addComparator(new BookAuthorComparatorPreprocessedMongeElkan(), 0);
-		// matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.25);
+		matchingRule.addComparator(new BookAuthorComparatorMongeElkan(), 0.6);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Book, Attribute> blocker = new StandardRecordBlocker<Book, Attribute>(
