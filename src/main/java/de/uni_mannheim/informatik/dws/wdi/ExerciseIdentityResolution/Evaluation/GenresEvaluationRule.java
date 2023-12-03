@@ -27,6 +27,7 @@ public class GenresEvaluationRule extends EvaluationRule<Book_DF, Attribute>{
 
         return authors1.containsAll(authors2) && authors2.containsAll(authors1);
     }
+    
 
     @Override
 	public boolean isEqual(Book_DF record1, Book_DF record2,

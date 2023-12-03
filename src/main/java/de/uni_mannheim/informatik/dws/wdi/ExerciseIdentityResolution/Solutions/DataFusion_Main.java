@@ -23,6 +23,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.Auth
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserIntersection;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AuthorsFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AverageRatingFuserAverage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AverageRatingFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.AwardsFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.BookFormatFuserDummy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.CharactersFuserDummy;
@@ -35,6 +36,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.Pric
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublicationDateFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublicationDateFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublisherFuserFavourSource;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublisherFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.PublisherFuserShortestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.TitleFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Fusers.TitleFuserShortestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Book_DF;
@@ -107,9 +110,9 @@ public class DataFusion_Main {
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Book_DF, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/output/correspondences/goodreads_covers_correspondencesML_p0.7.csv"),ds3, ds2);
-		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_covers_correspondencesML_p0.7.csv"),ds2, ds1);
-		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_goodreads_correspondencesML_p0.7.csv"),ds1, ds3);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/goodreads_covers_correspondencesML_new.csv"),ds3, ds2);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_covers_correspondencesML_new.csv"),ds2, ds1);
+		correspondences.loadCorrespondences(new File("data/output/correspondences/amazon_goodreads_correspondencesML_new (2).csv"),ds3, ds1);
 		
 
 		// write group size distribution
@@ -118,7 +121,7 @@ public class DataFusion_Main {
 		// load the gold standard
 		logger.info("*\tEvaluating results\t*");
 		DataSet<Book_DF, Attribute> gs = new FusibleHashedDataSet<>();
-		new Book_DFXMLReader().loadFromXML(new File("data/goldstandard_DF/gs_data_fusion_2.0.xml"), "/books/book", gs);
+		new Book_DFXMLReader().loadFromXML(new File("data/goldstandard_DF/gs_data_fusion_3.1.xml"), "/books/book", gs);
 
 		for(Book_DF m : gs.get()) {
 			logger.info(String.format("gs: %s", m.getIdentifier()));
@@ -134,7 +137,7 @@ public class DataFusion_Main {
 		strategy.addAttributeFuser(Book_DF.AUTHORS,new AuthorsFuserFavourSource(), new AuthorsEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.GENRES, new GenresFuserFavourSource(),new GenresEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.PUBLISHER,new PublisherFuserFavourSource(),new PublisherEvaluationRule());
-		strategy.addAttributeFuser(Book_DF.PUBLICATION_DATE,new PublicationDateFuserMostRecent(),new PublicationDateEvaluationRule());
+		strategy.addAttributeFuser(Book_DF.PUBLICATION_DATE,new PublicationDateFuserFavourSource(),new PublicationDateEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.AVERAGE_RATING,new AverageRatingFuserAverage(),new AverageRatingEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.PAGE_NUMBER,new PageNumberFuserDummy(), new PageNumberEvaluationRule());
 		strategy.addAttributeFuser(Book_DF.CHARACTERS,new CharactersFuserDummy(),new CharactersEvaluationRule());
