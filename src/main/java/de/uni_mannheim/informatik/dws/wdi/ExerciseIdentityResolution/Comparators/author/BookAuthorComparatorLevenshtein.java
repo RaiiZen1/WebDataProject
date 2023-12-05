@@ -48,7 +48,7 @@ public class BookAuthorComparatorLevenshtein implements Comparator<Book, Attribu
         }
 
         // postprocessing
-        int postSimilarity = 1;
+        double postSimilarity = 1;
         if (maxSimilarity <= 0.3) {
             postSimilarity = 0;
         }
